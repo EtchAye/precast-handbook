@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 5: Anaemia – PRECAST Handbook</title>
+  <meta name="description" content="PRECAST Handbook Chapter 5: Anaemia management for cancer surgery prehabilitation. Screening, iron deficiency diagnosis, IV iron therapy." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 50:'#f0f4ff', 100:'#dce6ff', 200:'#b9ceff', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            teal: { 50:'#f0fdfa', 100:'#ccfbf1', 400:'#2dd4bf', 600:'#0d9488', 700:'#0f766e', 800:'#115e59' },
+            gold: { 50:'#fffbeb', 100:'#fef3c7', 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .prose-table th { background-color: #1e3a8a; color: white; }
+    .prose-table td, .prose-table th { padding: 0.6rem 0.9rem; border: 1px solid #e5e7eb; font-size: 0.875rem; }
+    .prose-table tr:nth-child(even) td { background-color: #f8fafc; }
+    .section-anchor { scroll-margin-top: 5rem; }
+    .sidebar-link { transition: color 0.15s, padding-left 0.15s; }
+    .sidebar-link:hover { color: #0d9488; padding-left: 0.25rem; }
+    .sidebar-link.active { color: #0d9488; font-weight: 600; border-left: 3px solid #0d9488; padding-left: 0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-teal-700 to-teal-800 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <a href="index.html" class="inline-flex items-center gap-2 text-teal-200 hover:text-white text-sm font-medium mb-4 transition-colors">
+        ← Back to PRECAST Handbook
+      </a>
+      <div class="flex items-center gap-4">
+        <div class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-center min-w-[70px]">
+          <p class="text-xs font-semibold opacity-70 uppercase tracking-wider">Ch.</p>
+          <p class="text-4xl font-extrabold leading-none">5</p>
+        </div>
+        <div>
+          <p class="text-teal-200 text-sm font-semibold uppercase tracking-widest mb-0.5">PRECAST Handbook</p>
+          <h1 class="text-3xl md:text-4xl font-extrabold">Anaemia</h1>
+          <p class="text-teal-100 text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation &nbsp;·&nbsp; Last Updated: May 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="bg-teal-700 text-white sticky top-0 z-50 shadow-md" aria-label="Chapter navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="index.html" class="hover:text-teal-200 transition-colors">🏠 Home</a>
+      <span class="text-white/30">|</span>
+      <a href="#overview" class="hover:text-teal-200 transition-colors">Overview</a>
+      <a href="#recommendations" class="hover:text-teal-200 transition-colors">Key Recommendations</a>
+      <a href="#screening" class="hover:text-teal-200 transition-colors">Screening</a>
+      <a href="#investigations" class="hover:text-teal-200 transition-colors">Investigations</a>
+      <a href="#treatment" class="hover:text-teal-200 transition-colors">Treatment</a>
+      <a href="#pathway" class="hover:text-teal-200 transition-colors">Decision Pathway</a>
+      <a href="#references" class="hover:text-teal-200 transition-colors">References</a>
+      <span class="text-white/30">|</span>
+      <a href="diabetes.html" class="hover:text-teal-200 transition-colors">Ch. 6: Diabetes →</a>
+      <a href="frailty.html" class="hover:text-teal-200 transition-colors">Ch. 7: Frailty</a>
+      <span class="opacity-40">|</span>
+      <a href="nutrition.html" class="hover:text-teal-200 transition-colors">Ch. 8: Nutrition</a>
+      <span class="opacity-40">|</span>
+      <a href="nowcasting.html" class="hover:text-teal-200 transition-colors">Ch. 9: Nowcasting</a>
+      <span class="opacity-40">|</span>
+      <a href="exercise.html" class="hover:text-teal-200 transition-colors">Ch. 10: Exercise →</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex gap-8">
+
+    <!-- Sidebar TOC (desktop) -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <div class="sticky top-20 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Contents</p>
+        <nav class="space-y-1 text-sm text-gray-600">
+          <a href="#overview" class="sidebar-link block py-1">Chapter Overview</a>
+          <a href="#objectives" class="sidebar-link block py-1">Learning Objectives</a>
+          <a href="#recommendations" class="sidebar-link block py-1">Key Recommendations</a>
+          <a href="#introduction" class="sidebar-link block py-1">1. Introduction</a>
+          <a href="#epidemiology" class="sidebar-link block py-1">2. Epidemiology</a>
+          <a href="#screening" class="sidebar-link block py-1">3. Screening</a>
+          <a href="#investigations" class="sidebar-link block py-1">4. Investigations</a>
+          <a href="#iron-studies" class="sidebar-link block py-1">5. Iron Studies</a>
+          <a href="#treatment" class="sidebar-link block py-1">6. Treatment</a>
+          <a href="#special" class="sidebar-link block py-1">7. Special Considerations</a>
+          <a href="#qi" class="sidebar-link block py-1">8. Quality Improvement</a>
+          <a href="#pathway" class="sidebar-link block py-1">9. Decision Pathway</a>
+          <a href="#summary" class="sidebar-link block py-1">10. Summary</a>
+          <a href="#references" class="sidebar-link block py-1">11. References</a>
+        </nav>
+        <div class="mt-5 pt-4 border-t border-gray-100">
+          <p class="text-xs text-gray-400 mb-2 font-semibold uppercase tracking-wider">Other Chapters</p>
+          <a href="diabetes.html" class="text-xs text-navy-700 hover:text-teal-700 block py-1">→ Ch. 6: Diabetes</a>
+          <a href="frailty.html" class="text-xs text-violet-700 hover:text-teal-700 block py-1">→ Ch. 7: Frailty</a>
+          <a href="nutrition.html" class="text-xs text-emerald-700 hover:text-teal-700 block py-1">→ Ch. 8: Nutrition</a>
+          <a href="nowcasting.html" class="text-xs text-amber-700 hover:text-teal-700 block py-1">→ Ch. 9: Nowcasting</a>
+          <a href="exercise.html" class="text-xs text-rose-700 hover:text-teal-700 block py-1">→ Ch. 10: Exercise</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Chapter Overview -->
+      <section id="overview" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Chapter Overview</h2>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div><span class="font-semibold text-gray-500">Chapter Number:</span> <span class="text-gray-800">5</span></div>
+          <div><span class="font-semibold text-gray-500">Last Updated:</span> <span class="text-gray-800">May 2026</span></div>
+          <div class="md:col-span-2"><span class="font-semibold text-gray-500">Target Audience:</span> <span class="text-gray-800">Health professionals involved in cancer surgery prehabilitation programs, including surgeons, anaesthetists, nurses, allied health professionals, and general practitioners.</span></div>
+        </div>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section id="objectives" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Learning Objectives</h2>
+        <p class="text-sm text-gray-600 mb-4">By the end of this chapter, the reader will be able to:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>Define anaemia using WHO criteria and understand its clinical significance in cancer surgery patients</li>
+          <li>Identify which patients require preoperative anaemia screening</li>
+          <li>Order and interpret appropriate investigations for anaemia and iron deficiency</li>
+          <li>Distinguish between absolute and functional iron deficiency in cancer patients</li>
+          <li>Prescribe appropriate treatment for iron deficiency anaemia, including timing and dosing</li>
+          <li>Recognise when specialist haematology referral is indicated</li>
+          <li>Implement quality improvement measures to evaluate anaemia management programs</li>
+        </ol>
+      </section>
+
+      <!-- Key Clinical Recommendations -->
+      <section id="recommendations" class="section-anchor mb-6">
+        <div class="bg-teal-700 text-white rounded-2xl p-8 shadow-md">
+          <h2 class="text-xl font-bold mb-5 flex items-center gap-2">⚡ Key Clinical Recommendations</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="text-teal-200 text-xs font-bold uppercase tracking-wider mb-3">Critical Actions</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2"><span class="text-teal-300 font-bold mt-0.5">•</span><span><strong>Screen all patients</strong> undergoing cancer surgery with predicted blood loss ≥500 ml for anaemia</span></li>
+                <li class="flex gap-2"><span class="text-teal-300 font-bold mt-0.5">•</span><span><strong>Test for iron deficiency</strong> using serum ferritin and transferrin saturation (TSAT)</span></li>
+                <li class="flex gap-2"><span class="text-teal-300 font-bold mt-0.5">•</span><span><strong>Treat iron deficiency</strong> with intravenous iron (1 g ferric carboxymaltose or ferric derisomaltose)</span></li>
+                <li class="flex gap-2"><span class="text-teal-300 font-bold mt-0.5">•</span><span><strong>Optimal timing:</strong> Administer IV iron 4–6 weeks before surgery when possible</span></li>
+                <li class="flex gap-2"><span class="text-teal-300 font-bold mt-0.5">•</span><span><strong>Refer to haematology:</strong> Patients with B12/folate deficiency, unclear iron status, or religious objection to blood transfusion</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-teal-200 text-xs font-bold uppercase tracking-wider mb-3">Diagnostic Thresholds</p>
+              <div class="bg-white/10 rounded-xl p-4 space-y-3 text-sm">
+                <div>
+                  <p class="font-semibold text-teal-100 mb-1">WHO Anaemia Thresholds</p>
+                  <p>Females: Hb &lt;120 g/L</p>
+                  <p>Males: Hb &lt;130 g/L</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-teal-100 mb-1">Iron Deficiency Definitions</p>
+                  <p><strong>Absolute:</strong> Ferritin &lt;30 μg/L (healthy)</p>
+                  <p><strong>Functional:</strong> Ferritin &lt;100 μg/L OR TSAT &lt;20% (cancer/inflammation)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. Introduction -->
+      <section id="introduction" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">1. Introduction and Clinical Context</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">Anaemia is a common and clinically significant condition in patients undergoing cancer surgery. The World Health Organization (WHO) defines anaemia as haemoglobin (Hb) concentration below 120 g/L in females and below 130 g/L in males.</p>
+        <p class="text-gray-700 leading-relaxed mb-4">Preoperative anaemia in cancer patients is independently associated with adverse surgical outcomes, including increased perioperative morbidity, prolonged hospital stay, and elevated mortality risk. While the evidence that correcting anaemia directly modifies these risks remains evolving, treatment of anaemia offers several important benefits:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm mb-4">
+          <li>Improved quality of life in cancer patients</li>
+          <li>Enhanced functional capacity during prehabilitation</li>
+          <li>Reduced risk of perioperative blood transfusion</li>
+          <li>Optimisation of physiological reserve before major surgery</li>
+        </ul>
+        <p class="text-gray-700 leading-relaxed">International consensus guidelines, including the Frankfurt Consensus Conference and Enhanced Recovery After Surgery (ERAS) protocols, recommend systematic detection and treatment of anaemia before major cancer surgery.</p>
+      </section>
+
+      <!-- 2. Epidemiology -->
+      <section id="epidemiology" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">2. Epidemiology and Impact</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">2.1 Prevalence in Cancer Populations</h3>
+        <p class="text-gray-700 text-sm mb-3">Anaemia is particularly prevalent in cancer surgery populations, with the highest rates observed in:</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-5">
+          <li><strong>Colorectal cancer patients:</strong> High rates due to chronic gastrointestinal blood loss</li>
+          <li><strong>Gynaecological oncology patients:</strong> Elevated prevalence secondary to menstrual and tumour-related bleeding</li>
+          <li><strong>Upper gastrointestinal malignancies:</strong> Associated with nutritional deficiencies and chronic blood loss</li>
+        </ul>
+        <h3 class="font-semibold text-gray-800 mb-2">2.2 Common Causes in Cancer Patients</h3>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Cause</th><th>Mechanism</th><th>Prevalence</th></tr></thead>
+            <tbody>
+              <tr><td>Iron deficiency</td><td>Chronic blood loss, malabsorption, dietary insufficiency</td><td>Most common</td></tr>
+              <tr><td>Anaemia of chronic disease</td><td>Inflammatory cytokines, hepcidin elevation</td><td>Common</td></tr>
+              <tr><td>Vitamin B12 deficiency</td><td>Malabsorption, dietary insufficiency</td><td>Less common</td></tr>
+              <tr><td>Folate deficiency</td><td>Dietary insufficiency, increased utilisation</td><td>Less common</td></tr>
+              <tr><td>Renal impairment</td><td>Reduced erythropoietin production</td><td>Variable</td></tr>
+              <tr><td>Chemotherapy effects</td><td>Bone marrow suppression</td><td>Context-dependent</td></tr>
+              <tr><td>Haematologic disorders</td><td>Thalassaemia, myelodysplasia, etc.</td><td>Rare</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. Screening -->
+      <section id="screening" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">3. Patient Selection and Screening</h2>
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-5 mb-5">
+          <p class="font-semibold text-teal-800 mb-1">Screening Indication</p>
+          <p class="text-sm text-teal-700"><strong>All patients should be screened for anaemia</strong> prior to cancer surgery when the predicted potential blood loss is <strong>500 ml or greater</strong>.</p>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Procedures Requiring Screening</h3>
+        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-5">
+          <li>Colorectal resections</li>
+          <li>Hepatobiliary and pancreatic surgery</li>
+          <li>Oesophagogastric resections</li>
+          <li>Major gynaecological oncology procedures</li>
+          <li>Urological cancer surgery</li>
+          <li>Head and neck cancer surgery with major reconstruction</li>
+        </ul>
+        <h3 class="font-semibold text-gray-800 mb-2">Timing of Screening</h3>
+        <p class="text-gray-700 text-sm mb-4">Screening should occur at the earliest opportunity, ideally at initial surgical consultation or prehabilitation assessment — minimum 4–6 weeks before planned surgery.</p>
+        <h3 class="font-semibold text-gray-800 mb-2">High-Risk Populations</h3>
+        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
+          <li>Patients with visible bleeding (haematochezia, melaena, haematuria, menorrhagia)</li>
+          <li>Colorectal and gynaecological cancer patients</li>
+          <li>Patients with poor nutritional status or weight loss</li>
+          <li>Those with previous anaemia or iron deficiency</li>
+          <li>Patients on anticoagulation or antiplatelet therapy</li>
+        </ul>
+      </section>
+
+      <!-- 4. Investigations -->
+      <section id="investigations" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">4. Diagnostic Investigations</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">4.1 Initial Screening Tests</h3>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Test</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td>Full Blood Examination (FBE)</td><td>Haemoglobin, MCV, MCH, red cell indices</td></tr>
+              <tr><td>Serum ferritin</td><td>Assessment of iron stores</td></tr>
+              <tr><td>Transferrin saturation (TSAT)</td><td>Functional iron availability</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">4.2 Extended Investigations (if anaemia unexplained by iron deficiency)</h3>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Test</th><th>Indication</th></tr></thead>
+            <tbody>
+              <tr><td>Urea, Electrolytes, Creatinine (UEC)</td><td>Assess renal function</td></tr>
+              <tr><td>C-Reactive Protein (CRP)</td><td>Identify inflammatory state</td></tr>
+              <tr><td>Vitamin B12</td><td>Exclude B12 deficiency</td></tr>
+              <tr><td>Serum folate</td><td>Exclude folate deficiency</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <p class="text-sm font-semibold text-amber-800 mb-1">⚠ Tests to Avoid</p>
+          <p class="text-sm text-amber-700"><strong>Serum iron alone is NOT recommended</strong> as a measure of iron status — it fluctuates with time of day, meals, and supplementation. TSAT (incorporating serum iron) is more useful but still requires clinical context.</p>
+        </div>
+        <div class="mt-4 bg-navy-50 border border-navy-100 rounded-xl p-4">
+          <p class="text-sm font-semibold text-navy-800 mb-1">When to Refer to Haematology</p>
+          <ul class="text-sm text-navy-700 space-y-1 list-disc list-inside">
+            <li>Low vitamin B12 or serum folate levels</li>
+            <li>Unclear iron status despite initial investigations</li>
+            <li><strong>Patients with religious or other objection to blood transfusion (mandatory referral)</strong></li>
+            <li>Suspected haematologic disorders</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. Iron Studies -->
+      <section id="iron-studies" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">5. Interpretation of Iron Studies</h2>
+        <p class="text-gray-700 text-sm mb-4">Serum ferritin is the best measure of total body iron stores in healthy individuals. However, ferritin is also an <strong>acute phase reactant</strong> and may be falsely elevated in the presence of active malignancy, systemic inflammation, infection, or liver disease.</p>
+        <div class="grid md:grid-cols-2 gap-4 mb-5">
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+            <p class="font-semibold text-red-800 mb-1">Absolute Iron Deficiency</p>
+            <p class="text-sm text-red-700">Ferritin &lt;30 μg/L (in otherwise healthy individuals)</p>
+          </div>
+          <div class="bg-orange-50 border border-orange-100 rounded-xl p-4">
+            <p class="font-semibold text-orange-800 mb-1">Functional Iron Deficiency</p>
+            <p class="text-sm text-orange-700">Ferritin &lt;100 μg/L <strong>OR</strong> TSAT &lt;20% (in cancer/inflammatory states)</p>
+          </div>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Clinical Interpretation Table</h3>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Ferritin</th><th>TSAT</th><th>Interpretation</th><th>Action</th></tr></thead>
+            <tbody>
+              <tr><td>&lt;30 μg/L</td><td>Any</td><td>Absolute iron deficiency</td><td>Treat with IV iron</td></tr>
+              <tr><td>30–100 μg/L</td><td>&lt;20%</td><td>Functional iron deficiency (cancer/inflammation)</td><td>Treat with IV iron</td></tr>
+              <tr><td>&lt;100 μg/L</td><td>≥20%</td><td>Possible functional iron deficiency</td><td>Consider IV iron in context</td></tr>
+              <tr><td>≥100 μg/L</td><td>&lt;20%</td><td>Functional iron deficiency</td><td>Treat with IV iron</td></tr>
+              <tr><td>≥100 μg/L</td><td>≥20%</td><td>Iron replete</td><td>Investigate other causes of anaemia</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 6. Treatment -->
+      <section id="treatment" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">6. Treatment Recommendations</h2>
+        <p class="text-gray-700 text-sm mb-4">In patients with active inflammation, including active cancer, intestinal absorption of iron is significantly impaired due to hepcidin-mediated blockade of iron transport. Consequently, <strong>intravenous (IV) iron formulations are strongly preferred</strong> over oral iron supplementation in the preoperative cancer population.</p>
+        <h3 class="font-semibold text-gray-800 mb-2">IV Iron Formulations and Dosing</h3>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Formulation</th><th>Brand Name</th><th>Typical Dose</th></tr></thead>
+            <tbody>
+              <tr><td>Ferric carboxymaltose</td><td>Ferinject®</td><td>1000 mg (1 g)</td></tr>
+              <tr><td>Ferric derisomaltose</td><td>Monofer®</td><td>1000 mg (1 g)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 mb-5">
+          <p class="font-semibold text-teal-800 mb-1">Optimal Timing</p>
+          <p class="text-sm text-teal-700">IV iron should be administered <strong>4–6 weeks prior to surgery</strong> when possible. Benefits can be observed even with supplementation as close as 1 day prior to surgery, but earlier administration is preferred.</p>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Adverse Effects and Complications</h3>
+        <div class="overflow-x-auto mb-4">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Side Effect</th><th>Frequency</th><th>Management</th></tr></thead>
+            <tbody>
+              <tr><td>Nausea</td><td>Common</td><td>Usually self-limiting; antiemetics if needed</td></tr>
+              <tr><td>Headache</td><td>Common</td><td>Simple analgesia</td></tr>
+              <tr><td>Constipation / Diarrhoea</td><td>Common</td><td>Usually self-limiting; dietary advice</td></tr>
+              <tr><td>Skin staining (extravasation)</td><td>Rare</td><td>Ensure secure IV access; may be permanent</td></tr>
+              <tr><td>Hypophosphataemia</td><td>Notable</td><td>Check phosphate if worsening fatigue; oral/IV replacement</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+          <p class="text-sm font-semibold text-red-800 mb-1">⛔ Contraindication</p>
+          <p class="text-sm text-red-700">IV iron should <strong>not be prescribed during active infection</strong>. Defer treatment until infection is resolved.</p>
+        </div>
+      </section>
+
+      <!-- 7. Special Considerations -->
+      <section id="special" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">7. Special Considerations and Complications</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">Anaemia Without Iron Deficiency</h3>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Cause</th><th>Investigation</th><th>Management</th></tr></thead>
+            <tbody>
+              <tr><td>Vitamin B12 deficiency</td><td>Serum B12</td><td>Haematology referral</td></tr>
+              <tr><td>Folate deficiency</td><td>Serum folate</td><td>Haematology referral</td></tr>
+              <tr><td>Renal impairment</td><td>UEC, eGFR</td><td>Nephrology input; consider ESAs</td></tr>
+              <tr><td>Anaemia of chronic disease</td><td>CRP, ferritin, clinical context</td><td>Unlikely correctable preoperatively</td></tr>
+              <tr><td>Chemotherapy-related</td><td>Medication history</td><td>Unlikely correctable preoperatively</td></tr>
+              <tr><td>Haematologic disorders</td><td>Blood film, haematology review</td><td>Specialist management</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 text-sm">
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+            <p class="font-semibold text-navy-800 mb-1">Declining Blood Transfusion</p>
+            <p class="text-navy-700">Mandatory referral to laboratory haematology for comprehensive preoperative optimisation and blood conservation strategies.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <p class="font-semibold text-gray-800 mb-1">Patients on Anticoagulation</p>
+            <p class="text-gray-700">Continue standard screening and treatment. IV iron can be safely administered in anticoagulated patients.</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <p class="font-semibold text-gray-800 mb-1">Neoadjuvant Chemotherapy</p>
+            <p class="text-gray-700">Screen before and after chemotherapy. Chemotherapy-induced anaemia may not be fully correctable preoperatively.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Quality Improvement -->
+      <section id="qi" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">8. Quality Improvement and Evaluation</h2>
+        <div class="grid md:grid-cols-3 gap-4 text-sm mb-5">
+          <div class="bg-teal-50 border border-teal-100 rounded-xl p-4">
+            <p class="font-bold text-teal-800 mb-2">Epidemiological Metrics</p>
+            <ul class="space-y-1 text-teal-700 list-disc list-inside">
+              <li>Prevalence of anaemia</li>
+              <li>Prevalence of iron deficiency</li>
+              <li>Prevalence of B12/folate deficiency</li>
+            </ul>
+          </div>
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+            <p class="font-bold text-navy-800 mb-2">Process Metrics</p>
+            <ul class="space-y-1 text-navy-700 list-disc list-inside">
+              <li>Screening rate</li>
+              <li>Treatment compliance</li>
+              <li>Timing of treatment</li>
+              <li>Haematology referral rate</li>
+            </ul>
+          </div>
+          <div class="bg-gold-50 border border-gold-100 rounded-xl p-4">
+            <p class="font-bold text-gold-700 mb-2">Efficacy Metrics</p>
+            <ul class="space-y-1 text-gray-700 list-disc list-inside">
+              <li>Haemoglobin response</li>
+              <li>Anaemia correction rate</li>
+              <li>Transfusion rate</li>
+              <li>Adverse event rate</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Clinical Decision Pathway -->
+      <section id="pathway" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-6">9. Clinical Decision Pathway</h2>
+        <div class="space-y-4">
+          <!-- Step 1 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">1</div>
+            <div class="flex-1 bg-teal-50 border border-teal-100 rounded-xl p-4">
+              <p class="font-semibold text-teal-800">Patient Identification</p>
+              <p class="text-sm text-teal-700 mt-1">Patient scheduled for cancer surgery with predicted blood loss ≥500 ml → Order screening blood tests.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">2</div>
+            <div class="flex-1 bg-teal-50 border border-teal-100 rounded-xl p-4">
+              <p class="font-semibold text-teal-800">Initial Screening</p>
+              <p class="text-sm text-teal-700 mt-1">Order: Full Blood Examination (FBE), Serum ferritin, Transferrin saturation (TSAT).</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">3</div>
+            <div class="flex-1 bg-teal-50 border border-teal-100 rounded-xl p-4">
+              <p class="font-semibold text-teal-800">Haemoglobin Assessment</p>
+              <p class="text-sm text-teal-700 mt-1">Is the patient anaemic? (Females: Hb &lt;120 g/L; Males: Hb &lt;130 g/L). If YES → also order UEC, CRP, B12, Folate.</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">4</div>
+            <div class="flex-1 bg-teal-50 border border-teal-100 rounded-xl p-4">
+              <p class="font-semibold text-teal-800">Iron Status Assessment</p>
+              <p class="text-sm text-teal-700 mt-1">Iron deficiency criteria: Ferritin &lt;100 μg/L <strong>OR</strong> TSAT &lt;20%. If YES → prescribe IV iron. If NO → investigate other causes.</p>
+            </div>
+          </div>
+          <!-- Step 5 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">5</div>
+            <div class="flex-1 bg-teal-50 border border-teal-100 rounded-xl p-4">
+              <p class="font-semibold text-teal-800">IV Iron Treatment</p>
+              <p class="text-sm text-teal-700 mt-1">Ferric carboxymaltose (Ferinject®) 1000 mg OR Ferric derisomaltose (Monofer®) 1000 mg. Administer 4–6 weeks pre-op. Repeat FBE 2–4 weeks after infusion.</p>
+            </div>
+          </div>
+          <!-- Step 6 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">6</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Investigate Alternative Causes</p>
+              <p class="text-sm text-navy-700 mt-1">If iron replete but anaemic: B12/folate deficiency → Haematology; Renal impairment → Nephrology; Unclear → Haematology; Chronic disease → Document, optimise other aspects.</p>
+            </div>
+          </div>
+          <!-- Step 7 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold-500 text-white font-bold flex items-center justify-center text-sm">7</div>
+            <div class="flex-1 bg-gold-50 border border-gold-100 rounded-xl p-4">
+              <p class="font-semibold text-gold-700">Special Circumstances</p>
+              <p class="text-sm text-gray-700 mt-1">Patient declines blood transfusion → Mandatory haematology referral. Unclear iron status → Haematology referral.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Summary -->
+      <section id="summary" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">10. Summary and Key Points</h2>
+        <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
+          <li><strong>Anaemia is common and clinically significant</strong> in cancer surgery patients, associated with adverse outcomes and reduced quality of life.</li>
+          <li><strong>Universal screening is recommended</strong> for all patients undergoing cancer surgery with predicted blood loss ≥500 ml.</li>
+          <li><strong>Iron deficiency is the most common and most treatable cause</strong> of anaemia in this population.</li>
+          <li><strong>Different diagnostic thresholds apply</strong> in cancer patients due to inflammatory effects on ferritin (functional iron deficiency: ferritin &lt;100 μg/L or TSAT &lt;20%).</li>
+          <li><strong>Intravenous iron is the treatment of choice</strong> in cancer patients, with 1 g ferric carboxymaltose or ferric derisomaltose administered 4–6 weeks before surgery.</li>
+          <li><strong>Modern IV iron is safe</strong>, with negligible anaphylaxis risk but awareness needed for hypophosphataemia and skin staining.</li>
+          <li><strong>Haematology referral is indicated</strong> for B12/folate deficiency, unclear iron status, and patients declining blood transfusion.</li>
+          <li><strong>Quality improvement evaluation</strong> should include epidemiological, process, and efficacy metrics.</li>
+        </ol>
+      </section>
+
+      <!-- References -->
+      <section id="references" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">11. References</h2>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>World Health Organization. Guidelines on haemoglobin cutoffs to define anaemia in individuals and populations. Geneva: WHO; 2024.</li>
+          <li>Mueller MM, Van Remoortel H, Meybohm P, et al. Patient Blood Management: Recommendations From the 2018 Frankfurt Consensus Conference. <em>JAMA.</em> 2019;321(10):983–997.</li>
+          <li>Ljungqvist O, Scott M, Fearon KC. Enhanced Recovery After Surgery: A Review. <em>JAMA Surg.</em> 2017;152(3):292–298.</li>
+          <li>National Blood Authority. Patient blood management guidelines: module 2 – perioperative. Canberra, ACT: National Blood Authority; 2012.</li>
+          <li>World Health Organization. WHO guideline on use of ferritin concentrations to assess iron status in individuals and populations. Geneva: WHO; 2020.</li>
+          <li>Pasricha SR, Tye-Din J, Muckenthaler MU, Swinkels DW. Iron deficiency. <em>The Lancet.</em> 2021;397(10270):233–248.</li>
+          <li>Zoller H, Wolf M, Blumenstein I, et al. Hypophosphataemia following ferric derisomaltose and ferric carboxymaltose in patients with IBD (PHOSPHARE-IBD). <em>Gut.</em> 2023;72(4):644–653.</li>
+          <li>Shah A, Donovan K, Seeley C, et al. Risk of Infection Associated With Administration of Intravenous Iron: A Systematic Review and Meta-Analysis. <em>SSRN Electron J.</em> 2021.</li>
+        </ol>
+        <div class="mt-6 pt-4 border-t border-gray-100 text-sm text-gray-500">
+          <p><strong>Acknowledgements:</strong> Based on content from the <a href="https://prep4cancersurgery.org.au/" target="_blank" rel="noopener" class="underline text-teal-700">Prep-4-Cancer Surgery Toolkit</a>, developed by Peter MacCallum Cancer Centre in collaboration with WCMICS.</p>
+        </div>
+      </section>
+
+      <!-- Chapter Navigation -->
+      <div class="flex justify-between items-center mt-8">
+        <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-teal-700 transition-colors">← Back to Handbook</a>
+        <a href="diabetes.html" class="flex items-center gap-2 bg-navy-700 hover:bg-navy-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 6: Diabetes →</a>
+        <a href="frailty.html" class="flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 7: Frailty</a>
+        <a href="nutrition.html" class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 8: Nutrition</a>
+        <a href="nowcasting.html" class="flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 9: Nowcasting</a>
+        <a href="exercise.html" class="flex items-center gap-2 bg-rose-700 hover:bg-rose-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 10: Exercise →</a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-300 mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div>
+          <p class="text-white font-bold">PRECAST Handbook – Chapter 5: Anaemia</p>
+          <p class="text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+        </div>
+        <div class="text-sm text-right">
+          <p>Based on the <a href="https://prep4cancersurgery.org.au/" class="underline hover:text-white" target="_blank" rel="noopener">Prep-4-Cancer Surgery Toolkit</a></p>
+          <p class="mt-1 text-gray-500">© 2026 PRECAST Handbook Editorial Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

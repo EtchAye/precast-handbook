@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 7: Frailty – PRECAST Handbook</title>
+  <meta name="description" content="PRECAST Handbook Chapter 7: Frailty assessment and management for cancer surgery prehabilitation. Screening tools, comprehensive geriatric assessment, and multidisciplinary intervention." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   { 50:'#f0f4ff', 100:'#dce6ff', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            teal:   { 50:'#f0fdfa', 100:'#ccfbf1', 600:'#0d9488', 700:'#0f766e' },
+            gold:   { 50:'#fffbeb', 100:'#fef3c7', 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' },
+            violet: { 50:'#f5f3ff', 100:'#ede9fe', 200:'#ddd6fe', 600:'#7c3aed', 700:'#6d28d9', 800:'#5b21b6', 900:'#4c1d95' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .prose-table th { background-color: #5b21b6; color: white; }
+    .prose-table td, .prose-table th { padding: 0.6rem 0.9rem; border: 1px solid #e5e7eb; font-size: 0.875rem; }
+    .prose-table tr:nth-child(even) td { background-color: #f8fafc; }
+    .section-anchor { scroll-margin-top: 5rem; }
+    .sidebar-link { transition: color 0.15s, padding-left 0.15s; }
+    .sidebar-link:hover { color: #7c3aed; padding-left: 0.25rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-violet-700 to-violet-800 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <a href="index.html" class="inline-flex items-center gap-2 text-violet-200 hover:text-white text-sm font-medium mb-4 transition-colors">
+        ← Back to PRECAST Handbook
+      </a>
+      <div class="flex items-center gap-4">
+        <div class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-center min-w-[70px]">
+          <p class="text-xs font-semibold opacity-70 uppercase tracking-wider">Ch.</p>
+          <p class="text-4xl font-extrabold leading-none">7</p>
+        </div>
+        <div>
+          <p class="text-violet-200 text-sm font-semibold uppercase tracking-widest mb-0.5">PRECAST Handbook</p>
+          <h1 class="text-3xl md:text-4xl font-extrabold">Frailty</h1>
+          <p class="text-violet-100 text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation &nbsp;·&nbsp; Last Updated: May 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="bg-violet-700 text-white sticky top-0 z-50 shadow-md" aria-label="Chapter navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="index.html" class="hover:text-violet-200 transition-colors">🏠 Home</a>
+      <span class="text-white/30">|</span>
+      <a href="#overview" class="hover:text-violet-200 transition-colors">Overview</a>
+      <a href="#recommendations" class="hover:text-violet-200 transition-colors">Key Recommendations</a>
+      <a href="#background" class="hover:text-violet-200 transition-colors">Background</a>
+      <a href="#screening" class="hover:text-violet-200 transition-colors">Screening</a>
+      <a href="#assessment" class="hover:text-violet-200 transition-colors">Assessment</a>
+      <a href="#intervention" class="hover:text-violet-200 transition-colors">Intervention 🎯</a>
+      <a href="#referrals" class="hover:text-violet-200 transition-colors">Referrals 🎯</a>
+      <a href="#efi" class="hover:text-violet-200 transition-colors font-semibold">eFI ✦</a>
+      <a href="#shap" class="hover:text-violet-200 transition-colors font-semibold">SHAP ✦</a>
+      <a href="#pathway" class="hover:text-violet-200 transition-colors">Decision Pathway</a>
+      <a href="#references" class="hover:text-violet-200 transition-colors">References</a>
+      <span class="text-white/30">|</span>
+      <a href="anaemia.html" class="hover:text-violet-200 transition-colors">← Ch. 5: Anaemia</a>
+      <a href="diabetes.html" class="hover:text-violet-200 transition-colors">← Ch. 6: Diabetes</a>
+      <span class="opacity-40">|</span>
+      <a href="nutrition.html" class="hover:text-violet-200 transition-colors">Ch. 8: Nutrition</a>
+      <span class="opacity-40">|</span>
+      <a href="nowcasting.html" class="hover:text-violet-200 transition-colors">Ch. 9: Nowcasting</a>
+      <span class="opacity-40">|</span>
+      <a href="exercise.html" class="hover:text-violet-200 transition-colors">Ch. 10: Exercise →</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex gap-8">
+
+    <!-- Sidebar TOC (desktop) -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <div class="sticky top-20 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Contents</p>
+        <nav class="space-y-1 text-sm text-gray-600">
+          <a href="#overview"         class="sidebar-link block py-1">Chapter Overview</a>
+          <a href="#objectives"       class="sidebar-link block py-1">Learning Objectives</a>
+          <a href="#recommendations"  class="sidebar-link block py-1">Key Recommendations</a>
+          <a href="#background"       class="sidebar-link block py-1">1. Background</a>
+          <a href="#epidemiology"     class="sidebar-link block py-1">2. Epidemiology &amp; Impact</a>
+          <a href="#screening"        class="sidebar-link block py-1">3. Screening</a>
+          <a href="#tools"            class="sidebar-link block py-1">4. Screening Tools</a>
+          <a href="#assessment"       class="sidebar-link block py-1">5. Comprehensive Assessment</a>
+          <a href="#intervention"     class="sidebar-link block py-1">6. Intervention 🎯</a>
+          <a href="#referrals"        class="sidebar-link block py-1">7. Referral Pathways 🎯</a>
+          <a href="#delirium"         class="sidebar-link block py-1">8. Delirium Prevention</a>
+          <a href="#shared-decision"  class="sidebar-link block py-1">9. Shared Decision Making</a>
+          <a href="#qi"               class="sidebar-link block py-1">10. Quality Improvement</a>
+          <a href="#pathway"          class="sidebar-link block py-1">11. Decision Pathway</a>
+          <a href="#summary"          class="sidebar-link block py-1">12. Summary</a>
+          <a href="#efi"              class="sidebar-link block py-1 font-semibold text-violet-700">12a. eFrailty Index ✦</a>
+          <a href="#shap"             class="sidebar-link block py-1 font-semibold text-violet-700">12b. SHAP Risk Profile ✦</a>
+          <a href="#references"       class="sidebar-link block py-1">13. References</a>
+        </nav>
+        <div class="mt-5 pt-4 border-t border-gray-100">
+          <p class="text-xs text-gray-400 mb-2 font-semibold uppercase tracking-wider">Other Chapters</p>
+          <a href="anaemia.html"  class="text-xs text-teal-700 hover:text-violet-700 block py-1">← Ch. 5: Anaemia</a>
+          <a href="diabetes.html" class="text-xs text-navy-700 hover:text-violet-700 block py-1">← Ch. 6: Diabetes</a>
+          <a href="nutrition.html" class="text-xs text-emerald-700 hover:text-violet-700 block py-1">→ Ch. 8: Nutrition</a>
+          <a href="nowcasting.html" class="text-xs text-amber-700 hover:text-violet-700 block py-1">→ Ch. 9: Nowcasting</a>
+          <a href="exercise.html" class="text-xs text-rose-700 hover:text-violet-700 block py-1">→ Ch. 10: Exercise</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Chapter Overview -->
+      <section id="overview" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Chapter Overview</h2>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div><span class="font-semibold text-gray-500">Chapter Number:</span> <span class="text-gray-800">7</span></div>
+          <div><span class="font-semibold text-gray-500">Last Updated:</span> <span class="text-gray-800">May 2026</span></div>
+          <div class="md:col-span-2"><span class="font-semibold text-gray-500">Target Audience:</span> <span class="text-gray-800">Health professionals involved in cancer surgery prehabilitation programs, including surgeons, anaesthetists, nurses, allied health professionals, geriatricians, and general practitioners.</span></div>
+        </div>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section id="objectives" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Learning Objectives</h2>
+        <p class="text-sm text-gray-600 mb-4">By the end of this chapter, the reader will be able to:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>Define frailty and distinguish it from comorbidity and normal ageing</li>
+          <li>Identify which patients require preoperative frailty screening</li>
+          <li>Apply validated frailty screening tools including the Clinical Frailty Scale (CFS) and Edmonton Frail Scale (EFS)</li>
+          <li>Understand the role and components of the Comprehensive Geriatric Assessment (CGA)</li>
+          <li>Identify modifiable frailty components and implement targeted prehabilitation interventions</li>
+          <li>Recognise when specialist geriatric, allied health, and multidisciplinary referrals are required</li>
+          <li>Apply strategies to mitigate the risk of postoperative delirium and cognitive dysfunction</li>
+          <li>Facilitate shared decision making with frail patients and their families regarding surgical risk</li>
+          <li>Implement quality improvement measures to evaluate frailty management programs</li>
+        </ol>
+      </section>
+
+      <!-- Key Clinical Recommendations -->
+      <section id="recommendations" class="section-anchor mb-6">
+        <div class="bg-violet-700 text-white rounded-2xl p-8 shadow-md">
+          <h2 class="text-xl font-bold mb-5 flex items-center gap-2">⚡ Key Clinical Recommendations</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="text-violet-200 text-xs font-bold uppercase tracking-wider mb-3">Critical Actions</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Screen all patients ≥65 years</strong> and any individual with reduced biological, physical, or psychosocial reserves</span></li>
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Use a validated screening tool</strong> — Clinical Frailty Scale (CFS) or Edmonton Frail Scale (EFS)</span></li>
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Refer for Comprehensive Geriatric Assessment (CGA)</strong> all patients identified as frail on screening</span></li>
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Identify modifiable frailty components</strong> — target exercise, nutrition, and psychological health via prehabilitation (COACH services)</span></li>
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Begin discharge planning preoperatively</strong> for frail patients — social supports and disposition planning</span></li>
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Commence delirium prevention strategies preoperatively</strong> — address polypharmacy (≥5 medications)</span></li>
+                <li class="flex gap-2"><span class="text-violet-300 font-bold mt-0.5">•</span><span><strong>Initiate shared decision making</strong> early when surgery is being contemplated</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-violet-200 text-xs font-bold uppercase tracking-wider mb-3">CFS Risk Stratification</p>
+              <div class="bg-white/10 rounded-xl p-4 space-y-3 text-sm">
+                <div class="flex items-center gap-3">
+                  <span class="bg-green-400 text-green-900 font-bold text-xs px-2 py-1 rounded-full min-w-[80px] text-center">CFS 1–3</span>
+                  <span>Low risk — Very fit to Managing well</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="bg-amber-400 text-amber-900 font-bold text-xs px-2 py-1 rounded-full min-w-[80px] text-center">CFS 4–5</span>
+                  <span>Moderate risk — Vulnerable to Mildly frail</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="bg-red-400 text-red-900 font-bold text-xs px-2 py-1 rounded-full min-w-[80px] text-center">CFS ≥6</span>
+                  <span>High risk — Moderately to Severely frail</span>
+                </div>
+                <div class="mt-3 pt-3 border-t border-white/20">
+                  <p class="font-semibold text-violet-100 mb-1">EFS Threshold</p>
+                  <p>EFS ≥5 identifies patients aged ≥70 who may benefit from prehabilitation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. Background -->
+      <section id="background" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">1. Background and Clinical Context</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Frailty is a complex, multidimensional syndrome characterised by a decline of physical, sensory and/or cognitive reserves — or an accumulation of deficits — that leads to a reduced ability to withstand even relatively minor physiological insults or stressors. In the context of cancer surgery, frailty represents a critical risk factor that requires systematic identification and targeted intervention during the prehabilitation period.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Frailty is independently associated with higher rates of postoperative complications, increased hospital length of stay, ICU admission, and mortality in patients undergoing major cancer surgery. It is a distinct entity from comorbidity, although the two are often related. While frailty is generally observed in the geriatric population (&gt;65 years), it can be present in younger individuals due to functional and physiological limitations associated with cancer and its treatment.
+        </p>
+        <div class="bg-violet-50 border border-violet-100 rounded-xl p-5 mt-4">
+          <p class="font-semibold text-violet-800 mb-2">Key Conceptual Distinctions</p>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <p class="font-semibold text-gray-700 mb-1">Frailty</p>
+              <p class="text-gray-600">Reduced physiological reserve and resistance to stressors. Multidimensional — physical, cognitive, psychosocial. <em>Potentially modifiable.</em></p>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-700 mb-1">Comorbidity</p>
+              <p class="text-gray-600">Concurrent medical conditions (e.g., diabetes, cardiac disease). Related to but distinct from frailty. May contribute to frailty.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-700 mb-1">Disability</p>
+              <p class="text-gray-600">Impaired ability to perform activities of daily living. May result from frailty. Not synonymous with frailty.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Epidemiology -->
+      <section id="epidemiology" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">2. Epidemiology and Impact</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">2.1 Prevalence in Cancer Surgery Populations</h3>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4">
+          Frailty is highly prevalent in cancer surgery populations. Cancer itself accelerates the frailty trajectory through nutritional depletion, systemic inflammation, reduced physical activity, and treatment-related toxicity. Rates vary by tumour type, patient age, and frailty definition used, but frailty is consistently identified as one of the most important predictors of adverse perioperative outcomes in older surgical oncology patients.
+        </p>
+        <h3 class="font-semibold text-gray-800 mb-2">2.2 Surgical Outcomes Associated with Frailty</h3>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Outcome</th><th>Impact of Frailty</th><th>Evidence Level</th></tr></thead>
+            <tbody>
+              <tr><td>Postoperative complications</td><td>Significantly increased — higher CFS scores independently associated with complications</td><td>Strong (prospective studies)</td></tr>
+              <tr><td>Hospital length of stay</td><td>Prolonged — frail patients require longer inpatient recovery</td><td>Strong</td></tr>
+              <tr><td>ICU admission</td><td>Increased requirement for intensive care postoperatively</td><td>Strong</td></tr>
+              <tr><td>30-day readmission</td><td>Higher CFS scores associated with increased readmission rates</td><td>Strong</td></tr>
+              <tr><td>Mortality</td><td>Independently associated with increased perioperative mortality</td><td>Strong</td></tr>
+              <tr><td>Postoperative delirium</td><td>Significantly higher risk in frail patients</td><td>Strong</td></tr>
+              <tr><td>Functional decline</td><td>Greater risk of failure to return to baseline function</td><td>Moderate</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. Screening -->
+      <section id="screening" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">3. Patient Selection and Screening</h2>
+        <div class="bg-violet-50 border border-violet-200 rounded-xl p-5 mb-5">
+          <p class="font-semibold text-violet-800 mb-1">Screening Indication</p>
+          <p class="text-sm text-violet-700">Frailty screening should be carried out on <strong>all patients over 65 years of age</strong>, and any individual with reduced biological, physical, or psychosocial reserves, regardless of age.</p>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Populations Requiring Frailty Screening</h3>
+        <div class="grid md:grid-cols-2 gap-4 text-sm mb-5">
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <p class="font-semibold text-gray-700 mb-2">Age-Based Criteria</p>
+            <ul class="space-y-1 text-gray-600 list-disc list-inside">
+              <li>All patients aged ≥65 years</li>
+              <li>Patients aged &lt;65 with significant functional limitations</li>
+              <li>Patients with cancer-related weight loss or deconditioning</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <p class="font-semibold text-gray-700 mb-2">Clinical Indicators (Any Age)</p>
+            <ul class="space-y-1 text-gray-600 list-disc list-inside">
+              <li>Reduced mobility or functional independence</li>
+              <li>Cognitive impairment or dementia</li>
+              <li>Polypharmacy (≥5 medications)</li>
+              <li>Malnutrition or significant weight loss</li>
+              <li>Social isolation or limited support networks</li>
+              <li>History of falls</li>
+              <li>Sensory impairment (vision, hearing)</li>
+            </ul>
+          </div>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Timing of Screening</h3>
+        <p class="text-gray-700 text-sm">Frailty screening should be performed at the earliest opportunity in the prehabilitation pathway — ideally at initial surgical consultation or prehabilitation assessment, at least 4–6 weeks before planned surgery to allow time for intervention and optimisation.</p>
+      </section>
+
+      <!-- 4. Screening Tools -->
+      <section id="tools" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">4. Frailty Screening Tools</h2>
+
+        <!-- CFS -->
+        <div class="mb-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="bg-violet-100 text-violet-700 font-bold text-sm px-3 py-1 rounded-full">CFS</div>
+            <h3 class="font-semibold text-gray-800 text-lg">Clinical Frailty Scale (CFS)</h3>
+            <a href="https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html" target="_blank" rel="noopener" class="text-xs text-violet-600 underline hover:text-violet-800">Visit website ↗</a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">The CFS is a judgement-based tool to screen for frailty and to broadly stratify degrees of physical and cognitive function. Scores range from 1 (very fit) to 9 (terminally ill). Higher CFS scores are significantly associated with prolonged postoperative stay, readmission, morbidity, and mortality in older patients undergoing cancer surgery.</p>
+          <div class="overflow-x-auto mb-4">
+            <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+              <thead><tr><th>Items</th><th>Time</th><th>Risk Cut-offs</th><th>Any Clinician?</th><th>Patient Self-complete?</th><th>Remote?</th><th>Free?</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>9</td>
+                  <td>5 mins</td>
+                  <td>
+                    <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded mr-1">Low: 1–3</span>
+                    <span class="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2 py-0.5 rounded mr-1">Moderate: 4–5</span>
+                    <span class="inline-block bg-red-100 text-red-800 text-xs font-medium px-2 py-0.5 rounded">High: ≥6</span>
+                  </td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-violet-50 border border-violet-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-violet-800 mb-2">CFS Score Descriptions</p>
+            <div class="grid md:grid-cols-3 gap-2 text-xs">
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-green-700">1 – Very Fit:</span> Robust, active, energetic, motivated</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-green-700">2 – Fit:</span> No active disease symptoms, less fit than 1</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-green-700">3 – Managing Well:</span> Medical problems well controlled</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-amber-600">4 – Vulnerable:</span> Not dependent but slowed, symptoms limit activity</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-amber-600">5 – Mildly Frail:</span> Limited dependence on others for IADLs</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-red-600">6 – Moderately Frail:</span> Help needed with ADLs and IADLs</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-red-600">7 – Severely Frail:</span> Completely dependent for personal care</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-red-700">8 – Very Severely Frail:</span> Completely dependent, approaching end of life</div>
+              <div class="bg-white rounded-lg p-2 border border-violet-100"><span class="font-bold text-gray-600">9 – Terminally Ill:</span> Life expectancy &lt;6 months</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EFS -->
+        <div class="mb-4">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="bg-violet-100 text-violet-700 font-bold text-sm px-3 py-1 rounded-full">EFS</div>
+            <h3 class="font-semibold text-gray-800 text-lg">Edmonton Frail Scale (EFS)</h3>
+            <a href="https://edmontonfrailscale.org/" target="_blank" rel="noopener" class="text-xs text-violet-600 underline hover:text-violet-800">Visit website ↗</a>
+          </div>
+          <p class="text-gray-700 text-sm mb-4">The EFS is a multidimensional assessment tool utilising an 11-item questionnaire to analyse 9 domains of frailty: cognition, general health status, functional independence, social support, medication use, nutrition, mood, continence, and functional performance (via a Timed Up and Go test). Higher EFS scores are associated with greater risk of postoperative complications.</p>
+          <div class="overflow-x-auto mb-4">
+            <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+              <thead><tr><th>Items</th><th>Time</th><th>Risk Cut-off</th><th>Any Clinician?</th><th>Patient Self-complete?</th><th>Remote?</th><th>Free?</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>9</td>
+                  <td>5–10 mins</td>
+                  <td><span class="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2 py-0.5 rounded">≥5 identifies those who may benefit from prehabilitation (age ≥70)</span></td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>Yes (individual/small research; licensing fee for larger organisations)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-violet-50 border border-violet-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-violet-800 mb-2">EFS Domains Assessed</p>
+            <div class="grid md:grid-cols-3 gap-2">
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">🧠 Cognition</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">❤️ General Health Status</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">🚶 Functional Independence</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">👥 Social Support</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">💊 Medication Use</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">🥗 Nutrition</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">😔 Mood</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">🚿 Continence</span>
+              <span class="bg-white border border-violet-100 rounded-lg px-3 py-1.5 text-xs text-gray-700">⏱️ Functional Performance (TUG)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool Comparison -->
+        <div class="bg-gold-50 border border-gold-100 rounded-xl p-5 mt-4">
+          <p class="font-semibold text-gold-700 mb-2">💡 Choosing Between CFS and EFS</p>
+          <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+            <div>
+              <p class="font-semibold mb-1">Use CFS when:</p>
+              <ul class="list-disc list-inside space-y-1">
+                <li>Rapid screening is needed (&lt;5 minutes)</li>
+                <li>Remote or telephone assessment required</li>
+                <li>Broad stratification is sufficient</li>
+                <li>Clinician has clinical knowledge of the patient</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold mb-1">Use EFS when:</p>
+              <ul class="list-disc list-inside space-y-1">
+                <li>Multidimensional domain assessment required</li>
+                <li>Identifying specific modifiable frailty components</li>
+                <li>Guiding targeted prehabilitation referrals</li>
+                <li>Patient is aged ≥70 years</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Comprehensive Assessment -->
+      <section id="assessment" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">5. Comprehensive Geriatric Assessment (CGA)</h2>
+        <p class="text-gray-700 text-sm mb-4">Assessment should be carried out using a validated multidimensional frailty instrument. <strong>Referral to a geriatrician or frailty service for completion of the Comprehensive Geriatric Assessment (CGA) is recommended</strong> for all patients identified as frail on screening.</p>
+        <div class="bg-violet-50 border border-violet-200 rounded-xl p-5 mb-5">
+          <p class="font-semibold text-violet-800 mb-1">What is the CGA?</p>
+          <p class="text-sm text-violet-700">The CGA is a multidimensional, interdisciplinary diagnostic process to determine the medical, psychological, and functional capabilities of a frail elderly patient, to guide appropriate interventions to support the patient. It can help identify frail patients who have a significantly increased risk of severe complications after elective surgery for colorectal cancer.</p>
+        </div>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+            <tbody>
+              <tr><td>Items</td><td>9 domains with multiple sub-items depending on response</td></tr>
+              <tr><td>Time to complete</td><td>60–120 minutes</td></tr>
+              <tr><td>Risk stratification</td><td>No consensus on single classification; each domain may hold different weighting</td></tr>
+              <tr><td>Who completes it?</td><td>Recommended to be inter-professional with oversight by a geriatrician</td></tr>
+              <tr><td>Patient self-complete?</td><td>No</td></tr>
+              <tr><td>Remote completion?</td><td>No</td></tr>
+              <tr><td>Cost</td><td>Freely available</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">CGA Domains</h3>
+        <div class="grid md:grid-cols-3 gap-3 text-sm">
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-3">
+            <p class="font-semibold text-gray-700 mb-1">🏥 Medical</p>
+            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+              <li>Comorbidities</li>
+              <li>Medications (polypharmacy)</li>
+              <li>Nutritional status</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-3">
+            <p class="font-semibold text-gray-700 mb-1">🧠 Psychological</p>
+            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+              <li>Cognitive function</li>
+              <li>Mood and affect</li>
+              <li>Delirium risk</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-3">
+            <p class="font-semibold text-gray-700 mb-1">🚶 Functional</p>
+            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+              <li>Activities of daily living (ADL)</li>
+              <li>Instrumental ADLs</li>
+              <li>Mobility and falls</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-3">
+            <p class="font-semibold text-gray-700 mb-1">👥 Social</p>
+            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+              <li>Social support network</li>
+              <li>Carer availability</li>
+              <li>Living situation</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-3">
+            <p class="font-semibold text-gray-700 mb-1">🏠 Environmental</p>
+            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+              <li>Home environment</li>
+              <li>Discharge planning needs</li>
+              <li>Equipment requirements</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-3">
+            <p class="font-semibold text-gray-700 mb-1">📋 Values &amp; Goals</p>
+            <ul class="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+              <li>Patient preferences</li>
+              <li>Advance care planning</li>
+              <li>Goals of care</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm">
+          <p class="font-semibold text-amber-800 mb-1">⚠ Limitation of CGA</p>
+          <p class="text-amber-700">No CGA components were found to be predictors of 30-day or 90-day mortality in systematic review evidence. The CGA is most useful for identifying interventional targets and guiding care planning, rather than as a mortality risk predictor alone.</p>
+        </div>
+      </section>
+
+      <!-- 6. Intervention -->
+      <section id="intervention" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">6. Prehabilitation Intervention for Frail Patients</h2>
+
+        <!-- PRECAST Relevance Banner -->
+        <div class="flex items-start gap-4 bg-gradient-to-r from-violet-700 to-violet-600 text-white rounded-xl p-5 mb-6 shadow-md">
+          <div class="text-3xl flex-shrink-0">🎯</div>
+          <div>
+            <p class="font-bold text-lg mb-1">PRECAST Project — Specially Relevant Section</p>
+            <p class="text-violet-100 text-sm leading-relaxed">This section is of <strong class="text-white">central importance to the PRECAST project</strong>. When the PRECAST calculator identifies modifiable frailty features (particularly via SHAP analysis or high eFI score), clinicians should immediately consider COACH referral and targeted prehabilitation. The PRECAST risk profile directly informs which interventions are most likely to reduce surgical risk for each individual patient.</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 text-sm mb-4">As with all patients, prehabilitation aims to improve functional capacity, nutritional status, and psychological health. Frail individuals require broader multidisciplinary input to assist with optimisation of comorbidities and implementation of social supports. Discharge disposition planning should begin during the preoperative period.</p>
+
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+            <div class="text-2xl mb-2">🏋️</div>
+            <p class="font-semibold text-green-800 mb-1">Exercise</p>
+            <p class="text-xs text-green-700">Tailored exercise program to improve strength, endurance, and functional capacity. Physiotherapy-led, progressive resistance and aerobic training.</p>
+          </div>
+          <div class="bg-orange-50 border border-orange-100 rounded-xl p-4">
+            <div class="text-2xl mb-2">🥗</div>
+            <p class="font-semibold text-orange-800 mb-1">Nutrition</p>
+            <p class="text-xs text-orange-700">Dietitian-led nutritional assessment and optimisation. Protein supplementation, oral nutritional supplements, and management of malnutrition.</p>
+          </div>
+          <div class="bg-blue-50 border border-blue-100 rounded-xl p-4">
+            <div class="text-2xl mb-2">🧠</div>
+            <p class="font-semibold text-blue-800 mb-1">Psychological Health</p>
+            <p class="text-xs text-blue-700">Clinical psychology input for anxiety, depression, and cognitive concerns. Cognitive prehabilitation strategies where appropriate.</p>
+          </div>
+        </div>
+
+        <div class="bg-violet-50 border border-violet-100 rounded-xl p-5 mb-4">
+          <p class="font-semibold text-violet-800 mb-2">COACH Service (Combined Outpatient Allied Health Service)</p>
+          <p class="text-sm text-violet-700 mb-3">The COACH service provides combined exercise, nutrition, and clinical psychology support. When modifiable frailty components are identified (particularly via SHAP analysis or EFI screening), clinicians should:</p>
+          <ul class="text-sm text-violet-700 space-y-1 list-disc list-inside">
+            <li>Refer to COACH for exercise, nutrition, and/or clinical psychology (marked with asterisk in referral list below)</li>
+            <li>If services are not provided by COACH, discuss at the MDT and ask a clinician on the team to make the appropriate referral</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 7. Referral Pathways -->
+      <section id="referrals" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">7. Referral Pathways</h2>
+
+        <!-- PRECAST Relevance Banner -->
+        <div class="flex items-start gap-4 bg-gradient-to-r from-violet-700 to-violet-600 text-white rounded-xl p-5 mb-6 shadow-md">
+          <div class="text-3xl flex-shrink-0">🎯</div>
+          <div>
+            <p class="font-bold text-lg mb-1">PRECAST Project — Specially Relevant Section</p>
+            <p class="text-violet-100 text-sm leading-relaxed">This section is of <strong class="text-white">central importance to the PRECAST project</strong>. The PRECAST calculator's SHAP output highlights which deficits are driving an individual patient's frailty risk score. Clinicians should use the SHAP waterfall plot to <strong class="text-white">identify the top modifiable features</strong> and map these directly to the referral pathways below. Services marked with ✦ COACH are available through the Combined Outpatient Allied Health Service and should be the first referral pathway when applicable. All other referrals should be discussed at the Tuesday MDT.</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 text-sm mb-4">Frail patients with high Electronic Frailty Index (eFI) scores or complex needs may require referral to a range of specialist services. The following referrals should be considered based on individual patient assessment:</p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-3">Specialist Medical Referrals</h3>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">👴</span>
+                <div><p class="font-semibold text-gray-700">Geriatric Registrar / Geriatrician</p><p class="text-xs text-gray-500">For CGA, frailty management, and delirium prevention</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">❤️</span>
+                <div><p class="font-semibold text-gray-700">Cardiology</p><p class="text-xs text-gray-500">Cardiac optimisation for frail patients with cardiovascular disease</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">🫁</span>
+                <div><p class="font-semibold text-gray-700">Respiratory Services</p><p class="text-xs text-gray-500">Lung function testing, sleep study, respiratory optimisation</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">🩸</span>
+                <div><p class="font-semibold text-gray-700">Haematology</p><p class="text-xs text-gray-500">Anaemia management, blood disorders</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">💉</span>
+                <div><p class="font-semibold text-gray-700">Diabetic Nurse / Endocrinology</p><p class="text-xs text-gray-500">Glycaemic management in frail patients with diabetes</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">🏃</span>
+                <div><p class="font-semibold text-gray-700">CPET (Cardiopulmonary Exercise Testing)</p><p class="text-xs text-gray-500">Objective functional capacity assessment</p></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-3">Allied Health &amp; Social Referrals</h3>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 bg-violet-50 rounded-lg p-3 text-sm border border-violet-100">
+                <span class="text-violet-600 font-bold text-lg">🏋️</span>
+                <div><p class="font-semibold text-violet-700">Physiotherapy* <span class="text-xs font-normal">(COACH)</span></p><p class="text-xs text-gray-500">Exercise prehabilitation, mobility, strength training</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-violet-50 rounded-lg p-3 text-sm border border-violet-100">
+                <span class="text-violet-600 font-bold text-lg">🥗</span>
+                <div><p class="font-semibold text-violet-700">Nutrition Service* <span class="text-xs font-normal">(COACH)</span></p><p class="text-xs text-gray-500">Nutritional optimisation and supplementation</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-violet-50 rounded-lg p-3 text-sm border border-violet-100">
+                <span class="text-violet-600 font-bold text-lg">🧠</span>
+                <div><p class="font-semibold text-violet-700">Clinical Psychology* <span class="text-xs font-normal">(COACH)</span></p><p class="text-xs text-gray-500">Psychological support, anxiety, depression, cognitive concerns</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">🏠</span>
+                <div><p class="font-semibold text-gray-700">Occupational Therapy</p><p class="text-xs text-gray-500">Home assessment, ADL support, discharge planning</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">👥</span>
+                <div><p class="font-semibold text-gray-700">Social Services</p><p class="text-xs text-gray-500">Social supports, community services, carer coordination</p></div>
+              </div>
+              <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3 text-sm">
+                <span class="text-violet-600 font-bold text-lg">😴</span>
+                <div><p class="font-semibold text-gray-700">Sleep Study</p><p class="text-xs text-gray-500">Obstructive sleep apnoea assessment in frail patients</p></div>
+              </div>
+            </div>
+            <p class="text-xs text-violet-600 mt-2 font-medium">* Available through COACH (Combined Outpatient Allied Health Service)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Delirium Prevention -->
+      <section id="delirium" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">8. Delirium Prevention and Cognitive Risk Management</h2>
+        <p class="text-gray-700 text-sm mb-4">Frail patients are at significantly elevated risk of postoperative delirium and cognitive dysfunction. Strategies to mitigate these risks should begin preoperatively.</p>
+        <div class="grid md:grid-cols-2 gap-4 mb-5">
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4">
+            <p class="font-semibold text-red-800 mb-2">Risk Factors for Postoperative Delirium</p>
+            <ul class="text-sm text-red-700 space-y-1 list-disc list-inside">
+              <li>Advanced age (≥65 years)</li>
+              <li>Existing cognitive impairment or dementia</li>
+              <li>Frailty (CFS ≥4)</li>
+              <li>Polypharmacy (≥5 medications)</li>
+              <li>Sensory impairment (vision, hearing)</li>
+              <li>Dehydration and malnutrition</li>
+              <li>Sleep disturbance</li>
+              <li>Social isolation</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+            <p class="font-semibold text-green-800 mb-2">Preoperative Prevention Strategies</p>
+            <ul class="text-sm text-green-700 space-y-1 list-disc list-inside">
+              <li><strong>Medication review:</strong> Address polypharmacy; deprescribe anticholinergics, benzodiazepines, opioids where possible</li>
+              <li><strong>Cognitive prehabilitation:</strong> Engage cognitive stimulation activities</li>
+              <li><strong>Sensory aids:</strong> Ensure hearing aids and glasses are available and functioning</li>
+              <li><strong>Nutritional optimisation:</strong> Address malnutrition and dehydration</li>
+              <li><strong>Exercise:</strong> Improve physical conditioning and mobility</li>
+              <li><strong>Sleep hygiene:</strong> Assess and treat sleep disorders</li>
+              <li><strong>Family engagement:</strong> Involve family/carers in planning and orientation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+          <p class="font-semibold text-navy-800 mb-1">Polypharmacy (≥5 Medications)</p>
+          <p class="text-sm text-navy-700">Polypharmacy should be systematically addressed in all frail patients. Medication review should be conducted by the treating team or a clinical pharmacist, with deprescribing of inappropriate medications where clinically safe. This reduces delirium risk, falls risk, and medication-related adverse events in the perioperative period.</p>
+        </div>
+      </section>
+
+      <!-- 9. Shared Decision Making -->
+      <section id="shared-decision" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">9. Shared Decision Making</h2>
+        <p class="text-gray-700 text-sm mb-4">Shared decision making (SDM) should begin when surgery is being contemplated, and should incorporate discussions to establish who will be involved in medical decision-making and support. For frail patients, SDM is particularly critical given the elevated surgical risk and the importance of aligning treatment goals with patient values and preferences.</p>
+        <div class="grid md:grid-cols-2 gap-4 mb-5">
+          <div class="bg-violet-50 border border-violet-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-violet-800 mb-2">Key SDM Conversations for Frail Patients</p>
+            <ul class="space-y-1 text-violet-700 list-disc list-inside">
+              <li>Realistic discussion of surgical risks given frailty status</li>
+              <li>Expected recovery trajectory and functional outcomes</li>
+              <li>Alternative treatment options (non-operative, palliative)</li>
+              <li>Goals of care and patient values</li>
+              <li>Advance care planning and medical decision-making</li>
+              <li>Who will provide support post-surgery (family, carers)</li>
+              <li>Discharge planning and rehabilitation expectations</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-gray-800 mb-2">Participants in SDM for Frail Patients</p>
+            <ul class="space-y-1 text-gray-700 list-disc list-inside">
+              <li>Patient (central to all decisions)</li>
+              <li>Family members / carers (as appropriate)</li>
+              <li>Surgeon</li>
+              <li>Anaesthetist</li>
+              <li>Geriatrician (for CGA findings)</li>
+              <li>Oncologist (for oncological context)</li>
+              <li>Nurse coordinator / prehabilitation nurse</li>
+              <li>Palliative care (where appropriate)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-gold-50 border border-gold-100 rounded-xl p-4 text-sm">
+          <p class="font-semibold text-gold-700 mb-1">💡 Discharge Disposition Planning</p>
+          <p class="text-gray-700">Discharge planning should begin during the preoperative period for all frail patients. Early identification of discharge needs (rehabilitation facility, home care services, equipment) avoids delays in discharge and reduces preventable readmissions.</p>
+        </div>
+      </section>
+
+      <!-- 10. Quality Improvement -->
+      <section id="qi" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">10. Quality Improvement and Evaluation</h2>
+        <div class="grid md:grid-cols-3 gap-4 text-sm">
+          <div class="bg-violet-50 border border-violet-100 rounded-xl p-4">
+            <p class="font-bold text-violet-800 mb-2">Epidemiological Metrics</p>
+            <ul class="space-y-1 text-violet-700 list-disc list-inside">
+              <li>Prevalence of frailty (CFS ≥4 or EFS ≥5)</li>
+              <li>Prevalence by tumour type and age group</li>
+              <li>Proportion with CFS ≥6 (high risk)</li>
+            </ul>
+          </div>
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+            <p class="font-bold text-navy-800 mb-2">Process Metrics</p>
+            <ul class="space-y-1 text-navy-700 list-disc list-inside">
+              <li>Frailty screening rate (eligible patients)</li>
+              <li>CGA referral rate for frail patients</li>
+              <li>Prehabilitation uptake in frail patients</li>
+              <li>Polypharmacy review completion rate</li>
+              <li>SDM documentation rate</li>
+            </ul>
+          </div>
+          <div class="bg-gold-50 border border-gold-100 rounded-xl p-4">
+            <p class="font-bold text-gold-700 mb-2">Outcome Metrics</p>
+            <ul class="space-y-1 text-gray-700 list-disc list-inside">
+              <li>Postoperative complication rate by CFS</li>
+              <li>Hospital length of stay</li>
+              <li>ICU admission rate</li>
+              <li>Postoperative delirium rate</li>
+              <li>30-day readmission rate</li>
+              <li>Discharge disposition (home vs. facility)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Clinical Decision Pathway -->
+      <section id="pathway" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-6">11. Clinical Decision Pathway</h2>
+        <div class="space-y-4">
+          <!-- Step 1 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">1</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Patient Identification</p>
+              <p class="text-sm text-violet-700 mt-1">Identify all patients ≥65 years, and any patient with reduced biological, physical, or psychosocial reserves at prehabilitation assessment.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">2</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Frailty Screening</p>
+              <p class="text-sm text-violet-700 mt-1">Apply validated screening tool: <strong>Clinical Frailty Scale (CFS)</strong> for rapid stratification, or <strong>Edmonton Frail Scale (EFS)</strong> for multidimensional domain assessment. Aim to complete at least 4–6 weeks before surgery.</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">3</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Interpret Screening Result</p>
+              <p class="text-sm text-violet-700 mt-1">
+                <strong>CFS 1–3 (Low risk):</strong> Standard prehabilitation pathway. <br/>
+                <strong>CFS 4–5 (Moderate risk):</strong> Enhanced prehabilitation; consider CGA referral. <br/>
+                <strong>CFS ≥6 (High risk):</strong> Mandatory CGA referral; multidisciplinary planning; SDM discussions.
+              </p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">4</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Identify Modifiable Components</p>
+              <p class="text-sm text-violet-700 mt-1">Review EFI or EFS domains to identify modifiable frailty components (exercise capacity, nutrition, psychological health, polypharmacy, sensory impairment, social supports). Use SHAP analysis where available.</p>
+            </div>
+          </div>
+          <!-- Step 5 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">5</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Initiate Targeted Prehabilitation</p>
+              <p class="text-sm text-violet-700 mt-1">Refer to COACH for exercise, nutrition, and/or clinical psychology. For components not covered by COACH, discuss at MDT and arrange appropriate specialist referrals (see referral list in Section 7).</p>
+            </div>
+          </div>
+          <!-- Step 6 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">6</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Delirium Prevention</p>
+              <p class="text-sm text-violet-700 mt-1">Conduct medication review; address polypharmacy (≥5 medications). Ensure sensory aids in place. Optimise nutrition, sleep, and cognitive engagement. Engage family/carers in preoperative planning.</p>
+            </div>
+          </div>
+          <!-- Step 7 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">7</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Shared Decision Making</p>
+              <p class="text-sm text-violet-700 mt-1">Initiate SDM conversations regarding surgical risk, recovery expectations, goals of care, and advance care planning. Establish who will be involved in medical decision-making and support.</p>
+            </div>
+          </div>
+          <!-- Step 8 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-violet-700 text-white font-bold flex items-center justify-center text-sm">8</div>
+            <div class="flex-1 bg-violet-50 border border-violet-100 rounded-xl p-4">
+              <p class="font-semibold text-violet-800">Discharge Planning</p>
+              <p class="text-sm text-violet-700 mt-1">Begin discharge disposition planning preoperatively. Identify rehabilitation needs, home care requirements, and equipment. Coordinate with social work and occupational therapy early.</p>
+            </div>
+          </div>
+          <!-- Step 9 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold-500 text-white font-bold flex items-center justify-center text-sm">9</div>
+            <div class="flex-1 bg-gold-50 border border-gold-100 rounded-xl p-4">
+              <p class="font-semibold text-gold-700">Proceed to Surgery with Multidisciplinary Plan</p>
+              <p class="text-sm text-gray-700 mt-1">Communicate frailty status and management plan to surgical, anaesthetic, and ward teams. Ensure perioperative delirium prevention protocols are activated. Confirm postoperative rehabilitation and discharge plan is in place.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. Summary -->
+      <section id="summary" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">12. Summary and Key Points</h2>
+        <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
+          <li><strong>Frailty is a complex multidimensional syndrome</strong> characterised by reduced physiological reserve, distinct from comorbidity and normal ageing.</li>
+          <li><strong>Frailty is independently associated</strong> with postoperative complications, prolonged hospital stay, ICU admission, and mortality in cancer surgery patients.</li>
+          <li><strong>Screen all patients ≥65 years</strong> and those with reduced reserves using the Clinical Frailty Scale (CFS) or Edmonton Frail Scale (EFS).</li>
+          <li><strong>CFS provides rapid stratification</strong> (Low: 1–3, Moderate: 4–5, High: ≥6); EFS provides multidimensional domain assessment to guide targeted intervention.</li>
+          <li><strong>Refer frail patients for Comprehensive Geriatric Assessment (CGA)</strong> by a geriatrician or frailty service to guide comprehensive management.</li>
+          <li><strong>Identify and target modifiable frailty components</strong> via COACH services (exercise, nutrition, clinical psychology) and specialist referrals as needed.</li>
+          <li><strong>Delirium prevention strategies</strong> must begin preoperatively — address polypharmacy, sensory impairment, nutrition, sleep, and cognitive engagement.</li>
+          <li><strong>Discharge disposition planning</strong> should begin during the preoperative period for all frail patients.</li>
+          <li><strong>Shared decision making</strong> is essential for frail patients — align surgical decision-making with patient values, goals of care, and realistic outcome expectations.</li>
+          <li><strong>A multidisciplinary team approach</strong> is required for optimal management of frail cancer surgery patients.</li>
+        </ol>
+        <div class="mt-6 bg-violet-50 border border-violet-100 rounded-xl p-5">
+          <p class="font-semibold text-violet-800 mb-3">Implementation Checklist for Prehabilitation Programs</p>
+          <div class="grid md:grid-cols-2 gap-2 text-sm text-violet-700">
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Establish frailty screening protocols for all eligible patients</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Implement CFS or EFS as standard screening tools</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Develop CGA referral pathways to geriatric services</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Establish COACH referral pathways (exercise, nutrition, psychology)</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Develop polypharmacy review protocols</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Implement delirium prevention protocols</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Create discharge planning processes for frail patients</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Establish SDM documentation processes</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Implement frailty data collection for quality improvement</label>
+            <label class="flex items-center gap-2"><input type="checkbox" class="rounded"/> Educate MDT on frailty assessment and management</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- 13. References -->
+      <!-- eFrailty Index Section -->
+      <section id="efi" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-2">12a. The Electronic Frailty Index (eFI)</h2>
+        <p class="text-sm text-violet-600 font-semibold mb-4 uppercase tracking-wide">PRECAST Calculator — Core Input Measure</p>
+
+        <p class="text-gray-700 text-sm mb-4">The <strong>Electronic Frailty Index (eFI)</strong> is a validated, data-driven tool that calculates a cumulative deficit score from routinely collected electronic health record (EHR) data. It is one of the core input features used by the PRECAST calculator to generate a patient's individualised surgical risk profile. Unlike clinical frailty scales that require direct assessment, the eFI is derived automatically from coded clinical data, making it scalable across large populations.</p>
+
+        <div class="bg-violet-50 border border-violet-200 rounded-xl p-5 mb-6">
+          <p class="font-semibold text-violet-800 mb-2">How the eFI is Calculated</p>
+          <p class="text-sm text-violet-700 mb-2">The eFI score is computed as: <strong>Number of deficits present ÷ Total number of possible deficits</strong></p>
+          <div class="grid md:grid-cols-4 gap-3 mt-3">
+            <div class="bg-white border border-violet-100 rounded-lg p-3 text-center">
+              <p class="text-2xl font-extrabold text-violet-700">0–0.12</p>
+              <p class="text-xs font-semibold text-green-700 mt-1">Fit</p>
+              <p class="text-xs text-gray-500">No or very few deficits</p>
+            </div>
+            <div class="bg-white border border-violet-100 rounded-lg p-3 text-center">
+              <p class="text-2xl font-extrabold text-violet-700">0.13–0.24</p>
+              <p class="text-xs font-semibold text-yellow-700 mt-1">Mild Frailty</p>
+              <p class="text-xs text-gray-500">Some deficit accumulation</p>
+            </div>
+            <div class="bg-white border border-violet-100 rounded-lg p-3 text-center">
+              <p class="text-2xl font-extrabold text-violet-700">0.25–0.36</p>
+              <p class="text-xs font-semibold text-orange-700 mt-1">Moderate Frailty</p>
+              <p class="text-xs text-gray-500">Multiple deficits present</p>
+            </div>
+            <div class="bg-white border border-violet-100 rounded-lg p-3 text-center">
+              <p class="text-2xl font-extrabold text-violet-700">&gt;0.36</p>
+              <p class="text-xs font-semibold text-red-700 mt-1">Severe Frailty</p>
+              <p class="text-xs text-gray-500">High deficit accumulation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infogram from DOCX -->
+        <h3 class="font-semibold text-gray-800 text-base mb-3">Deficits Included in the eFI</h3>
+        <p class="text-gray-600 text-sm mb-4">The eFI draws on deficits across four domains — Disease State, Symptoms/Signs, Disability, and Abnormal Laboratory Values. The infogram below (from the PRECAST project resource) shows all included deficits:</p>
+
+        <div class="rounded-xl overflow-hidden border border-gray-200 shadow-sm mb-6">
+          <img src="frailty_efi_infogram.png" alt="Deficits included in the eFI — showing Disease State (arthritis, atrial fibrillation, CKD, coronary heart disease, diabetes, foot problems, fragility fracture, urinary health, heart failure, heart valve disease, hypertension, hypotension/syncope, metastatic disease, osteoporosis, Parkinson's, obesity, peptic ulcer, peripheral vascular disease, respiratory disease, skin ulcer, stroke/TIA, thyroid disorders, urinary system disease, pulmonary embolus), Symptoms/Signs (dizziness, dyspnoea, falls, memory and cognitive problems, sleep disturbance, urinary incontinence, weight loss and anorexia), Disability (activity limitation, hearing loss, housebound, mobility and transfer problems, requirement for care, social vulnerability, vision problems), and Abnormal Laboratory Values (anaemia and haematinic deficiency)" class="w-full" loading="lazy" />
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+          <div class="bg-gray-50 rounded-xl p-4">
+            <h4 class="font-semibold text-gray-800 mb-2 text-sm">🔵 Disease State (24 deficits)</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">Arthritis, Atrial Fibrillation, Chronic Kidney Disease, Coronary Heart Disease, Diabetes, Foot Problems, Fragility Fracture, Urinary Health &amp; Disease, Heart Failure, Heart Valve Disease, Hypertension, Hypotension/Syncope, Metastatic Disease, Osteoporosis, Parkinson's Disease, Obesity, Peptic Ulcer, Peripheral Vascular Disease, Respiratory Disease, Skin Ulcer, Stroke and TIA, Thyroid Disorders, Urinary System Disease, Pulmonary Embolus</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-4">
+            <h4 class="font-semibold text-gray-800 mb-2 text-sm">🟢 Symptoms/Signs (7 deficits)</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">Dizziness, Dyspnoea, Falls, Memory and Cognitive Problems, Sleep Disturbance, Urinary Incontinence, Weight Loss and Anorexia</p>
+            <h4 class="font-semibold text-gray-800 mb-2 mt-3 text-sm">🟢 Disability (7 deficits)</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">Activity Limitation, Hearing Loss, Housebound, Mobility and Transfer Problems, Requirement for Care, Social Vulnerability, Vision Problems/Blindness</p>
+            <h4 class="font-semibold text-gray-800 mb-2 mt-3 text-sm">🔬 Abnormal Laboratory Value (1 deficit)</h4>
+            <p class="text-xs text-gray-600">Anaemia &amp; Haematinic Deficiency</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm">
+          <p class="font-semibold text-amber-800 mb-1">⚡ Clinical Tip — eFI in PRECAST</p>
+          <p class="text-amber-700">When the eFI is high, review the individual deficits contributing to the score. Some (e.g., anaemia, diabetes, weight loss, dyspnoea) are <strong>potentially modifiable</strong> through prehabilitation. The PRECAST SHAP output (see Section 12b below) will show which of these deficits are most influential for the individual patient's risk score — prioritise those for intervention.</p>
+        </div>
+      </section>
+
+      <!-- SHAP Plot Section -->
+      <section id="shap" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-2">12b. Understanding the PRECAST Risk Profile — SHAP Analysis</h2>
+        <p class="text-sm text-violet-600 font-semibold mb-4 uppercase tracking-wide">PRECAST Calculator — Interpreting the Output</p>
+
+        <p class="text-gray-700 text-sm mb-4">The PRECAST calculator uses a machine-learning model to generate an individualised surgical risk score. To make this model transparent and clinically interpretable, it produces a <strong>SHAP (SHapley Additive exPlanations) waterfall plot</strong> for each patient. This plot shows exactly which features are <em>increasing</em> or <em>decreasing</em> that patient's risk relative to the average patient.</p>
+
+        <div class="bg-violet-50 border border-violet-200 rounded-xl p-5 mb-6">
+          <p class="font-semibold text-violet-800 mb-3">How to Read a SHAP Waterfall Plot</p>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="bg-white rounded-lg p-3 border border-violet-100">
+              <p class="font-semibold text-red-700 mb-1">🔴 Red Bars (Positive SHAP)</p>
+              <p class="text-xs text-gray-600">Features that <strong>increase</strong> this patient's risk above the average. Longer bars = greater impact. These are the priority targets for intervention.</p>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-violet-100">
+              <p class="font-semibold text-blue-700 mb-1">🔵 Blue Bars (Negative SHAP)</p>
+              <p class="text-xs text-gray-600">Features that <strong>decrease</strong> this patient's risk below the average. These represent protective factors or absent risk factors.</p>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-violet-100">
+              <p class="font-semibold text-gray-700 mb-1">📊 Bar Length</p>
+              <p class="text-xs text-gray-600">The longer the bar, the more that feature is contributing to (or protecting against) this individual patient's risk score.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive SHAP Waterfall Plot -->
+        <h3 class="font-semibold text-gray-800 mb-1">Example SHAP Waterfall Plot — PRECAST Risk Profile</h3>
+        <p class="text-xs text-gray-500 mb-4">Illustrative example showing how the PRECAST calculator explains an individual patient's risk score. Features in red increase risk; features in blue are protective. Hover over bars for details.</p>
+
+        <div class="bg-gray-50 rounded-xl border border-gray-200 p-4 mb-4" style="max-height:520px;">
+          <canvas id="shapChart" style="max-height:480px;"></canvas>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm mb-4">
+          <p class="font-semibold text-amber-800 mb-2">⚡ Clinical Action — Using the SHAP Output</p>
+          <ol class="list-decimal list-inside text-amber-700 space-y-1 text-xs">
+            <li>Identify the <strong>top 3–5 red (risk-increasing) features</strong> for this patient.</li>
+            <li>Determine which are <strong>modifiable</strong> (e.g., weight loss/anorexia → Nutrition; dyspnoea → Respiratory; falls → Physiotherapy; anaemia → Haematology).</li>
+            <li>For modifiable features covered by COACH (Exercise, Nutrition, Psychology), <strong>refer directly to COACH</strong>.</li>
+            <li>For all other modifiable features, <strong>raise at the Tuesday MDT</strong> and request appropriate specialist referral (see Section 7).</li>
+            <li>Document which features were targeted and review at follow-up to assess improvement in risk score.</li>
+          </ol>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div class="bg-gray-50 rounded-xl p-4">
+            <h4 class="font-semibold text-gray-800 mb-2">Modifiable eFI Features → COACH Referrals</h4>
+            <table class="w-full text-xs">
+              <thead><tr class="bg-violet-700 text-white"><th class="p-2 text-left rounded-tl">eFI Feature</th><th class="p-2 text-left rounded-tr">COACH Service</th></tr></thead>
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="p-2">Weight loss / Anorexia</td><td class="p-2 text-violet-700 font-semibold">Nutrition ✦</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="p-2">Activity Limitation</td><td class="p-2 text-violet-700 font-semibold">Physiotherapy ✦</td></tr>
+                <tr class="border-b border-gray-100"><td class="p-2">Falls / Mobility problems</td><td class="p-2 text-violet-700 font-semibold">Physiotherapy ✦</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="p-2">Memory / Cognitive problems</td><td class="p-2 text-violet-700 font-semibold">Clinical Psychology ✦</td></tr>
+                <tr class="border-b border-gray-100"><td class="p-2">Social Vulnerability</td><td class="p-2 text-violet-700 font-semibold">Clinical Psychology ✦</td></tr>
+              </tbody>
+            </table>
+            <p class="text-xs text-violet-600 mt-2">✦ Available through COACH</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-4">
+            <h4 class="font-semibold text-gray-800 mb-2">Modifiable eFI Features → MDT Referrals</h4>
+            <table class="w-full text-xs">
+              <thead><tr class="bg-navy-700 text-white"><th class="p-2 text-left rounded-tl">eFI Feature</th><th class="p-2 text-left rounded-tr">Specialist Service</th></tr></thead>
+              <tbody>
+                <tr class="border-b border-gray-100"><td class="p-2">Anaemia &amp; Haematinic Deficiency</td><td class="p-2 font-semibold">Haematology</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="p-2">Dyspnoea / Respiratory Disease</td><td class="p-2 font-semibold">Respiratory Services</td></tr>
+                <tr class="border-b border-gray-100"><td class="p-2">Diabetes</td><td class="p-2 font-semibold">Diabetic Nurse</td></tr>
+                <tr class="border-b border-gray-100 bg-gray-50"><td class="p-2">Atrial Fibrillation / Heart Failure</td><td class="p-2 font-semibold">Cardiology</td></tr>
+                <tr class="border-b border-gray-100"><td class="p-2">Sleep Disturbance</td><td class="p-2 font-semibold">Sleep Study</td></tr>
+              </tbody>
+            </table>
+            <p class="text-xs text-gray-500 mt-2">Raise at Tuesday MDT for referral</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chart.js script for SHAP plot -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+      <script>
+      (function() {
+        const labels = [
+          'eFI Score (High)',
+          'Weight Loss / Anorexia',
+          'Dyspnoea',
+          'Activity Limitation',
+          'Falls History',
+          'Anaemia & Haematinic Deficiency',
+          'Atrial Fibrillation',
+          'Cognitive Problems',
+          'Diabetes',
+          'Housebound',
+          'Social Vulnerability',
+          'Hypertension (controlled)',
+          'Osteoporosis (treated)',
+          'Hearing Loss',
+          'E(base value)'
+        ];
+        const shapValues = [0.38, 0.29, 0.22, 0.18, 0.15, 0.13, 0.10, 0.09, -0.06, -0.08, -0.10, -0.12, -0.14, -0.16, 0];
+        const colors = shapValues.map((v, i) => {
+          if (i === labels.length - 1) return 'rgba(107,114,128,0.7)';
+          return v >= 0 ? 'rgba(220,38,38,0.82)' : 'rgba(37,99,235,0.82)';
+        });
+        const borderColors = shapValues.map((v, i) => {
+          if (i === labels.length - 1) return 'rgba(107,114,128,1)';
+          return v >= 0 ? 'rgba(185,28,28,1)' : 'rgba(29,78,216,1)';
+        });
+
+        const ctx = document.getElementById('shapChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'SHAP Value (contribution to risk)',
+              data: shapValues,
+              backgroundColor: colors,
+              borderColor: borderColors,
+              borderWidth: 1.5,
+              borderRadius: 4,
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+              legend: { display: false },
+              title: {
+                display: true,
+                text: 'PRECAST Calculator — Individual Patient SHAP Risk Profile (Illustrative Example)',
+                font: { size: 13, weight: '600' },
+                color: '#1e3a8a',
+                padding: { bottom: 12 }
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(ctx) {
+                    const v = ctx.parsed.x;
+                    const dir = v > 0 ? '▲ Increases risk' : v < 0 ? '▼ Decreases risk' : 'Base value';
+                    return ` SHAP: ${v > 0 ? '+' : ''}${v.toFixed(2)}  (${dir})`;
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                title: { display: true, text: '← Decreases Risk   |   SHAP Value   |   Increases Risk →', font: { size: 11 }, color: '#6b7280' },
+                grid: { color: 'rgba(0,0,0,0.06)' },
+                ticks: { font: { size: 11 } }
+              },
+              y: {
+                ticks: {
+                  font: { size: 11 },
+                  callback: function(val, idx) {
+                    const l = labels[idx];
+                    return l.length > 30 ? l.substring(0,28) + '…' : l;
+                  }
+                },
+                grid: { display: false }
+              }
+            }
+          }
+        });
+      })();
+      </script>
+
+      <section id="references" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">13. References</h2>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>Aguilar-Frasco JL, Rodríguez-Quintero JH, Moctezum-Velázquez P, et al. Frailty index as a predictive preoperative tool in the elder population undergoing major abdominal surgery: a prospective analysis of clinical utility. <em>Langenbeck's Archives of Surgery.</em> 2021;406:1189–1198.</li>
+          <li>Philip FA, Jagathnath Krishna KM, Bhargavan RV, Augustine P, Thomas S. Comparison of preoperative assessment tools in older patients undergoing cancer surgery: A prospective study. <em>J Geriatric Oncology.</em> 2022;13(4):420–425.</li>
+          <li>He Y, Li LW, Hao Y, et al. Assessment of predictive validity and feasibility of Edmonton Frail Scale in identifying postoperative complications among elderly patients: a prospective observational study. <em>Sci Rep.</em> 2020;10:14682.</li>
+          <li>Engel JS, Tran J, Khalil N, et al. A systematic review of perioperative clinical practice guidelines for care of older adults living with frailty. <em>British Journal of Anaesthesia.</em> 2023;130(3):262–271.</li>
+          <li>Wieland D, Hirth V. Comprehensive Geriatric Assessment. <em>Cancer Control.</em> 2003;10(6):454–462.</li>
+          <li>Kristjansson SR, Nesbakken A, Jordhøy MS, et al. Comprehensive geriatric assessment can predict complications in elderly patients after elective surgery for colorectal cancer: a prospective observational cohort study. <em>Crit Rev Oncol Hematol.</em> 2010;76(3):208–217.</li>
+          <li>Feng MA, McMillan DT, Crowell K, Muss H, Nielsen ME, Smith AB. Geriatric assessment in surgical oncology: a systematic review. <em>J Surg Res.</em> 2015;193(1):265–272.</li>
+          <li>Clegg A, Bates C, Young J, et al. Development and validation of an electronic frailty index using routine primary care electronic health record data. <em>Age Ageing.</em> 2016;45(3):353–360.</li>
+          <li>Lundberg SM, Lee S-I. A unified approach to interpreting model predictions. <em>Advances in Neural Information Processing Systems.</em> 2017;30:4765–4774. (SHAP methodology)</li>
+        </ol>
+        <div class="mt-6 pt-4 border-t border-gray-100 text-sm text-gray-500">
+          <p><strong>Acknowledgements:</strong> Based on content from the <a href="https://prep4cancersurgery.org.au/toolkit/frailty/" target="_blank" rel="noopener" class="underline text-violet-700">Prep-4-Cancer Surgery Toolkit (Frailty)</a>, developed by Peter MacCallum Cancer Centre in collaboration with WCMICS. Additional content drawn from the uploaded PRECAST Frailty chapter document.</p>
+        </div>
+      </section>
+
+      <!-- Chapter Navigation -->
+      <div class="flex justify-between items-center mt-8">
+        <a href="diabetes.html" class="flex items-center gap-2 bg-navy-700 hover:bg-navy-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">← Chapter 6: Diabetes</a>
+        <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-violet-700 transition-colors">Back to Handbook</a>
+        <a href="nutrition.html" class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 8: Nutrition</a>
+        <a href="nowcasting.html" class="flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 9: Nowcasting</a>
+        <a href="exercise.html" class="flex items-center gap-2 bg-rose-700 hover:bg-rose-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 10: Exercise →</a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-300 mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div>
+          <p class="text-white font-bold">PRECAST Handbook – Chapter 7: Frailty</p>
+          <p class="text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+        </div>
+        <div class="text-sm text-right">
+          <p>Based on the <a href="https://prep4cancersurgery.org.au/" class="underline hover:text-white" target="_blank" rel="noopener">Prep-4-Cancer Surgery Toolkit</a></p>
+          <p class="mt-1 text-gray-500">© 2026 PRECAST Handbook Editorial Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

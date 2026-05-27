@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 9: Nowcasting – PRECAST Handbook</title>
+  <meta name="description" content="PRECAST Handbook Chapter 9: Nowcasting — real-time patient risk estimation and clinical decision support for cancer surgery prehabilitation." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   { 50:'#f0f4ff', 100:'#dce6ff', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            amber:  { 50:'#fffbeb', 100:'#fef3c7', 200:'#fde68a', 300:'#fcd34d', 400:'#fbbf24', 600:'#d97706', 700:'#b45309', 800:'#92400e', 900:'#78350f' },
+            teal:   { 50:'#f0fdfa', 700:'#0f766e' },
+            emerald:{ 700:'#047857' },
+            violet: { 700:'#6d28d9' },
+            gold:   { 50:'#fffbeb', 400:'#fbbf24', 500:'#f59e0b' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .prose-table th { background-color: #b45309; color: white; }
+    .prose-table td, .prose-table th { padding: 0.6rem 0.9rem; border: 1px solid #e5e7eb; font-size: 0.875rem; }
+    .prose-table tr:nth-child(even) td { background-color: #fffbeb; }
+    .section-anchor { scroll-margin-top: 5rem; }
+    .sidebar-link { transition: color 0.15s, padding-left 0.15s; }
+    .sidebar-link:hover { color: #b45309; padding-left: 0.25rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-amber-700 to-amber-800 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex items-center gap-4 mb-3">
+        <a href="index.html" class="text-amber-200 hover:text-white text-sm transition-colors">← PRECAST Handbook</a>
+        <span class="text-amber-400 text-sm">/</span>
+        <span class="text-amber-200 text-sm">Chapter 9</span>
+      </div>
+      <div class="flex items-start gap-6">
+        <div class="bg-white/15 rounded-2xl px-5 py-4 text-center flex-shrink-0 hidden sm:block">
+          <p class="text-xs font-semibold uppercase tracking-widest text-amber-200 mb-1">Chapter</p>
+          <p class="text-5xl font-extrabold leading-none">9</p>
+        </div>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-2">Nowcasting</h1>
+          <p class="text-amber-100 text-lg font-light max-w-2xl">Real-time patient risk estimation and clinical decision support for cancer surgery prehabilitation</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full">🚧 Content Coming Soon</span>
+            <span class="bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full">PRECAST Project</span>
+            <span class="bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full">Risk Estimation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="bg-amber-700 text-white sticky top-0 z-50 shadow-md" aria-label="Chapter navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="index.html" class="hover:text-amber-200 transition-colors">🏠 Home</a>
+      <span class="text-white/30">|</span>
+      <a href="#overview" class="hover:text-amber-200 transition-colors">Overview</a>
+      <a href="#placeholder" class="hover:text-amber-200 transition-colors">Content Placeholder</a>
+      <a href="#references" class="hover:text-amber-200 transition-colors">References</a>
+      <span class="text-white/30">|</span>
+      <a href="anaemia.html" class="hover:text-amber-200 transition-colors">← Ch. 5: Anaemia</a>
+      <a href="diabetes.html" class="hover:text-amber-200 transition-colors">← Ch. 6: Diabetes</a>
+      <a href="frailty.html" class="hover:text-amber-200 transition-colors">← Ch. 7: Frailty</a>
+      <a href="nutrition.html" class="hover:text-amber-200 transition-colors">← Ch. 8: Nutrition</a>
+      <span class="opacity-40">|</span>
+      <a href="exercise.html" class="hover:text-amber-200 transition-colors">Ch. 10: Exercise →</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex gap-8">
+
+    <!-- Sidebar TOC (desktop) -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <div class="sticky top-20 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-3">Contents</p>
+        <nav class="space-y-1 text-sm text-gray-600">
+          <a href="#overview" class="sidebar-link block py-1 border-l-2 border-transparent pl-3 hover:border-amber-500">Chapter Overview</a>
+          <a href="#objectives" class="sidebar-link block py-1 border-l-2 border-transparent pl-3 hover:border-amber-500">Learning Objectives</a>
+          <a href="#placeholder" class="sidebar-link block py-1 border-l-2 border-transparent pl-3 hover:border-amber-500">Content Placeholder</a>
+          <a href="#references" class="sidebar-link block py-1 border-l-2 border-transparent pl-3 hover:border-amber-500">References</a>
+        </nav>
+        <div class="mt-5 pt-4 border-t border-gray-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Other Chapters</p>
+          <a href="anaemia.html"  class="text-xs text-teal-700 hover:text-amber-700 block py-1">← Ch. 5: Anaemia</a>
+          <a href="diabetes.html" class="text-xs text-navy-700 hover:text-amber-700 block py-1">← Ch. 6: Diabetes</a>
+          <a href="frailty.html"  class="text-xs text-violet-700 hover:text-amber-700 block py-1">← Ch. 7: Frailty</a>
+          <a href="nutrition.html" class="text-xs text-emerald-700 hover:text-amber-700 block py-1">← Ch. 8: Nutrition</a>
+          <a href="exercise.html" class="text-xs text-rose-700 hover:text-amber-700 block py-1">→ Ch. 10: Exercise</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Chapter Overview -->
+      <section id="overview" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Chapter Overview</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          This chapter covers <strong>Nowcasting</strong> in the context of cancer surgery prehabilitation — the use of real-time or near-real-time data to estimate a patient's current clinical status, risk profile, and trajectory. Nowcasting methods support timely clinical decision-making and enable proactive, personalised prehabilitation planning.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          <strong>Note:</strong> This chapter is currently a placeholder. Full content will be added by the PRECAST editorial team. The structure and sections below outline the intended scope of this chapter.
+        </p>
+      </section>
+
+      <!-- Coming Soon Banner -->
+      <section class="mb-6">
+        <div class="bg-amber-50 border-2 border-dashed border-amber-300 rounded-2xl p-8 text-center">
+          <div class="text-5xl mb-4">🚧</div>
+          <h2 class="text-2xl font-bold text-amber-800 mb-2">Content Coming Soon</h2>
+          <p class="text-amber-700 max-w-xl mx-auto text-sm leading-relaxed">
+            This chapter is reserved for the <strong>Nowcasting</strong> content being developed by the PRECAST project team. The editorial team will populate this chapter with clinical guidance, methods, and tools as they become available.
+          </p>
+          <div class="mt-6 bg-white border border-amber-200 rounded-xl p-4 max-w-md mx-auto text-left">
+            <p class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Planned sections include:</p>
+            <ul class="text-sm text-amber-800 space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> Introduction &amp; Clinical Rationale</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> What is Nowcasting?</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> Data Sources &amp; Methods</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> The PRECAST Nowcasting Model</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> Clinical Application &amp; Workflow Integration</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> Interpretation of Outputs</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> Quality Improvement &amp; Evaluation</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> Clinical Decision Pathway</li>
+              <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">◦</span> References</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Objectives Placeholder -->
+      <section id="objectives" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Learning Objectives</h2>
+        <div class="bg-amber-50 border border-amber-100 rounded-xl p-4">
+          <p class="text-sm text-amber-700 italic">Learning objectives will be defined when chapter content is finalised by the editorial team.</p>
+        </div>
+        <p class="text-gray-500 text-sm mt-4">Upon completion of this chapter, clinicians will be expected to understand the principles of nowcasting as applied to cancer surgery prehabilitation, interpret nowcasting outputs in clinical practice, and integrate nowcasting tools into patient assessment and optimisation workflows.</p>
+      </section>
+
+      <!-- Content Placeholder Sections -->
+      <section id="placeholder" class="section-anchor mb-6 space-y-4">
+
+        <!-- Section 1 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 1</span>
+            <h2 class="text-xl font-bold text-navy-800">Introduction &amp; Clinical Rationale</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 2 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 2</span>
+            <h2 class="text-xl font-bold text-navy-800">What is Nowcasting?</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 3 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 3</span>
+            <h2 class="text-xl font-bold text-navy-800">Data Sources &amp; Methods</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 4 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 4</span>
+            <h2 class="text-xl font-bold text-navy-800">The PRECAST Nowcasting Model</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 5 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 5</span>
+            <h2 class="text-xl font-bold text-navy-800">Clinical Application &amp; Workflow Integration</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 6 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 6</span>
+            <h2 class="text-xl font-bold text-navy-800">Interpretation of Outputs</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 7 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 7</span>
+            <h2 class="text-xl font-bold text-navy-800">Quality Improvement &amp; Evaluation</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+        <!-- Section 8 Placeholder -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Section 8</span>
+            <h2 class="text-xl font-bold text-navy-800">Clinical Decision Pathway</h2>
+          </div>
+          <div class="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 text-center">
+            <p class="text-gray-400 text-sm italic">Content to be provided by the PRECAST editorial team.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- References -->
+      <section id="references" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">References</h2>
+        <div class="bg-amber-50 border border-amber-100 rounded-xl p-4">
+          <p class="text-sm text-amber-700 italic">References will be added when chapter content is finalised by the editorial team.</p>
+        </div>
+      </section>
+
+      <!-- Acknowledgements -->
+      <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <div class="mt-0 text-sm text-gray-500">
+          <p><strong>Acknowledgements:</strong> This chapter is being developed by the PRECAST project team at Peter MacCallum Cancer Centre in collaboration with Western &amp; Central Melbourne Integrated Cancer Services (WCMICS).</p>
+        </div>
+      </section>
+
+      <!-- Chapter Navigation -->
+      <div class="flex justify-between items-center mt-8">
+        <a href="nutrition.html" class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">← Chapter 8: Nutrition</a>
+        <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-amber-700 transition-colors">Back to Handbook</a>
+        <a href="exercise.html" class="flex items-center gap-2 bg-rose-700 hover:bg-rose-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 10: Exercise →</a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-300 mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div>
+          <p class="text-white font-bold">PRECAST Handbook – Chapter 9: Nowcasting</p>
+          <p class="text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+        </div>
+        <div class="text-sm text-right">
+          <p>Based on the <a href="https://prep4cancersurgery.org.au/" class="underline hover:text-white" target="_blank" rel="noopener">Prep-4-Cancer Surgery Toolkit</a></p>
+          <p class="mt-1 text-gray-500">© 2026 PRECAST Handbook Editorial Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

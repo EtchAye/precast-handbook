@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 6: Diabetes – PRECAST Handbook</title>
+  <meta name="description" content="PRECAST Handbook Chapter 6: Diabetes management for cancer surgery prehabilitation. Screening, glycaemic targets, perioperative medication management." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 50:'#f0f4ff', 100:'#dce6ff', 200:'#b9ceff', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            teal: { 50:'#f0fdfa', 100:'#ccfbf1', 600:'#0d9488', 700:'#0f766e' },
+            gold: { 50:'#fffbeb', 100:'#fef3c7', 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .prose-table th { background-color: #1e3a8a; color: white; }
+    .prose-table td, .prose-table th { padding: 0.6rem 0.9rem; border: 1px solid #e5e7eb; font-size: 0.875rem; }
+    .prose-table tr:nth-child(even) td { background-color: #f8fafc; }
+    .section-anchor { scroll-margin-top: 5rem; }
+    .sidebar-link { transition: color 0.15s, padding-left 0.15s; }
+    .sidebar-link:hover { color: #1e3a8a; padding-left: 0.25rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-navy-700 to-navy-800 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <a href="index.html" class="inline-flex items-center gap-2 text-blue-200 hover:text-white text-sm font-medium mb-4 transition-colors">
+        ← Back to PRECAST Handbook
+      </a>
+      <div class="flex items-center gap-4">
+        <div class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-center min-w-[70px]">
+          <p class="text-xs font-semibold opacity-70 uppercase tracking-wider">Ch.</p>
+          <p class="text-4xl font-extrabold leading-none">6</p>
+        </div>
+        <div>
+          <p class="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-0.5">PRECAST Handbook</p>
+          <h1 class="text-3xl md:text-4xl font-extrabold">Diabetes</h1>
+          <p class="text-blue-100 text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation &nbsp;·&nbsp; Last Updated: May 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="bg-navy-700 text-white sticky top-0 z-50 shadow-md" aria-label="Chapter navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="index.html" class="hover:text-blue-200 transition-colors">🏠 Home</a>
+      <span class="text-white/30">|</span>
+      <a href="#overview" class="hover:text-blue-200 transition-colors">Overview</a>
+      <a href="#recommendations" class="hover:text-blue-200 transition-colors">Key Recommendations</a>
+      <a href="#types" class="hover:text-blue-200 transition-colors">Types of DM</a>
+      <a href="#screening" class="hover:text-blue-200 transition-colors">Screening</a>
+      <a href="#investigations" class="hover:text-blue-200 transition-colors">Investigations</a>
+      <a href="#medications" class="hover:text-blue-200 transition-colors">Medications</a>
+      <a href="#pathway" class="hover:text-blue-200 transition-colors">Decision Pathway</a>
+      <a href="#references" class="hover:text-blue-200 transition-colors">References</a>
+      <span class="text-white/30">|</span>
+      <a href="anaemia.html" class="hover:text-blue-200 transition-colors">← Ch. 5: Anaemia</a>
+      <a href="frailty.html" class="hover:text-blue-200 transition-colors">Ch. 7: Frailty</a>
+      <span class="opacity-40">|</span>
+      <a href="nutrition.html" class="hover:text-blue-200 transition-colors">Ch. 8: Nutrition</a>
+      <span class="opacity-40">|</span>
+      <a href="nowcasting.html" class="hover:text-blue-200 transition-colors">Ch. 9: Nowcasting</a>
+      <span class="opacity-40">|</span>
+      <a href="exercise.html" class="hover:text-blue-200 transition-colors">Ch. 10: Exercise →</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex gap-8">
+
+    <!-- Sidebar TOC (desktop) -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <div class="sticky top-20 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Contents</p>
+        <nav class="space-y-1 text-sm text-gray-600">
+          <a href="#overview" class="sidebar-link block py-1">Chapter Overview</a>
+          <a href="#objectives" class="sidebar-link block py-1">Learning Objectives</a>
+          <a href="#recommendations" class="sidebar-link block py-1">Key Recommendations</a>
+          <a href="#introduction" class="sidebar-link block py-1">1. Introduction</a>
+          <a href="#types" class="sidebar-link block py-1">2. Types of Diabetes</a>
+          <a href="#epidemiology" class="sidebar-link block py-1">3. Epidemiology</a>
+          <a href="#screening" class="sidebar-link block py-1">4. Screening</a>
+          <a href="#investigations" class="sidebar-link block py-1">5. Investigations &amp; Criteria</a>
+          <a href="#assessment" class="sidebar-link block py-1">6. Preoperative Assessment</a>
+          <a href="#medications" class="sidebar-link block py-1">7. Medication Management</a>
+          <a href="#new-dm" class="sidebar-link block py-1">8. Newly Diagnosed DM</a>
+          <a href="#qi" class="sidebar-link block py-1">9. Quality Improvement</a>
+          <a href="#pathway" class="sidebar-link block py-1">10. Decision Pathway</a>
+          <a href="#summary" class="sidebar-link block py-1">11. Summary</a>
+          <a href="#references" class="sidebar-link block py-1">12. References</a>
+        </nav>
+        <div class="mt-5 pt-4 border-t border-gray-100">
+          <p class="text-xs text-gray-400 mb-2 font-semibold uppercase tracking-wider">Other Chapters</p>
+          <a href="anaemia.html" class="text-xs text-teal-700 hover:text-navy-700 block py-1">← Ch. 5: Anaemia</a>
+          <a href="frailty.html" class="text-xs text-violet-700 hover:text-navy-700 block py-1">→ Ch. 7: Frailty</a>
+          <a href="nutrition.html" class="text-xs text-emerald-700 hover:text-navy-700 block py-1">→ Ch. 8: Nutrition</a>
+          <a href="nowcasting.html" class="text-xs text-amber-700 hover:text-navy-700 block py-1">→ Ch. 9: Nowcasting</a>
+          <a href="exercise.html" class="text-xs text-rose-700 hover:text-navy-700 block py-1">→ Ch. 10: Exercise</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Chapter Overview -->
+      <section id="overview" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Chapter Overview</h2>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div><span class="font-semibold text-gray-500">Chapter Number:</span> <span class="text-gray-800">6</span></div>
+          <div><span class="font-semibold text-gray-500">Last Updated:</span> <span class="text-gray-800">May 2026</span></div>
+          <div class="md:col-span-2"><span class="font-semibold text-gray-500">Target Audience:</span> <span class="text-gray-800">Health professionals involved in cancer surgery prehabilitation programs, including surgeons, anaesthetists, nurses, allied health professionals, and general practitioners.</span></div>
+        </div>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section id="objectives" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Learning Objectives</h2>
+        <p class="text-sm text-gray-600 mb-4">By the end of this chapter, the reader will be able to:</p>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>Identify the types of diabetes mellitus relevant to the oncology setting</li>
+          <li>Determine which patients require preoperative diabetes screening</li>
+          <li>Order and interpret appropriate investigations for diabetes assessment</li>
+          <li>Apply diagnostic criteria for diabetes mellitus using HbA1c and glucose measurements</li>
+          <li>Assess preoperative glycaemic control and identify optimal targets</li>
+          <li>Manage diabetes medications appropriately in the preoperative period</li>
+          <li>Recognise and manage newly diagnosed diabetes in cancer surgery patients</li>
+          <li>Implement quality improvement measures to evaluate diabetes management programs</li>
+        </ol>
+      </section>
+
+      <!-- Key Clinical Recommendations -->
+      <section id="recommendations" class="section-anchor mb-6">
+        <div class="bg-navy-700 text-white rounded-2xl p-8 shadow-md">
+          <h2 class="text-xl font-bold mb-5 flex items-center gap-2">⚡ Key Clinical Recommendations</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="text-blue-200 text-xs font-bold uppercase tracking-wider mb-3">Critical Actions</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2"><span class="text-blue-300 font-bold mt-0.5">•</span><span><strong>Screen all at-risk patients</strong> with HbA1c (known DM, cardiovascular risk factors, BMI &gt;25, age &gt;40, glucocorticoid use, family history)</span></li>
+                <li class="flex gap-2"><span class="text-blue-300 font-bold mt-0.5">•</span><span><strong>Optimal glycaemic target:</strong> HbA1c ≤6.5% before surgery</span></li>
+                <li class="flex gap-2"><span class="text-blue-300 font-bold mt-0.5">•</span><span><strong>High-risk threshold:</strong> HbA1c ≥10% is associated with postoperative complications</span></li>
+                <li class="flex gap-2"><span class="text-blue-300 font-bold mt-0.5">•</span><span><strong>Withhold diabetes medications</strong> at appropriate intervals before fasting to avoid hypoglycaemia, acidosis, and aspiration</span></li>
+                <li class="flex gap-2"><span class="text-blue-300 font-bold mt-0.5">•</span><span><strong>Refer newly diagnosed T2D</strong> to GP for dietary measures and oral hypoglycaemic agents</span></li>
+                <li class="flex gap-2"><span class="text-blue-300 font-bold mt-0.5">•</span><span><strong>Refer to endocrinology:</strong> Patients requiring insulin therapy or blood glucose &gt;16 mmol/L when surgery cannot be delayed</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-blue-200 text-xs font-bold uppercase tracking-wider mb-3">Diagnostic Criteria (any one of)</p>
+              <div class="bg-white/10 rounded-xl p-4 space-y-2 text-sm">
+                <p>HbA1c ≥6.5% (48 mmol/mol)</p>
+                <p>Fasting glucose ≥7.0 mmol/L</p>
+                <p>Random glucose ≥11.1 mmol/L</p>
+                <p>OGTT: fasting glucose ≥7.0 mmol/L or 2-hour glucose ≥11.1 mmol/L</p>
+                <div class="mt-3 pt-3 border-t border-white/20">
+                  <p class="font-semibold text-blue-100 mb-1">Prevalence</p>
+                  <p>General population: 1 in 20 Australians</p>
+                  <p>Older Australians: 1 in 5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. Introduction -->
+      <section id="introduction" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">1. Introduction and Clinical Context</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">Diabetes mellitus (DM) is a common metabolic disorder characterised by chronic hyperglycaemia resulting from defects in insulin secretion, insulin action, or both. In the context of cancer surgery prehabilitation, diabetes represents a significant modifiable risk factor that requires systematic identification and optimisation.</p>
+        <p class="text-gray-700 leading-relaxed mb-4">Poor glycaemic control in the perioperative period is associated with substantial morbidity, including increased infection rates, impaired wound healing, prolonged hospital stay, and elevated mortality risk. Beyond surgical outcomes, suboptimal diabetes management in cancer patients has broader implications for oncological care, including:</p>
+        <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-4">
+          <li>Reduced efficacy of chemotherapy</li>
+          <li>Increased adverse effects from therapy</li>
+          <li>Requirement for treatment modifications</li>
+          <li>Increased emergency department visits</li>
+        </ul>
+        <p class="text-gray-700 leading-relaxed">The prevalence of diabetes in the surgical oncology population is substantial, affecting more than 1 in 20 Australians overall, with rates increasing to 1 in 5 in older Australians. Additionally, undiagnosed diabetes is common, with prevalence rates of approximately 16% identified in Australian general practice screening studies.</p>
+      </section>
+
+      <!-- 2. Types of Diabetes -->
+      <section id="types" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">2. Types of Diabetes in the Oncology Setting</h2>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Type</th><th>Description</th><th>Oncology Relevance</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Type 1 DM (T1D)</strong></td><td>Autoimmune destruction of beta cells; absolute insulin deficiency</td><td>Requires specialist management; basal insulin must never be withheld</td></tr>
+              <tr><td><strong>Type 2 DM (T2D)</strong></td><td>Insulin resistance and relative insulin deficiency</td><td>Most common; managed with lifestyle, oral agents, and/or insulin</td></tr>
+              <tr><td><strong>Glucocorticoid-induced DM (GID)</strong></td><td>Steroid-induced hyperglycaemia</td><td>Common in cancer patients receiving dexamethasone or other steroids</td></tr>
+              <tr><td><strong>Type 3c DM (T3cDM)</strong></td><td>Pancreatic/exocrine DM following pancreatic disease or surgery</td><td>Relevant for pancreatic and upper GI cancer surgery</td></tr>
+              <tr><td><strong>Immune checkpoint inhibitor-related T1D (ir-T1cDM)</strong></td><td>Autoimmune DM triggered by immunotherapy</td><td>Emerging complication of checkpoint inhibitor therapy</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. Epidemiology -->
+      <section id="epidemiology" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">3. Epidemiology and Impact</h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4 text-center">
+            <p class="text-4xl font-extrabold text-navy-700">1 in 20</p>
+            <p class="text-sm text-gray-600 mt-1">Australians in the general population</p>
+          </div>
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4 text-center">
+            <p class="text-4xl font-extrabold text-navy-700">1 in 5</p>
+            <p class="text-sm text-gray-600 mt-1">Older Australians</p>
+          </div>
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4 text-center">
+            <p class="text-4xl font-extrabold text-navy-700">~16%</p>
+            <p class="text-sm text-gray-600 mt-1">Undiagnosed DM prevalence in Australian general practice</p>
+          </div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed">Poor glycaemic control is independently associated with increased surgical site infections, anastomotic leaks, cardiovascular events, and 30-day mortality. The relationship between diabetes and oncological outcomes is bidirectional — cancer and its treatment can worsen glycaemic control, while poor glycaemic control can compromise treatment efficacy.</p>
+      </section>
+
+      <!-- 4. Screening -->
+      <section id="screening" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">4. Patient Selection and Screening</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">Who Should Be Screened</h3>
+        <div class="bg-navy-50 border border-navy-100 rounded-xl p-5 mb-4">
+          <p class="text-sm font-semibold text-navy-800 mb-2">At-risk patients requiring HbA1c screening:</p>
+          <div class="grid md:grid-cols-2 gap-2 text-sm text-navy-700">
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Known diabetes mellitus (any type)</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Cardiovascular risk factors</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> BMI &gt;25 kg/m²</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Age &gt;40 years</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Glucocorticoid use</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Family history of diabetes</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Previous gestational diabetes</div>
+            <div class="flex items-center gap-2"><span class="text-navy-500">✓</span> Polycystic ovarian syndrome (PCOS)</div>
+          </div>
+        </div>
+        <p class="text-gray-700 text-sm">Screening should be performed at the prehabilitation assessment, ideally 4–6 weeks before surgery to allow time for optimisation. Universal HbA1c testing may be considered in cancer surgery populations given the high prevalence of undiagnosed diabetes.</p>
+      </section>
+
+      <!-- 5. Investigations -->
+      <section id="investigations" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">5. Diagnostic Investigations and Criteria</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">Recommended Investigations</h3>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Test</th><th>Purpose</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>HbA1c</td><td>Diagnose DM; assess glycaemic control</td><td>Order 4–6 weeks pre-op; reflects 3-month average glucose</td></tr>
+              <tr><td>Fasting plasma glucose</td><td>Diagnose DM; assess fasting glycaemia</td><td>Requires 8-hour fast</td></tr>
+              <tr><td>Random plasma glucose</td><td>Diagnose DM if symptomatic</td><td>≥11.1 mmol/L with symptoms = DM</td></tr>
+              <tr><td>OGTT (oral glucose tolerance test)</td><td>Diagnose impaired glucose tolerance and DM</td><td>75 g glucose load; 2-hour sample</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Diagnostic Criteria (any one sufficient for diagnosis)</h3>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Test</th><th>Diagnostic Threshold</th></tr></thead>
+            <tbody>
+              <tr><td>HbA1c</td><td>≥6.5% (48 mmol/mol)</td></tr>
+              <tr><td>Fasting glucose</td><td>≥7.0 mmol/L</td></tr>
+              <tr><td>Random glucose</td><td>≥11.1 mmol/L (with symptoms)</td></tr>
+              <tr><td>OGTT (fasting)</td><td>≥7.0 mmol/L</td></tr>
+              <tr><td>OGTT (2-hour)</td><td>≥11.1 mmol/L</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-4 bg-gold-50 border border-gold-100 rounded-xl p-4 text-sm">
+          <p class="font-semibold text-gold-700 mb-1">💡 HbA1c Limitations in Cancer Patients</p>
+          <p class="text-gray-700">HbA1c may be unreliable in patients with haemolytic anaemia, haemoglobinopathies, recent blood transfusion, iron deficiency, or renal failure. In these cases, fasting glucose or OGTT may be more appropriate.</p>
+        </div>
+      </section>
+
+      <!-- 6. Preoperative Assessment -->
+      <section id="assessment" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">6. Preoperative Assessment and Glycaemic Targets</h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+            <p class="text-3xl font-extrabold text-green-700">≤6.5%</p>
+            <p class="text-sm font-semibold text-green-800 mt-1">Optimal HbA1c</p>
+            <p class="text-xs text-green-700 mt-1">Target before elective surgery</p>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
+            <p class="text-3xl font-extrabold text-amber-700">6.5–10%</p>
+            <p class="text-sm font-semibold text-amber-800 mt-1">Acceptable Range</p>
+            <p class="text-xs text-amber-700 mt-1">Optimise where possible; proceed with caution</p>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+            <p class="text-3xl font-extrabold text-red-700">≥10%</p>
+            <p class="text-sm font-semibold text-red-800 mt-1">High Risk</p>
+            <p class="text-xs text-red-700 mt-1">Associated with postoperative complications</p>
+          </div>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed">Preoperative assessment should include review of current diabetes management, identification of diabetes complications (nephropathy, neuropathy, retinopathy, cardiovascular disease), and assessment of hypoglycaemia risk. The optimal HbA1c target of ≤6.5% may not be achievable in all patients — clinical judgment is required, balancing the risks of poor glycaemic control against the risks of intensive therapy (particularly hypoglycaemia).</p>
+      </section>
+
+      <!-- 7. Medication Management -->
+      <section id="medications" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">7. Medication Management in the Preoperative Period</h2>
+        <p class="text-gray-700 text-sm mb-4">Careful preoperative management of diabetes medications is essential to avoid hypoglycaemia, ketoacidosis, lactic acidosis, and aspiration risk.</p>
+        <div class="overflow-x-auto mb-5">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Medication Class</th><th>Examples</th><th>Preoperative Management</th><th>Rationale</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Metformin</strong></td><td>Metformin</td><td>Withhold on day of surgery</td><td>Risk of lactic acidosis; hold if contrast or renal impairment</td></tr>
+              <tr><td><strong>Sulfonylureas</strong></td><td>Glipizide, gliclazide</td><td>Withhold on day of surgery</td><td>Risk of hypoglycaemia during fasting</td></tr>
+              <tr><td><strong>SGLT2 inhibitors</strong></td><td>Empagliflozin, dapagliflozin, canagliflozin</td><td><strong>Withhold 3–4 days before surgery</strong></td><td>Risk of euglycaemic DKA (eDKA) — even with normal glucose</td></tr>
+              <tr><td><strong>GLP-1 receptor agonists</strong></td><td>Semaglutide, liraglutide</td><td>Withhold on day of surgery (weekly agents: withhold 1 week prior)</td><td>Delayed gastric emptying increases aspiration risk</td></tr>
+              <tr><td><strong>DPP-4 inhibitors</strong></td><td>Sitagliptin, saxagliptin</td><td>Withhold on day of surgery</td><td>Low hypoglycaemia risk but withhold as precaution during fasting</td></tr>
+              <tr><td><strong>Basal insulin</strong></td><td>Glargine, detemir, degludec</td><td>Reduce dose by 20% on day before and day of surgery</td><td>Must never be completely withheld — prevents DKA (especially T1D)</td></tr>
+              <tr><td><strong>Prandial (bolus) insulin</strong></td><td>Aspart, lispro, glulisine</td><td>Withhold on day of surgery (no meals = no bolus)</td><td>Hypoglycaemia risk during fasting</td></tr>
+              <tr><td><strong>Mixed insulin</strong></td><td>Novomix, Humalog Mix</td><td>Withhold on day of surgery; convert to basal-bolus regimen</td><td>Requires specialist input for perioperative management</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
+          <p class="text-sm font-semibold text-red-800 mb-1">⚠ SGLT2 Inhibitor Warning</p>
+          <p class="text-sm text-red-700">SGLT2 inhibitors must be withheld <strong>3–4 days before surgery</strong> due to the risk of euglycaemic diabetic ketoacidosis (eDKA). This can occur even when blood glucose appears normal, making it particularly dangerous in the perioperative period.</p>
+        </div>
+        <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+          <p class="text-sm font-semibold text-navy-800 mb-1">Type 1 Diabetes — Special Consideration</p>
+          <p class="text-sm text-navy-700">Basal insulin must <strong>never be completely withheld</strong> in Type 1 diabetes. Even during fasting, basal insulin is required to prevent diabetic ketoacidosis. Refer to endocrinology for perioperative insulin management in all T1D patients.</p>
+        </div>
+      </section>
+
+      <!-- 8. Newly Diagnosed DM -->
+      <section id="new-dm" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">8. Management of Newly Diagnosed Diabetes</h2>
+        <p class="text-gray-700 text-sm mb-4">Preoperative screening provides an opportunity for case-finding of previously undiagnosed diabetes. Management of newly identified diabetes depends on the severity of hyperglycaemia and the urgency of surgery.</p>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden border-collapse">
+            <thead><tr><th>Scenario</th><th>Management</th><th>Referral</th></tr></thead>
+            <tbody>
+              <tr><td>Newly diagnosed T2D, HbA1c &lt;10%, surgery not urgent</td><td>Refer to GP for dietary advice and oral hypoglycaemic agents; optimise HbA1c before surgery</td><td>GP</td></tr>
+              <tr><td>Newly diagnosed T2D, HbA1c ≥10%, surgery not urgent</td><td>Refer to endocrinology for intensive glycaemic management before surgery</td><td>Endocrinology</td></tr>
+              <tr><td>Any DM, blood glucose &gt;16 mmol/L, surgery cannot be delayed</td><td>Urgent endocrinology referral for perioperative insulin management</td><td>Endocrinology (urgent)</td></tr>
+              <tr><td>Newly diagnosed T1D or suspected T1D</td><td>Urgent endocrinology referral; insulin therapy required</td><td>Endocrinology (urgent)</td></tr>
+              <tr><td>Glucocorticoid-induced DM</td><td>Review steroid regimen; consider insulin management; endocrinology input</td><td>Endocrinology</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 9. Quality Improvement -->
+      <section id="qi" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">9. Quality Improvement and Evaluation</h2>
+        <div class="grid md:grid-cols-2 gap-4 mb-5">
+          <div class="bg-navy-50 border border-navy-100 rounded-xl p-4 text-sm">
+            <p class="font-bold text-navy-800 mb-2">Epidemiological Metrics</p>
+            <ul class="space-y-1 text-navy-700 list-disc list-inside">
+              <li>Prevalence of DM in screened population</li>
+              <li>Prevalence of undiagnosed DM</li>
+              <li>Prevalence of suboptimal glycaemic control (HbA1c ≥10%)</li>
+            </ul>
+          </div>
+          <div class="bg-teal-50 border border-teal-100 rounded-xl p-4 text-sm">
+            <p class="font-bold text-teal-800 mb-2">Process Metrics</p>
+            <ul class="space-y-1 text-teal-700 list-disc list-inside">
+              <li>Screening rate (HbA1c in at-risk patients)</li>
+              <li>Compliance with medication withholding protocols</li>
+              <li>Endocrinology referral rate for high-risk patients</li>
+              <li>Timing of HbA1c relative to surgery</li>
+            </ul>
+          </div>
+          <div class="bg-gold-50 border border-gold-100 rounded-xl p-4 text-sm">
+            <p class="font-bold text-gold-700 mb-2">Efficacy Metrics</p>
+            <ul class="space-y-1 text-gray-700 list-disc list-inside">
+              <li>Mean HbA1c change from prehabilitation to surgery</li>
+              <li>Proportion achieving HbA1c ≤6.5%</li>
+              <li>Rate of perioperative hypoglycaemia</li>
+              <li>Rate of perioperative hyperglycaemia</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-sm">
+            <p class="font-bold text-gray-800 mb-2">Perioperative Outcome Metrics</p>
+            <ul class="space-y-1 text-gray-700 list-disc list-inside">
+              <li>Surgical site infection rate</li>
+              <li>Anastomotic leak rate</li>
+              <li>Hospital length of stay</li>
+              <li>30-day readmission rate</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Clinical Decision Pathway -->
+      <section id="pathway" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-6">10. Clinical Decision Pathway</h2>
+        <div class="space-y-4">
+          <!-- Step 1 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">1</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Patient Identification</p>
+              <p class="text-sm text-navy-700 mt-1">Identify at-risk patients at prehabilitation assessment: known DM, BMI &gt;25, age &gt;40, cardiovascular risk factors, glucocorticoid use, family history.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">2</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Order Screening Investigations</p>
+              <p class="text-sm text-navy-700 mt-1">Order HbA1c (4–6 weeks before surgery). Consider fasting glucose or OGTT if HbA1c unreliable (haemolytic anaemia, haemoglobinopathy, recent transfusion).</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">3</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Interpret Results</p>
+              <p class="text-sm text-navy-700 mt-1">HbA1c &lt;6.5% → No DM (or well-controlled existing DM). HbA1c 6.5–10% → DM diagnosed/known, optimise. HbA1c ≥10% → High-risk, refer to endocrinology.</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">4</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Newly Diagnosed DM</p>
+              <p class="text-sm text-navy-700 mt-1">If newly diagnosed T2D → Refer to GP for dietary measures and oral hypoglycaemics. If insulin required or blood glucose &gt;16 mmol/L → Refer to endocrinology.</p>
+            </div>
+          </div>
+          <!-- Step 5 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">5</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Review Diabetes Medications</p>
+              <p class="text-sm text-navy-700 mt-1">Identify all diabetes medications. Develop preoperative withholding plan. <strong>Withhold SGLT2 inhibitors 3–4 days before surgery.</strong> Withhold other agents on day of surgery. Never completely withhold basal insulin in T1D.</p>
+            </div>
+          </div>
+          <!-- Step 6 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">6</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Patient Education</p>
+              <p class="text-sm text-navy-700 mt-1">Provide written medication withholding instructions. Educate on hypoglycaemia symptoms and management. Advise on blood glucose monitoring during fasting period.</p>
+            </div>
+          </div>
+          <!-- Step 7 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">7</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Perioperative Monitoring Plan</p>
+              <p class="text-sm text-navy-700 mt-1">Establish blood glucose monitoring protocol for perioperative period. Communicate DM status and management plan to surgical and anaesthetic teams.</p>
+            </div>
+          </div>
+          <!-- Step 8 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-navy-700 text-white font-bold flex items-center justify-center text-sm">8</div>
+            <div class="flex-1 bg-navy-50 border border-navy-100 rounded-xl p-4">
+              <p class="font-semibold text-navy-800">Proceed to Surgery</p>
+              <p class="text-sm text-navy-700 mt-1">Confirm HbA1c target achieved or documented reason for proceeding. Confirm medication withholding instructions communicated. Confirm perioperative monitoring plan in place.</p>
+            </div>
+          </div>
+          <!-- Step 9 -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold-500 text-white font-bold flex items-center justify-center text-sm">9</div>
+            <div class="flex-1 bg-gold-50 border border-gold-100 rounded-xl p-4">
+              <p class="font-semibold text-gold-700">Postoperative Follow-up</p>
+              <p class="text-sm text-gray-700 mt-1">Resume diabetes medications as appropriate postoperatively. Arrange follow-up with GP or endocrinology. Consider long-term diabetes prevention for patients with pre-diabetes identified at screening.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Summary -->
+      <section id="summary" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">11. Summary and Key Points</h2>
+        <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
+          <li><strong>Diabetes is common in cancer surgery patients</strong> — affecting 1 in 20 Australians overall, with higher rates in older patients and high rates of undiagnosed disease.</li>
+          <li><strong>Systematic preoperative screening</strong> with HbA1c should be performed in all at-risk patients 4–6 weeks before surgery.</li>
+          <li><strong>The optimal glycaemic target is HbA1c ≤6.5%</strong> before elective surgery; HbA1c ≥10% is associated with significant postoperative complications.</li>
+          <li><strong>Multiple types of diabetes are relevant</strong> in the oncology setting, including glucocorticoid-induced DM and immune checkpoint inhibitor-related T1D.</li>
+          <li><strong>HbA1c has limitations</strong> in some cancer patients — consider fasting glucose or OGTT when HbA1c is unreliable.</li>
+          <li><strong>All diabetes medications require careful preoperative management</strong> to avoid hypoglycaemia, ketoacidosis, lactic acidosis, and aspiration.</li>
+          <li><strong>SGLT2 inhibitors must be withheld 3–4 days before surgery</strong> due to eDKA risk — even when blood glucose appears normal.</li>
+          <li><strong>Type 1 diabetes requires specialist management</strong> — basal insulin must never be completely withheld.</li>
+          <li><strong>Newly diagnosed T2D</strong> should be referred to GP; patients requiring insulin or with blood glucose &gt;16 mmol/L should be referred to endocrinology.</li>
+          <li><strong>Preoperative screening provides an opportunity</strong> for case-finding and long-term diabetes prevention beyond the surgical episode.</li>
+        </ol>
+      </section>
+
+      <!-- References -->
+      <section id="references" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">12. References</h2>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>Zeng X, Xu C, Cheng J, et al. Poor glycemic control might compromise the efficacy of chemotherapy in non-small cell lung cancer patients with diabetes mellitus. <em>Cancer Med.</em> 2020;9(3):902–911.</li>
+          <li>Phillips AL, Reeves DJ, Storey S. Impact of diabetes (type 2) and glycemic control on health-related outcomes of patients receiving chemotherapy for non-metastatic breast cancer. <em>Support Care Cancer.</em> 2023;31(2):114.</li>
+          <li>Australian Institute of Health and Welfare. Diabetes: Australian facts. 2023. Available from: https://www.aihw.gov.au/reports/diabetes/diabetes/contents/total-diabetes/total-diabetes</li>
+          <li>Nanayakkara N, Nguyen H, Churilov L, et al. Inpatient HbA1c testing: a prospective observational study. <em>BMJ Open Diabetes Research and Care.</em> 2015;3:e000113.</li>
+          <li>Levy N, Dhatariya K. Pre-operative optimisation of the surgical patient with diagnosed and undiagnosed diabetes: a practical review. <em>Anaesthesia.</em> 2019;74 Suppl 1:58–66.</li>
+          <li>Wang M, Hng TM. HbA1c: More than just a number. <em>Aust J Gen Pract.</em> 2021;50(9):628–632.</li>
+          <li>d'Emden MC, Shaw JE, Jones GR, et al. Guidance concerning the use of glycated haemoglobin (HbA1c) for the diagnosis of diabetes mellitus. <em>Med J Aust.</em> 2015;203(2):89–90.</li>
+        </ol>
+        <div class="mt-6 pt-4 border-t border-gray-100 text-sm text-gray-500">
+          <p><strong>Acknowledgements:</strong> Based on content from the <a href="https://prep4cancersurgery.org.au/" target="_blank" rel="noopener" class="underline text-navy-700">Prep-4-Cancer Surgery Toolkit</a>, developed by Peter MacCallum Cancer Centre in collaboration with WCMICS.</p>
+        </div>
+      </section>
+
+      <!-- Chapter Navigation -->
+      <div class="flex justify-between items-center mt-8">
+        <a href="anaemia.html" class="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">← Chapter 5: Anaemia</a>
+        <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-navy-700 transition-colors">Back to Handbook</a>
+        <a href="frailty.html" class="flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 7: Frailty</a>
+        <a href="nutrition.html" class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 8: Nutrition</a>
+        <a href="nowcasting.html" class="flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 9: Nowcasting</a>
+        <a href="exercise.html" class="flex items-center gap-2 bg-rose-700 hover:bg-rose-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 10: Exercise →</a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-300 mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div>
+          <p class="text-white font-bold">PRECAST Handbook – Chapter 6: Diabetes</p>
+          <p class="text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+        </div>
+        <div class="text-sm text-right">
+          <p>Based on the <a href="https://prep4cancersurgery.org.au/" class="underline hover:text-white" target="_blank" rel="noopener">Prep-4-Cancer Surgery Toolkit</a></p>
+          <p class="mt-1 text-gray-500">© 2026 PRECAST Handbook Editorial Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

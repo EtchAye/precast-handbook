@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 10: Exercise Prehabilitation – PRECAST Handbook</title>
+  <meta name="description" content="PRECAST Handbook Chapter 10: Exercise prehabilitation for cancer surgery. Screening, functional assessment, exercise prescription, targeted and specialist intervention." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:    { 50:'#f0f4ff', 100:'#dce6ff', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            teal:    { 50:'#f0fdfa', 100:'#ccfbf1', 600:'#0d9488', 700:'#0f766e' },
+            emerald: { 50:'#ecfdf5', 100:'#d1fae5', 600:'#059669', 700:'#047857', 800:'#065f46' },
+            violet:  { 50:'#f5f3ff', 100:'#ede9fe', 700:'#6d28d9', 800:'#5b21b6' },
+            rose:    { 50:'#fff1f2', 100:'#ffe4e6', 200:'#fecdd3', 300:'#fda4af', 600:'#e11d48', 700:'#be123c', 800:'#9f1239', 900:'#881337' },
+            gold:    { 50:'#fffbeb', 400:'#fbbf24', 500:'#f59e0b' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .prose-table th { background-color: #9f1239; color: white; }
+    .prose-table td, .prose-table th { padding: 0.6rem 0.9rem; border: 1px solid #e5e7eb; font-size: 0.875rem; }
+    .prose-table tr:nth-child(even) td { background-color: #fff1f2; }
+    .section-anchor { scroll-margin-top: 5rem; }
+    .sidebar-link { transition: color 0.15s, padding-left 0.15s; }
+    .sidebar-link:hover { color: #be123c; padding-left: 0.25rem; }
+    .risk-low    { background:#dcfce7; border-left:4px solid #16a34a; }
+    .risk-mod    { background:#fef9c3; border-left:4px solid #ca8a04; }
+    .risk-high   { background:#fee2e2; border-left:4px solid #dc2626; }
+    .rec-box     { background:#fff1f2; border-left:4px solid #be123c; }
+    .tool-card   { background:#fff; border:1px solid #fecdd3; border-radius:0.75rem; }
+    .traffic-green  { background:#dcfce7; border:2px solid #16a34a; border-radius:0.5rem; }
+    .traffic-amber  { background:#fef9c3; border:2px solid #ca8a04; border-radius:0.5rem; }
+    .traffic-red    { background:#fee2e2; border:2px solid #dc2626; border-radius:0.5rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-rose-700 to-rose-800 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <a href="index.html" class="inline-flex items-center gap-2 text-rose-200 hover:text-white text-sm font-medium mb-4 transition-colors">
+        ← Back to PRECAST Handbook
+      </a>
+      <div class="flex items-center gap-4">
+        <div class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-center min-w-[70px]">
+          <p class="text-xs font-semibold opacity-70 uppercase tracking-wider">Ch.</p>
+          <p class="text-4xl font-extrabold leading-none">10</p>
+        </div>
+        <div>
+          <p class="text-rose-200 text-sm font-semibold uppercase tracking-widest mb-0.5">PRECAST Handbook</p>
+          <h1 class="text-3xl md:text-4xl font-extrabold">Exercise Prehabilitation</h1>
+          <p class="text-rose-100 text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation &nbsp;·&nbsp; Last Updated: May 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="bg-rose-700 text-white sticky top-0 z-50 shadow-md" aria-label="Chapter navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="index.html" class="hover:text-rose-200 transition-colors">🏠 Home</a>
+      <span class="text-white/30">|</span>
+      <a href="#overview" class="hover:text-rose-200 transition-colors">Overview</a>
+      <a href="#screening" class="hover:text-rose-200 transition-colors">Screening</a>
+      <a href="#assessment" class="hover:text-rose-200 transition-colors">Assessment</a>
+      <a href="#prescription" class="hover:text-rose-200 transition-colors">Prescription</a>
+      <a href="#targeted" class="hover:text-rose-200 transition-colors">Targeted</a>
+      <a href="#specialist" class="hover:text-rose-200 transition-colors">Specialist</a>
+      <a href="#neoadjuvant" class="hover:text-rose-200 transition-colors">Neoadjuvant</a>
+      <a href="#respiratory" class="hover:text-rose-200 transition-colors">Respiratory</a>
+      <a href="#pathway" class="hover:text-rose-200 transition-colors">Pathway</a>
+      <a href="#references" class="hover:text-rose-200 transition-colors">References</a>
+      <span class="text-white/30">|</span>
+      <a href="anaemia.html"   class="hover:text-rose-200 transition-colors">Ch. 5: Anaemia</a>
+      <a href="diabetes.html"  class="hover:text-rose-200 transition-colors">Ch. 6: Diabetes</a>
+      <a href="frailty.html"   class="hover:text-rose-200 transition-colors">Ch. 7: Frailty</a>
+      <a href="nutrition.html" class="hover:text-rose-200 transition-colors">Ch. 8: Nutrition</a>
+      <a href="nowcasting.html" class="hover:text-rose-200 transition-colors">Ch. 9: Nowcasting</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex gap-8">
+
+    <!-- Sidebar TOC (desktop) -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <div class="sticky top-20 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Contents</p>
+        <nav class="space-y-1 text-sm text-gray-600">
+          <a href="#overview"       class="sidebar-link block py-1">Chapter Overview</a>
+          <a href="#objectives"     class="sidebar-link block py-1">Learning Objectives</a>
+          <a href="#recommendations" class="sidebar-link block py-1">Key Recommendations</a>
+          <a href="#background"     class="sidebar-link block py-1">1. Background &amp; Rationale</a>
+          <a href="#evidence"       class="sidebar-link block py-1">2. Evidence Base</a>
+          <a href="#screening"      class="sidebar-link block py-1">3. Exercise Screening</a>
+          <a href="#tools"          class="sidebar-link block py-1">4. Screening Tools</a>
+          <a href="#assessment"     class="sidebar-link block py-1">5. Functional Assessment</a>
+          <a href="#measures"       class="sidebar-link block py-1">6. Assessment Measures</a>
+          <a href="#prescription"   class="sidebar-link block py-1">7. Exercise Prescription</a>
+          <a href="#targeted"       class="sidebar-link block py-1">8. Targeted Intervention</a>
+          <a href="#specialist"     class="sidebar-link block py-1">9. Specialist Intervention</a>
+          <a href="#neoadjuvant"    class="sidebar-link block py-1">10. Neoadjuvant Therapy</a>
+          <a href="#respiratory"    class="sidebar-link block py-1">11. Respiratory Training</a>
+          <a href="#discharge"      class="sidebar-link block py-1">12. Discharge Planning</a>
+          <a href="#pathway"        class="sidebar-link block py-1">13. Clinical Pathway</a>
+          <a href="#resources"      class="sidebar-link block py-1">14. Resources</a>
+          <a href="#references"     class="sidebar-link block py-1">15. References</a>
+        </nav>
+        <div class="mt-5 pt-4 border-t border-gray-100">
+          <p class="text-xs text-gray-400 mb-2 font-semibold uppercase tracking-wider">Other Chapters</p>
+          <a href="anaemia.html"   class="text-xs text-teal-700 hover:text-rose-700 block py-1">← Ch. 5: Anaemia</a>
+          <a href="diabetes.html"  class="text-xs text-navy-700 hover:text-rose-700 block py-1">← Ch. 6: Diabetes</a>
+          <a href="frailty.html"   class="text-xs text-violet-700 hover:text-rose-700 block py-1">← Ch. 7: Frailty</a>
+          <a href="nutrition.html" class="text-xs text-emerald-700 hover:text-rose-700 block py-1">← Ch. 8: Nutrition</a>
+          <a href="nowcasting.html" class="text-xs text-amber-700 hover:text-rose-700 block py-1">← Ch. 9: Nowcasting</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 min-w-0 space-y-10">
+
+      <!-- Chapter Overview -->
+      <section id="overview" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-rose-100 text-rose-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Chapter 10</span>
+          <span class="text-gray-400 text-sm">Peter MacCallum Cancer Centre | Prep-4-Cancer Surgery Toolkit</span>
+        </div>
+        <h2 class="text-2xl font-bold text-gray-900 mb-3">Exercise Prehabilitation</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Exercise prehabilitation is a cornerstone of the PRECAST pathway. Poor preoperative functional capacity is a modifiable risk factor for postoperative complications, prolonged hospital stay, and delayed recovery. This chapter provides a comprehensive framework for exercise screening, functional assessment, and individualised exercise prescription for patients undergoing major cancer surgery.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Content is drawn from the Prep-4-Cancer Surgery Toolkit (Peter MacCallum Cancer Centre), the Exercise and Sports Science Australia (ESSA) position statement, and the American College of Sports Medicine (ACSM) international roundtable consensus on exercise for cancer survivors.
+        </p>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-rose-50 rounded-xl p-4 text-center">
+            <p class="text-2xl font-extrabold text-rose-700">2×/week</p>
+            <p class="text-sm text-gray-600 mt-1">Minimum supervised exercise frequency</p>
+          </div>
+          <div class="bg-rose-50 rounded-xl p-4 text-center">
+            <p class="text-2xl font-extrabold text-rose-700">≥2 weeks</p>
+            <p class="text-sm text-gray-600 mt-1">Recommended minimum prehabilitation duration</p>
+          </div>
+          <div class="bg-rose-50 rounded-xl p-4 text-center">
+            <p class="text-2xl font-extrabold text-rose-700">150 min</p>
+            <p class="text-sm text-gray-600 mt-1">Target moderate-intensity exercise per week</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section id="objectives" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Learning Objectives</h2>
+        <p class="text-gray-500 text-sm mb-4">After completing this chapter, the clinician will be able to:</p>
+        <ol class="space-y-3 text-gray-700">
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">1</span><span>Understand the rationale for exercise prehabilitation in cancer surgery pathways.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">2</span><span>Select and apply appropriate exercise screening tools to stratify patients by risk.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">3</span><span>Conduct or refer for comprehensive functional exercise assessment including CPET, 6MWT, ISWT, and sit-to-stand tests.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">4</span><span>Apply exercise prescription principles for aerobic and strength training in the prehabilitation context.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">5</span><span>Differentiate between targeted (moderate-risk) and specialist (high-risk/frail) exercise intervention pathways.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">6</span><span>Adapt exercise prescription for patients undergoing neoadjuvant therapy using a traffic-light system.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">7</span><span>Prescribe inspiratory muscle training (IMT) to reduce postoperative pulmonary complications.</span></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 w-7 h-7 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center text-sm font-bold">8</span><span>Plan appropriate discharge from the exercise prehabilitation service with a home exercise programme.</span></li>
+        </ol>
+      </section>
+
+      <!-- Key Recommendations -->
+      <section id="recommendations" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-5">Key Recommendations</h2>
+        <div class="space-y-4">
+          <div class="rec-box rounded-xl p-4">
+            <p class="font-semibold text-rose-900 mb-1">🏃 Universal Exercise Screening</p>
+            <p class="text-gray-700 text-sm">All patients eligible for prehabilitation should undergo exercise screening to identify functional exercise capacity. DASI ≤34 or CFS ≥4 should trigger further assessment by a physiotherapist or exercise physiologist.</p>
+          </div>
+          <div class="rec-box rounded-xl p-4">
+            <p class="font-semibold text-rose-900 mb-1">💪 Multimodal Exercise Prescription</p>
+            <p class="text-gray-700 text-sm">Both aerobic and strength training should be included. Moderate-to-high intensity is appropriate for most patients. High-intensity interval training (HIIT) may be preferred when prehabilitation time is limited. Target 150 min/week of moderate-intensity or 75 min/week of vigorous exercise.</p>
+          </div>
+          <div class="rec-box rounded-xl p-4">
+            <p class="font-semibold text-rose-900 mb-1">🫁 Inspiratory Muscle Training (IMT)</p>
+            <p class="text-gray-700 text-sm">IMT should be considered for all high-risk surgical patients. Initiate at least 2 weeks before surgery at 30–50% of maximal inspiratory pressure (MIP), with weekly supervised sessions (face-to-face or telehealth).</p>
+          </div>
+          <div class="rec-box rounded-xl p-4">
+            <p class="font-semibold text-rose-900 mb-1">📱 Telehealth Delivery</p>
+            <p class="text-gray-700 text-sm">Telehealth is a feasible and effective delivery mode for exercise prehabilitation. Supervision via videoconferencing, web-based platforms, or exercise prescription apps (e.g. Telehab, Physitrack) is recommended where face-to-face is not possible.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Background -->
+      <section id="background" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">1</span>
+          <h2 class="text-xl font-bold text-gray-900">Background &amp; Clinical Rationale</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Deconditioning is a potentially modifiable risk factor that significantly impacts postoperative recovery. Patients with poor preoperative physical function face higher rates of complications, longer hospital stays, and slower return to baseline activity. Exercise prehabilitation aims to reverse deconditioning and improve physiological reserve before surgery.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          The brief period between cancer diagnosis and treatment is commonly perceived as a barrier to prehabilitation. However, evidence demonstrates that exercise prehabilitation of even <strong>two weeks or less</strong> can contribute meaningfully to enhanced postoperative recovery. Programmes of 2–8 weeks are most commonly used to achieve positive change in surgical risk profiles.
+        </p>
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-5 mt-4">
+          <p class="font-semibold text-rose-900 mb-2">ESSA Position Statement Principles (Hayes et al., 2019)</p>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex gap-2"><span class="text-rose-600 font-bold">→</span> Exercise prescription must be individualised based on patient assessment, cancer-specific health issues, and patient-driven goals.</li>
+            <li class="flex gap-2"><span class="text-rose-600 font-bold">→</span> While multimodal, moderate-to-high intensity exercise is appropriate for most patients, there is no single evidence-based prescription for all cancer patients.</li>
+            <li class="flex gap-2"><span class="text-rose-600 font-bold">→</span> Targeted exercise prescription with behaviour change support is required to ensure greatest patient benefit with minimal risk of harm.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 2: Evidence Base -->
+      <section id="evidence" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">2</span>
+          <h2 class="text-xl font-bold text-gray-900">Evidence Base for Exercise Prehabilitation</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Exercise prehabilitation is supported by a growing body of evidence across multiple cancer surgery populations. Key findings include reductions in postoperative pulmonary complications, shorter hospital length of stay, and improved functional recovery.
+        </p>
+        <div class="overflow-x-auto mt-4">
+          <table class="prose-table w-full rounded-xl overflow-hidden">
+            <thead>
+              <tr>
+                <th>Study / Guideline</th>
+                <th>Population</th>
+                <th>Key Finding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ACSM Roundtable Consensus (Campbell et al., 2019)</td><td>Cancer survivors</td><td>Multimodal exercise (aerobic + resistance) is safe and beneficial; 150 min/week moderate or 75 min/week vigorous recommended</td></tr>
+              <tr><td>ESSA Position Statement (Hayes et al., 2019)</td><td>Cancer patients</td><td>Individualised, targeted exercise with behaviour change support achieves greatest benefit with low risk of harm</td></tr>
+              <tr><td>Assouline et al. (2021)</td><td>Major abdominal surgery</td><td>Preoperative exercise training halves risk of postoperative pulmonary complications; reduces hospital stay</td></tr>
+              <tr><td>Steffens &amp; Denehy (2023)</td><td>Multiple cancer types</td><td>Prehabilitation evidence is broad; no single prescription fits all; 2–8 week programmes are most studied</td></tr>
+              <tr><td>Silver &amp; Baima (2013)</td><td>Cancer prehabilitation</td><td>Foundational review defining cancer prehabilitation; demonstrates improvements in physical and psychological outcomes</td></tr>
+              <tr><td>Kendall et al. (2018)</td><td>Cardiac &amp; abdominal surgery</td><td>Inspiratory muscle training effective in reducing postoperative pulmonary complications and length of stay</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 3: Exercise Screening -->
+      <section id="screening" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">3</span>
+          <h2 class="text-xl font-bold text-gray-900">Exercise Screening</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+          <div class="bg-rose-50 rounded-xl p-5">
+            <p class="font-semibold text-rose-900 mb-2">Who should be screened?</p>
+            <p class="text-sm text-gray-700">Exercise screening should be completed for <strong>all individuals eligible for prehabilitation</strong>. The aim is to identify the individual's level of functional exercise capacity and stratify them into universal, targeted, or specialist intervention pathways.</p>
+          </div>
+          <div class="bg-rose-50 rounded-xl p-5">
+            <p class="font-semibold text-rose-900 mb-2">Why is screening important?</p>
+            <p class="text-sm text-gray-700">Poor functional exercise capacity is a risk factor for developing complications and poor postoperative recovery. Screening identifies patients who need further assessment and targeted or specialist intervention.</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-5 mb-4">
+          <p class="font-semibold text-gray-800 mb-2">Distinguishing Physical Activity from Exercise</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+            <div class="bg-white rounded-lg p-4 border border-gray-200">
+              <p class="font-semibold text-rose-800 mb-1">Physical Activity (PA)</p>
+              <p><em>"Any bodily movement produced by skeletal muscles that results in energy expenditure"</em> (Caspersen et al., 1985)</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 border border-gray-200">
+              <p class="font-semibold text-rose-800 mb-1">Exercise</p>
+              <p><em>"Planned, structured, repetitive, and purposive in the sense that improvement or maintenance of one or more components of physical fitness is an objective"</em> (Caspersen et al., 1985)</p>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-3">Both PA and exercise measurement are important in prehabilitation and should be considered separately in screening and assessment.</p>
+        </div>
+      </section>
+
+      <!-- Section 4: Screening Tools -->
+      <section id="tools" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">4</span>
+          <h2 class="text-xl font-bold text-gray-900">Exercise Screening Tools</h2>
+        </div>
+        <p class="text-gray-600 text-sm mb-5">The following tools are recommended for stratifying patients between universal intervention and targeted/specialist assessment. This is not an exhaustive list.</p>
+
+        <!-- DASI -->
+        <div class="tool-card p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-bold text-rose-800">Duke Activity Status Index (DASI / m-DASI)</h3>
+            <a href="https://www.mdcalc.com/calc/3910/duke-activity-status-index-dasi" target="_blank" class="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded-full hover:bg-rose-200 transition-colors">Visit Tool →</a>
+          </div>
+          <p class="text-sm text-gray-700 mb-3">A 12-item patient self-reported questionnaire estimating functional capacity based on ability to perform common activities of daily living. The modified DASI (m-DASI) is a simplified 4-item version with comparable clinometrics.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Items</th><th>Time</th><th>Cut-offs</th><th>Patient-reported</th><th>Remote</th><th>Free</th></tr></thead>
+              <tbody>
+                <tr><td>12 (DASI) / 4 (m-DASI)</td><td>10 min</td><td>DASI ≤34 = elevated risk; m-DASI: Low=4, Moderate=3, High=0–2</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- CFS -->
+        <div class="tool-card p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-bold text-rose-800">Clinical Frailty Scale (CFS)</h3>
+            <a href="https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html" target="_blank" class="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded-full hover:bg-rose-200 transition-colors">Visit Tool →</a>
+          </div>
+          <p class="text-sm text-gray-700 mb-3">A judgement-based tool scored 1–9 to screen for frailty and broadly stratify degrees of physical function. Higher CFS scores are significantly associated with prolonged postoperative stay, readmission, morbidity, and mortality.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Items</th><th>Time</th><th>Cut-offs</th><th>Patient-reported</th><th>Remote</th><th>Free</th></tr></thead>
+              <tbody>
+                <tr><td>9</td><td>5 min</td><td>Low risk 1–3; Moderate risk 4–5; High risk ≥6</td><td>No (clinician-rated)</td><td>Yes</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- AKPS -->
+        <div class="tool-card p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-bold text-rose-800">Australia-modified Karnofsky Performance Status (AKPS)</h3>
+          </div>
+          <p class="text-sm text-gray-700 mb-3">Measures overall performance status prior to prehabilitation. Patients are scored 10–100 based on ability to perform regular tasks. Score ≤70 indicates reduced performance status requiring further assessment.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Items</th><th>Time</th><th>Cut-off</th><th>Patient-reported</th><th>Remote</th><th>Free</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>2 min</td><td>≤70 = reduced performance status</td><td>No (clinician-rated)</td><td>Yes</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- IPAQ-SF -->
+        <div class="tool-card p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-bold text-rose-800">International Physical Activity Questionnaire – Short Form (IPAQ-SF)</h3>
+          </div>
+          <p class="text-sm text-gray-700 mb-3">Self-report questionnaire requiring recall of physical activity in the preceding week. Responses categorised as high/moderate (meeting PA guidelines) or low (not meeting guidelines).</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Items</th><th>Time</th><th>Cut-off</th><th>Patient-reported</th><th>Remote</th><th>Free</th></tr></thead>
+              <tbody>
+                <tr><td>7</td><td>5–10 min</td><td>Low PA = not meeting guidelines</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- GLTEQ -->
+        <div class="tool-card p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-bold text-rose-800">Godin Leisure Time Exercise Questionnaire (GLTEQ)</h3>
+          </div>
+          <p class="text-sm text-gray-700 mb-3">2-item self-report measure of usual physical activity. Measures frequency and intensity of exercise in free time in a typical week, plus frequency of sweat-inducing activity.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Items</th><th>Time</th><th>Cut-off</th><th>Patient-reported</th><th>Remote</th><th>Free</th></tr></thead>
+              <tbody>
+                <tr><td>2</td><td>2–5 min</td><td>&lt;14 = insufficiently active</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Stepped care model -->
+        <div class="bg-rose-50 rounded-xl p-5 mt-4">
+          <p class="font-semibold text-rose-900 mb-3">Stepped Care Model: Screening to Intervention</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+            <div class="risk-low rounded-lg p-4">
+              <p class="font-bold text-green-800 mb-1">🟢 Universal Intervention</p>
+              <p class="text-gray-700">DASI &gt;34 and CFS 1–3<br/>General physical activity advice, breathing exercises, home exercise programme</p>
+            </div>
+            <div class="risk-mod rounded-lg p-4">
+              <p class="font-bold text-yellow-800 mb-1">🟡 Targeted Intervention</p>
+              <p class="text-gray-700">DASI ≤34 or CFS 4–5<br/>Refer to physiotherapist/EP; CPET or 6MWT; supervised exercise programme</p>
+            </div>
+            <div class="risk-high rounded-lg p-4">
+              <p class="font-bold text-red-800 mb-1">🔴 Specialist Intervention</p>
+              <p class="text-gray-700">CFS ≥5 or 6MWT &lt;435m<br/>High-risk/frail; frequent supervised sessions; may require face-to-face for safety</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Functional Assessment -->
+      <section id="assessment" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">5</span>
+          <h2 class="text-xl font-bold text-gray-900">Functional Exercise Assessment</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">Individuals who are moderate or high risk on screening should be referred to a <strong>physiotherapist or exercise physiologist</strong> for comprehensive assessment. Those awaiting upper GI surgery (e.g. oesophagectomy, Whipple's) and complex abdominal surgery are at particularly high risk of deconditioning.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-3">Subjective Assessment</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Social history: support network, home environment, employment, social deprivation indicators</li>
+              <li>• Exercise habits, available equipment, access to facilities</li>
+              <li>• Falls history</li>
+              <li>• Previous injuries or chronic musculoskeletal conditions</li>
+              <li>• Impact and control of comorbidities (respiratory, cardiac, endocrine, neurological)</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-3">Objective Assessment</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Establishes baseline physical capacity using formal outcome measures</li>
+              <li>• Allows risk stratification into targeted vs specialist pathways</li>
+              <li>• Provides measurable outcomes for monitoring progress</li>
+              <li>• Guides individualised exercise prescription</li>
+              <li>• <a href="https://prep4cancersurgery.org.au/wp-content/uploads/2024/06/Template-for-Prehab-Exercise-Assessment-Initial-CURRENT.pdf" target="_blank" class="text-rose-700 underline">Assessment template available from toolkit</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Assessment Measures -->
+      <section id="measures" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">6</span>
+          <h2 class="text-xl font-bold text-gray-900">Functional Assessment Measures</h2>
+        </div>
+        <p class="text-gray-600 text-sm mb-5">The following objective measures are recommended for comprehensive exercise assessment. All should be performed by a qualified physiotherapist or exercise physiologist.</p>
+
+        <!-- 6MWT -->
+        <div class="tool-card p-5 mb-4">
+          <h3 class="font-bold text-rose-800 mb-1">Six-Minute Walk Test (6MWT)</h3>
+          <p class="text-sm text-gray-700 mb-3">Submaximal test of functional exercise capacity. Self-paced; primary outcome is distance walked. Two tests recommended for reproducibility (learning effect); one test is acceptable in clinical settings.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Low Risk</th><th>Moderate Risk</th><th>High Risk</th><th>MCID</th><th>Remote</th></tr></thead>
+              <tbody>
+                <tr><td>&gt;510 m</td><td>435–510 m</td><td>&lt;435 m</td><td>22–42 m (lung cancer)</td><td>No (requires standardised walkway)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ISWT -->
+        <div class="tool-card p-5 mb-4">
+          <h3 class="font-bold text-rose-800 mb-1">Incremental Shuttle Walk Test (ISWT)</h3>
+          <p class="text-sm text-gray-700 mb-3">Externally paced incremental test using audio recording (beep test). Correlates well with CPET VO₂ peak. Useful for prescribing targeted exercise. Two tests 30 minutes apart required.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Cut-off</th><th>MCID</th><th>Remote</th><th>Resources needed</th></tr></thead>
+              <tbody>
+                <tr><td>&lt;250 m = predictor of postoperative morbidity (colorectal surgery)</td><td>70 m (cardiac); 48 m (COPD)</td><td>No</td><td>10 m walkway, floor markers, ISWT CD/USB recording</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 30 sec STS -->
+        <div class="tool-card p-5 mb-4">
+          <h3 class="font-bold text-rose-800 mb-1">30-Second Sit-to-Stand Test (30STS)</h3>
+          <p class="text-sm text-gray-700 mb-3">Measures leg strength, function, and endurance. Counts full stands completed from a standardised chair in 30 seconds. Valid, reliable, and feasible via telehealth. Developed to overcome floor effect of 5-repetition STS in older adults.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>High Risk Cut-off</th><th>MCID</th><th>Remote (telehealth)</th><th>Resources</th></tr></thead>
+              <tbody>
+                <tr><td>&lt;12 (females), &lt;14 (males) for age 60–64; see normative table for other ages</td><td>Improvement of ≥2 stands</td><td>Yes (feasible)</td><td>Standardised chair (44–48 cm), stopwatch</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TUG -->
+        <div class="tool-card p-5 mb-4">
+          <h3 class="font-bold text-rose-800 mb-1">Timed Up and Go Test (TUG)</h3>
+          <p class="text-sm text-gray-700 mb-3">Measures falls risk, balance, sit-to-stand, and walking. Simple screening test for probability of falls among older adults. High test-retest user error; standardised protocol essential.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Cut-off</th><th>MCID</th><th>Remote</th><th>Resources</th></tr></thead>
+              <tbody>
+                <tr><td>≥12 sec = falls risk; ≥15–20 sec = higher risk of major surgical complications</td><td>Reductions ≥0.8–1.4 sec (hip OA)</td><td>No</td><td>Standardised armchair, 5 m walkway, stopwatch</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- SPPB -->
+        <div class="tool-card p-5 mb-4">
+          <h3 class="font-bold text-rose-800 mb-1">Short Physical Performance Battery (SPPB)</h3>
+          <p class="text-sm text-gray-700 mb-3">Series of tests assessing balance, gait speed, and sit-to-stand. Total score 0–12. Categorises performance as poor (0–6), moderate (7–9), or good (10–12).</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>High Risk</th><th>MCID</th><th>Remote</th><th>Resources</th></tr></thead>
+              <tbody>
+                <tr><td>&lt;10 = high risk</td><td>1 point</td><td>No</td><td>Stopwatch, 3–4 m walkway marker, standardised armchair</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Hand Grip -->
+        <div class="tool-card p-5 mb-4">
+          <h3 class="font-bold text-rose-800 mb-1">Hand Grip Strength</h3>
+          <p class="text-sm text-gray-700 mb-3">Measure of forearm muscle strength and overall upper body strength. Most useful for tracking performance over time. Normative data established for gender and age. Grip strength in midlife predicts physical disability in senior years.</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full text-xs">
+              <thead><tr><th>Cut-off</th><th>MCID</th><th>Remote</th><th>Resources</th></tr></thead>
+              <tbody>
+                <tr><td>Normative data by gender and age (see BMC Research Notes)</td><td>6.5 kg</td><td>No</td><td>Jamar dynamometer</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="bg-rose-50 rounded-xl p-4 mt-2">
+          <p class="text-sm text-gray-700"><strong>Note:</strong> CPET (Cardiopulmonary Exercise Testing) is the gold-standard objective measure of aerobic capacity. See the PRECAST Handbook chapter on Risk Stratification for full CPET guidance. CPET results (VO₂ peak, anaerobic threshold) directly inform exercise prescription intensity in targeted and specialist interventions.</p>
+        </div>
+      </section>
+
+      <!-- Section 7: Exercise Prescription Principles -->
+      <section id="prescription" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">7</span>
+          <h2 class="text-xl font-bold text-gray-900">Exercise Prescription Principles</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Exercise prescription should follow the FITT-VP framework (Frequency, Intensity, Time, Type, Volume, Progression), individualised to each patient's capacity, goals, and clinical context. Both aerobic and strength exercises can be delivered as continuous sets or interval training.
+        </p>
+
+        <!-- RPE Box -->
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-5 mb-6">
+          <p class="font-semibold text-rose-900 mb-2">Rate of Perceived Exertion (RPE) Scale</p>
+          <p class="text-sm text-gray-700 mb-3">The RPE scale (0–10) guides exercise dosage and progression. Target range is typically <strong>4–6 (moderate to hard)</strong>, but should be tailored to individual capacity.</p>
+          <div class="grid grid-cols-5 gap-2 text-center text-xs">
+            <div class="bg-green-100 rounded-lg p-2"><span class="font-bold text-green-800">0–1</span><br/>Nothing / Very Light</div>
+            <div class="bg-yellow-100 rounded-lg p-2"><span class="font-bold text-yellow-800">2–3</span><br/>Light</div>
+            <div class="bg-orange-100 rounded-lg p-2"><span class="font-bold text-orange-800">4–6</span><br/><strong>Moderate–Hard ✓</strong></div>
+            <div class="bg-red-100 rounded-lg p-2"><span class="font-bold text-red-800">7–8</span><br/>Very Hard</div>
+            <div class="bg-red-200 rounded-lg p-2"><span class="font-bold text-red-900">9–10</span><br/>Maximum</div>
+          </div>
+        </div>
+
+        <!-- Aerobic -->
+        <div class="mb-5">
+          <h3 class="font-bold text-rose-800 mb-3">Aerobic Training</h3>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full">
+              <thead><tr><th>Parameter</th><th>Supervised / HIIT</th><th>Home-Based Continuous</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Mode</strong></td><td>Exercise bike, treadmill, HIIT (gym or telehealth: marching, jogging on spot, step-ups, star jumps)</td><td>Bike, walking, treadmill, arm ergometer (patient preference)</td></tr>
+                <tr><td><strong>Intensity</strong></td><td>RPE 5–7 (hard–very hard); or 80–100% max HR (from CPET VO₂ peak or 220-age formula)</td><td>RPE 4–6 (moderate-hard); "ability to walk and talk in short sentences"</td></tr>
+                <tr><td><strong>Frequency</strong></td><td>5–7 times/week</td><td>5–7 times/week</td></tr>
+                <tr><td><strong>Duration</strong></td><td>20–30 min/day; target 150 min/week moderate or 75 min/week vigorous</td><td>20–30 min/day; target 150 min/week</td></tr>
+                <tr><td><strong>Progression</strong></td><td>Increase work-rate based on patient response; progress intervals (increase exercise, decrease rest time)</td><td>Increase speed, incline, resistance, and/or time; progress to RPE 5–6</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">HIIT: High-Intensity Interval Training. Work:rest ratios commonly used are 60:60 or 120:60 seconds.</p>
+        </div>
+
+        <!-- Strength -->
+        <div>
+          <h3 class="font-bold text-rose-800 mb-3">Strength Training</h3>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full">
+              <thead><tr><th>Parameter</th><th>Recommendation</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Mode</strong></td><td>Functional exercises: sit-to-stand, heel raises, squats, step-ups, bench push-ups, bicep curls, overhead press, shoulder abduction. Weights or resistance bands. Consider cluster sets or eccentric training to reduce fatigue.</td></tr>
+                <tr><td><strong>Intensity</strong></td><td>RPE 4–6 depending on goals</td></tr>
+                <tr><td><strong>Frequency</strong></td><td>2–3 days/week (rest day between sessions). If fatigue is significant: alternate upper limb (Mon) and lower limb (Tue) sessions.</td></tr>
+                <tr><td><strong>Duration</strong></td><td>2 sets of 8–10 repetitions per exercise; intervals at 60:60 or 120:60 work:rest ratio</td></tr>
+                <tr><td><strong>Progression</strong></td><td>Increase weight/reps (sets) or increase exercise intervals/decrease rest time (interval format)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Targeted Intervention -->
+      <section id="targeted" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">8</span>
+          <h2 class="text-xl font-bold text-gray-900">Targeted Exercise Intervention (Moderate Risk)</h2>
+        </div>
+        <div class="risk-mod rounded-xl p-4 mb-5">
+          <p class="font-semibold text-yellow-900 mb-2">Who receives targeted intervention?</p>
+          <p class="text-sm text-gray-700">Patients with <strong>DASI ≤34</strong> on screening and, on further assessment:</p>
+          <ul class="text-sm text-gray-700 mt-2 space-y-1">
+            <li>• CPET: AT 11–15 mL/kg/min <em>or</em> VO₂ peak 15–20 mL/kg/min</li>
+            <li>• <em>and/or</em> 6MWT: 435–510 m</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-2">Delivery</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Physiotherapist or exercise physiologist</li>
+              <li>• Face-to-face, telehealth, or web-based delivery</li>
+              <li>• Twice per week supervised sessions (minimum)</li>
+              <li>• Home exercise programme between sessions</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-2">Review Frequency</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Fortnightly to monthly face-to-face or telehealth review</li>
+              <li>• Phone review if telehealth unavailable</li>
+              <li>• Review and progress home-based exercise programme</li>
+              <li>• Review goals at each contact</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 bg-rose-50 rounded-xl p-4">
+          <strong>Note:</strong> Patients may transition between the stepped model of care. Intervention should be adjusted accordingly based on re-assessment findings.
+        </p>
+      </section>
+
+      <!-- Section 9: Specialist Intervention -->
+      <section id="specialist" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">9</span>
+          <h2 class="text-xl font-bold text-gray-900">Specialist Exercise Intervention (High Risk / Frail)</h2>
+        </div>
+        <div class="risk-high rounded-xl p-4 mb-5">
+          <p class="font-semibold text-red-900 mb-2">Who receives specialist intervention?</p>
+          <p class="text-sm text-gray-700">Patients who are more deconditioned or frail:</p>
+          <ul class="text-sm text-gray-700 mt-2 space-y-1">
+            <li>• CFS ≥5 (frail or severely frail)</li>
+            <li>• <em>and/or</em> 6MWT &lt;435 m</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-2">Prescription Principles</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Follows same FITT-VP principles as targeted intervention</li>
+              <li>• Supervision may be required for <strong>all</strong> exercise sessions</li>
+              <li>• Face-to-face preferred for safety (e.g. falls risk)</li>
+              <li>• Lower starting intensities with careful progression</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-2">Review Frequency</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• <strong>Weekly</strong> telehealth or face-to-face review</li>
+              <li>• Phone review if telehealth unavailable</li>
+              <li>• Some patients best managed face-to-face for safety</li>
+              <li>• Close monitoring for adverse events</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-rose-50 rounded-xl p-4">
+          <p class="text-sm text-gray-700"><strong>Clinician Qualifications:</strong> Targeted and specialist exercise intervention should be delivered by physiotherapists or exercise physiologists familiar with the ESSA position statement and the Cancer Exercise Toolkit (cancerexercisetoolkit.trekeducation.org). For patients with bone metastases, follow the ESSA bone metastases consensus guidelines (2022).</p>
+        </div>
+      </section>
+
+      <!-- Section 10: Neoadjuvant Therapy -->
+      <section id="neoadjuvant" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">10</span>
+          <h2 class="text-xl font-bold text-gray-900">Exercise Prescription During Neoadjuvant Therapy</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Patients undergoing neoadjuvant therapy often experience fluctuating physical capacity due to symptom burden and treatment side effects. A flexible approach to exercise prescription is essential.
+        </p>
+
+        <!-- Traffic Light System -->
+        <div class="mb-6">
+          <h3 class="font-bold text-rose-800 mb-3">Traffic Light Self-Rating System</h3>
+          <p class="text-sm text-gray-600 mb-4">Ask the patient to self-rate how they are feeling <em>that day</em> before starting their programme. Adjust exercise intensity accordingly (Abo et al., 2021).</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="traffic-green p-5 text-center">
+              <p class="text-3xl mb-2">🟢</p>
+              <p class="font-bold text-green-800 mb-1">Green — Go</p>
+              <p class="text-sm text-gray-700">Feeling well. Proceed with full planned exercise programme at target intensity.</p>
+            </div>
+            <div class="traffic-amber p-5 text-center">
+              <p class="text-3xl mb-2">🟡</p>
+              <p class="font-bold text-yellow-800 mb-1">Amber — Modify</p>
+              <p class="text-sm text-gray-700">Feeling moderate. Reduce intensity and/or duration. Focus on gentle movement and breathing exercises.</p>
+            </div>
+            <div class="traffic-red p-5 text-center">
+              <p class="text-3xl mb-2">🔴</p>
+              <p class="font-bold text-red-800 mb-1">Red — Rest</p>
+              <p class="text-sm text-gray-700">Feeling unwell. Rest or very gentle activity only. Do not push through significant fatigue or symptoms.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Periodisation -->
+        <div class="bg-gray-50 rounded-xl p-5">
+          <p class="font-semibold text-gray-900 mb-2">Chemotherapy Periodisation</p>
+          <p class="text-sm text-gray-700 mb-3">Periodise exercise relative to chemotherapy/immunotherapy cycles (Kirkham et al., 2020):</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div class="bg-white rounded-lg p-4 border border-gray-200">
+              <p class="font-semibold text-red-700 mb-1">Week of treatment administration</p>
+              <p class="text-gray-700">Reduce exercise time and frequency. Focus on gentle activity and breathing exercises. Monitor for adverse effects.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 border border-gray-200">
+              <p class="font-semibold text-green-700 mb-1">Between treatment cycles</p>
+              <p class="text-gray-700">Increase exercise frequency and intensity toward targets. Maximise training effect during recovery window.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11: Respiratory Training -->
+      <section id="respiratory" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">11</span>
+          <h2 class="text-xl font-bold text-gray-900">Respiratory Exercises &amp; Inspiratory Muscle Training (IMT)</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          All individuals preparing for surgery should receive universal respiratory education and breathing exercises. Inspiratory Muscle Training (IMT) should additionally be considered for all high-risk surgical patients.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          <div class="bg-rose-50 rounded-xl p-5">
+            <p class="font-semibold text-rose-900 mb-2">What is IMT?</p>
+            <p class="text-sm text-gray-700">Repetitive progressive resistance training targeting the skeletal muscles responsible for inspiration. A threshold resistance device (held in the mouth) increases load on inspiratory muscles by resisting inspiratory airflow.</p>
+          </div>
+          <div class="bg-rose-50 rounded-xl p-5">
+            <p class="font-semibold text-rose-900 mb-2">Evidence for IMT</p>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>• Halves risk of postoperative pulmonary complications in abdominal surgery (Kendall et al., 2018)</li>
+              <li>• Reduces hospital length of stay</li>
+              <li>• Benefits particularly notable in older and high-risk patients</li>
+              <li>• Most evidence in cardiac and thoracic surgery; growing evidence for abdominal surgery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white border border-rose-200 rounded-xl p-5">
+          <p class="font-semibold text-rose-900 mb-3">IMT Protocol</p>
+          <div class="overflow-x-auto">
+            <table class="prose-table w-full">
+              <thead><tr><th>Parameter</th><th>Recommendation</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Timing</strong></td><td>Initiate at least 2 weeks prior to surgery</td></tr>
+                <tr><td><strong>Starting Intensity</strong></td><td>30–50% of maximal inspiratory pressure (MIP)</td></tr>
+                <tr><td><strong>Progression</strong></td><td>Progressively increase resistance over time based on response</td></tr>
+                <tr><td><strong>Supervision</strong></td><td>Weekly supervised sessions (telehealth acceptable) for optimal outcomes</td></tr>
+                <tr><td><strong>Equipment</strong></td><td>Threshold resistance inspiratory muscle trainer (e.g. Threshold IMT device)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 12: Discharge Planning -->
+      <section id="discharge" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">12</span>
+          <h2 class="text-xl font-bold text-gray-900">Discharge Planning from Exercise Prehabilitation</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Most prehabilitation programmes run for 2–8 weeks. Discharge decisions should consider concurrent neoadjuvant treatment, patient progress, and adherence.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-2">Criteria for Discharge</p>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li class="flex gap-2"><span class="text-rose-600">✓</span> Patient is independent with exercise programme with consistent adherence</li>
+              <li class="flex gap-2"><span class="text-rose-600">✓</span> Achieved minimal clinically important difference (MCID) in appropriate outcome measures</li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-2">Discharge Package</p>
+            <ul class="text-sm text-gray-700 space-y-2">
+              <li class="flex gap-2"><span class="text-rose-600">→</span> Updated individualised home exercise programme (HEP)</li>
+              <li class="flex gap-2"><span class="text-rose-600">→</span> Contact details for prehabilitation clinician for patient queries</li>
+              <li class="flex gap-2"><span class="text-rose-600">→</span> Information on safe exercise: when to stop and who to contact</li>
+              <li class="flex gap-2"><span class="text-rose-600">→</span> ISBAR handover to inpatient physiotherapy team for continuity of care</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-rose-50 rounded-xl p-4">
+          <p class="text-sm text-gray-700"><strong>ISBAR Handover:</strong> Ensure communication via the Identify, Situation, Background, Assessment, Recommendation (ISBAR) framework to the appropriate inpatient physiotherapy team at the time of surgery admission to ensure continuity of care.</p>
+        </div>
+      </section>
+
+      <!-- Section 13: Clinical Decision Pathway -->
+      <section id="pathway" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">13</span>
+          <h2 class="text-xl font-bold text-gray-900">Clinical Decision Pathway</h2>
+        </div>
+        <p class="text-gray-600 text-sm mb-5">Stepwise pathway for exercise prehabilitation from referral to discharge.</p>
+        <div class="space-y-3">
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">1</span>
+            <div><p class="font-semibold text-gray-900">Referral &amp; Eligibility</p><p class="text-sm text-gray-600">Patient referred to prehabilitation following cancer diagnosis. Confirm eligibility for exercise prehabilitation programme.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
+            <div><p class="font-semibold text-gray-900">Universal Exercise Screening</p><p class="text-sm text-gray-600">Complete DASI/m-DASI and CFS for all patients. Add IPAQ-SF or GLTEQ for physical activity baseline. AKPS for performance status.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">3</span>
+            <div><p class="font-semibold text-gray-900">Risk Stratification</p><p class="text-sm text-gray-600">Low risk (DASI &gt;34, CFS 1–3): universal intervention only. Moderate risk (DASI ≤34 or CFS 4–5): refer for targeted assessment. High risk (CFS ≥5): refer for specialist assessment.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
+            <div><p class="font-semibold text-gray-900">Functional Assessment (Moderate/High Risk)</p><p class="text-sm text-gray-600">Physiotherapist or EP conducts subjective and objective assessment. Select from: 6MWT, ISWT, CPET, 30STS, TUG, SPPB, hand grip, pelvic floor questionnaire as appropriate.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">5</span>
+            <div><p class="font-semibold text-gray-900">Exercise Prescription</p><p class="text-sm text-gray-600">Individualise aerobic and strength programme. Apply FITT-VP principles. Set RPE targets. Include IMT for high-risk surgical patients. Document prescription and goals.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">6</span>
+            <div><p class="font-semibold text-gray-900">Delivery &amp; Supervision</p><p class="text-sm text-gray-600">Targeted: 2×/week supervised sessions (face-to-face or telehealth) + home programme. Specialist: weekly or more frequent supervision; face-to-face if falls risk.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">7</span>
+            <div><p class="font-semibold text-gray-900">Neoadjuvant Adaptation</p><p class="text-sm text-gray-600">Apply traffic-light self-rating system. Periodise exercise around chemotherapy cycles (reduce in treatment week, increase between cycles).</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">8</span>
+            <div><p class="font-semibold text-gray-900">Review &amp; Progress</p><p class="text-sm text-gray-600">Fortnightly–monthly (targeted) or weekly (specialist) review. Re-measure outcome measures. Adjust prescription. Reassess stepped care level if needed.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-gray-50 rounded-xl p-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-700 text-white rounded-full flex items-center justify-center font-bold text-sm">9</span>
+            <div><p class="font-semibold text-gray-900">Discharge Planning</p><p class="text-sm text-gray-600">Confirm MCID achieved and patient independence with HEP. Provide discharge package. Complete ISBAR handover to inpatient physiotherapy team.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-rose-50 rounded-xl p-4 border border-rose-200">
+            <span class="flex-shrink-0 w-8 h-8 bg-rose-800 text-white rounded-full flex items-center justify-center font-bold text-sm">10</span>
+            <div><p class="font-semibold text-rose-900">Surgery</p><p class="text-sm text-gray-600">Patient proceeds to surgery with optimised functional capacity and postoperative physiotherapy plan in place.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 14: Resources -->
+      <section id="resources" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">14</span>
+          <h2 class="text-xl font-bold text-gray-900">Clinical Resources &amp; Tools</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-3">Assessment Templates</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="https://prep4cancersurgery.org.au/wp-content/uploads/2024/06/Template-for-Prehab-Exercise-Assessment-Initial-CURRENT.pdf" target="_blank" class="text-rose-700 hover:underline">→ Prehab Exercise Initial Assessment Template (PDF)</a></li>
+              <li><a href="https://prep4cancersurgery.org.au/wp-content/uploads/2024/06/Template-for-Prehab-Exercise-Review-CURRENT.pdf" target="_blank" class="text-rose-700 hover:underline">→ Prehab Exercise Review Assessment Template (PDF)</a></li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-3">Exercise Prescription Apps</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="https://valdperformance.com/telehab/" target="_blank" class="text-rose-700 hover:underline">→ Telehab (free) — exercise prescription with patient app</a></li>
+              <li><a href="https://www.physitrack.com/en-au/" target="_blank" class="text-rose-700 hover:underline">→ Physitrack (licensed) — exercise videos + patient progress reporting</a></li>
+              <li><a href="https://simpleset.net/" target="_blank" class="text-rose-700 hover:underline">→ Simpleset (licensed) — EMR-integrated exercise prescription</a></li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-3">Clinical Guidelines</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="https://doi.org/10.1249/MSS.0000000000002116" target="_blank" class="text-rose-700 hover:underline">→ ACSM Exercise Guidelines for Cancer Survivors (2019)</a></li>
+              <li><a href="https://www.jsams.org/article/S1440-2440(18)31270-2/fulltext" target="_blank" class="text-rose-700 hover:underline">→ ESSA Position Statement: Exercise Medicine in Cancer (2019)</a></li>
+              <li><a href="https://www.cosa.org.au/media/332757/cosa-position-statement-v3-dec2020-web-final.pdf" target="_blank" class="text-rose-700 hover:underline">→ COSA Position Statement on Exercise in Cancer Care (2020)</a></li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5">
+            <p class="font-semibold text-gray-900 mb-3">Clinician Learning</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="https://cancerexercisetoolkit.trekeducation.org/" target="_blank" class="text-rose-700 hover:underline">→ Cancer Exercise Toolkit (Australia) — clinical skill development</a></li>
+              <li><a href="https://www.macmillan.org.uk/healthcare-professionals/news-and-resources/guides/integrating-physical-activity-into-cancer-care" target="_blank" class="text-rose-700 hover:underline">→ Macmillan: Integrating Physical Activity into Cancer Care (UK)</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- References -->
+      <section id="references" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 bg-rose-100 text-rose-800 rounded-full flex items-center justify-center font-bold text-sm">15</span>
+          <h2 class="text-xl font-bold text-gray-900">References</h2>
+        </div>
+        <ol class="space-y-3 text-sm text-gray-700">
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">1.</span>Hayes SC, et al. The Exercise and Sports Science Australia position statement: Exercise medicine in cancer management. <em>J Sci Med Sport.</em> 2019;22(11):1175–1199.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">2.</span>Campbell KL, et al. Exercise guidelines for cancer survivors: Consensus statement from international multidisciplinary roundtable. <em>Med Sci Sports Exerc.</em> 2019;51(11):2375–2390. <a href="https://doi.org/10.1249/MSS.0000000000002116" target="_blank" class="text-rose-600 hover:underline">doi:10.1249/MSS.0000000000002116</a></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">3.</span>Steffens D, Denehy L. Prehabilitation exercise programs for patients undergoing cancer surgery, does one size fit all? <em>Eur J Surg Oncol.</em> 2023;49(2):303–305. <a href="https://doi.org/10.1016/j.ejso.2022.11.591" target="_blank" class="text-rose-600 hover:underline">doi:10.1016/j.ejso.2022.11.591</a></li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">4.</span>Silver JK, Baima J. Cancer prehabilitation: an opportunity to decrease treatment-related morbidity, increase cancer treatment options, and improve physical and psychological health outcomes. <em>Am J Phys Med Rehabil.</em> 2013;92(8):715–727.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">5.</span>Assouline B, et al. Preoperative exercise training to prevent postoperative pulmonary complications in adults undergoing major surgery. <em>Ann Am Thorac Soc.</em> 2021;18(4):678–688.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">6.</span>Kendall F, et al. Inspiratory muscle training is effective to reduce postoperative pulmonary complications and length of hospital stay. <em>Disabil Rehabil.</em> 2018;40(8):864–882.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">7.</span>Katsura M, et al. Preoperative inspiratory muscle training for postoperative pulmonary complications in adults undergoing cardiac and major abdominal surgery. <em>Cochrane Database Syst Rev.</em> 2015;(10):CD010356.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">8.</span>Shulman MA, et al. Using the 6-minute walk test to predict disability-free survival after major surgery. <em>Br J Anaesth.</em> 2019;122(1):111–119.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">9.</span>Caspersen CJ, Powell KE, Christenson GM. Physical activity, exercise, and physical fitness: definitions and distinctions for health-related research. <em>Public Health Rep.</em> 1985;100(2):126–131.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">10.</span>Riedel B, et al. A simplified (modified) Duke Activity Status Index (M-DASI) to characterise functional capacity. <em>Br J Anaesth.</em> 2021;126(1):181–190.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">11.</span>Abo S, et al. Feasibility of early-commencing group-based exercise in allogeneic bone marrow transplantation: the BOOST study. <em>Bone Marrow Transplant.</em> 2021;56:2788–2796.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">12.</span>Kirkham AA, et al. "Chemotherapy-periodized" exercise to accommodate for cyclical variation in fatigue. <em>Med Sci Sports Exerc.</em> 2020;52(2):278–286.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">13.</span>Macmillan Cancer Support. Prehabilitation for people with cancer. 2019. Available at: prep4cancersurgery.org.au</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">14.</span>Waterland JL, et al. Patient acceptance of prehabilitation for major surgery: an exploratory survey. <em>Support Care Cancer.</em> 2021;29(2):779–785.</li>
+          <li class="flex gap-3"><span class="flex-shrink-0 font-bold text-rose-700">15.</span>ISBAR Collaborative. ISBAR: A Framework for Effective Communication. 2009.</li>
+        </ol>
+        <div class="mt-6 p-4 bg-gray-50 rounded-xl text-xs text-gray-500">
+          <strong>Source:</strong> Content adapted from the Prep-4-Cancer Surgery Toolkit, Peter MacCallum Cancer Centre, Victoria, Australia (prep4cancersurgery.org.au). Accessed May 2026.
+        </div>
+      </section>
+
+      <!-- Footer nav -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-4">Navigate Chapters</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="anaemia.html"   class="px-4 py-2 bg-teal-50 text-teal-700 rounded-xl text-sm font-medium hover:bg-teal-100 transition-colors">← Ch. 5: Anaemia</a>
+          <a href="diabetes.html"  class="px-4 py-2 bg-navy-50 text-navy-700 rounded-xl text-sm font-medium hover:bg-navy-100 transition-colors">← Ch. 6: Diabetes</a>
+          <a href="frailty.html"   class="px-4 py-2 bg-violet-50 text-violet-700 rounded-xl text-sm font-medium hover:bg-violet-100 transition-colors">← Ch. 7: Frailty</a>
+          <a href="nutrition.html" class="px-4 py-2 bg-emerald-50 text-emerald-700 rounded-xl text-sm font-medium hover:bg-emerald-100 transition-colors">← Ch. 8: Nutrition</a>
+          <a href="nowcasting.html" class="px-4 py-2 bg-amber-50 text-amber-700 rounded-xl text-sm font-medium hover:bg-amber-100 transition-colors">← Ch. 9: Nowcasting</a>
+          <a href="index.html"     class="px-4 py-2 bg-rose-700 text-white rounded-xl text-sm font-medium hover:bg-rose-800 transition-colors">🏠 Handbook Home</a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-sm py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="text-white font-semibold">PRECAST Handbook</p>
+        <p class="text-xs mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+      </div>
+      <div class="text-xs text-center">
+        <p>Content adapted from the <a href="https://prep4cancersurgery.org.au" target="_blank" class="text-rose-400 hover:text-rose-300">Prep-4-Cancer Surgery Toolkit</a></p>
+        <p class="mt-1">Peter MacCallum Cancer Centre, Victoria, Australia</p>
+      </div>
+      <div class="text-xs text-right">
+        <p>Chapter 10: Exercise Prehabilitation</p>
+        <p class="mt-1">Last Updated: May 2026</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

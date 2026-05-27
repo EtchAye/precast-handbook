@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRECAST Handbook – Medical Optimisation for Cancer Surgery Prehabilitation</title>
+  <meta name="description" content="The PRECAST Handbook: A comprehensive clinical reference for health professionals involved in cancer surgery prehabilitation programs." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 50:'#f0f4ff', 100:'#dce6ff', 200:'#b9ceff', 300:'#8aacff', 500:'#3b5fc0', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            teal:  { 50:'#f0fdfa', 100:'#ccfbf1', 400:'#2dd4bf', 600:'#0d9488', 700:'#0f766e', 800:'#115e59' },
+            gold:  { 50:'#fffbeb', 100:'#fef3c7', 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .chapter-card:hover { transform: translateY(-3px); }
+    .chapter-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-navy-800 to-navy-700 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex items-start gap-6">
+        <div class="hidden md:flex items-center justify-center w-20 h-20 rounded-2xl bg-white/10 border border-white/20 flex-shrink-0 text-4xl" aria-hidden="true">📋</div>
+        <div>
+          <p class="text-teal-400 text-sm font-semibold uppercase tracking-widest mb-1">Clinical Reference</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-3">PRECAST Handbook</h1>
+          <p class="text-xl text-blue-100 font-light max-w-2xl">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <span class="bg-white/10 border border-white/20 text-white text-xs font-medium px-3 py-1 rounded-full">For Health Professionals</span>
+            <span class="bg-teal-600/70 text-white text-xs font-medium px-3 py-1 rounded-full">Evidence-Based</span>
+            <span class="bg-gold-500/80 text-navy-900 text-xs font-bold px-3 py-1 rounded-full">Last Updated: May 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav bar -->
+  <nav class="bg-navy-700 text-white sticky top-0 z-50 shadow-md" aria-label="Main navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="#about" class="hover:text-teal-300 transition-colors">About</a>
+      <a href="#chapters" class="hover:text-teal-300 transition-colors">Chapters</a>
+      <a href="#how-to-add" class="hover:text-teal-300 transition-colors">Add a Chapter</a>
+      <a href="#acknowledgements" class="hover:text-teal-300 transition-colors">Acknowledgements</a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- About Section -->
+    <section id="about" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-10">
+        <h2 class="text-2xl font-bold text-navy-800 mb-4">About the PRECAST Handbook</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          The <strong>PRECAST Handbook</strong> is a clinical reference resource for health professionals involved in cancer surgery prehabilitation programs. It provides evidence-based, structured guidance on the medical optimisation of patients undergoing major cancer surgery.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Content is drawn from the <a href="https://prep4cancersurgery.org.au/" target="_blank" rel="noopener" class="text-navy-700 underline hover:text-teal-700 font-medium">Prep-4-Cancer Surgery Toolkit</a>, developed by Peter MacCallum Cancer Centre in collaboration with Western &amp; Central Melbourne Integrated Cancer Services (WCMICS).
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 mt-6">
+          <div class="bg-navy-50 rounded-xl p-5 border border-navy-100">
+            <div class="text-3xl mb-2">🎯</div>
+            <h3 class="font-semibold text-navy-800 mb-1">Target Audience</h3>
+            <p class="text-sm text-gray-600">Surgeons, anaesthetists, nurses, allied health professionals, and general practitioners in cancer care.</p>
+          </div>
+          <div class="bg-teal-50 rounded-xl p-5 border border-teal-100">
+            <div class="text-3xl mb-2">📚</div>
+            <h3 class="font-semibold text-navy-800 mb-1">Evidence-Based</h3>
+            <p class="text-sm text-gray-600">All chapters are grounded in current clinical evidence, consensus guidelines, and best practice recommendations.</p>
+          </div>
+          <div class="bg-gold-50 rounded-xl p-5 border border-gold-100">
+            <div class="text-3xl mb-2">🔄</div>
+            <h3 class="font-semibold text-navy-800 mb-1">Living Document</h3>
+            <p class="text-sm text-gray-600">Chapters are updated regularly as new evidence emerges. New chapters are added as the handbook expands.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapters Section -->
+    <section id="chapters" class="mb-16">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold text-navy-800">Table of Contents</h2>
+        <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">6 chapters available</span>
+      </div>
+
+      <!-- Chapter Introduction (placeholder chapters 1-4) -->
+      <div class="bg-white border border-dashed border-gray-200 rounded-xl p-5 mb-4 opacity-60">
+        <p class="text-sm text-gray-500 font-medium">Chapters 1–4 &nbsp;·&nbsp; <em>Handbook Introduction, Framework, and Core Principles</em> &nbsp;·&nbsp; Coming soon</p>
+      </div>
+
+      <!-- Chapter 5: Anaemia -->
+      <a href="anaemia.html" class="chapter-card block bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-teal-200 mb-4 overflow-hidden" aria-label="Chapter 5: Anaemia">
+        <div class="flex items-stretch">
+          <div class="bg-gradient-to-b from-teal-600 to-teal-700 text-white flex flex-col items-center justify-center px-6 py-6 min-w-[80px]">
+            <span class="text-xs font-semibold uppercase tracking-wider opacity-80">Ch.</span>
+            <span class="text-4xl font-extrabold leading-none">5</span>
+          </div>
+          <div class="p-6 flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-bold text-navy-800 mb-1">Anaemia</h3>
+                <p class="text-gray-600 text-sm mb-3">Preoperative screening, iron deficiency diagnosis, and IV iron therapy for cancer surgery patients.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-teal-50 text-teal-700 text-xs font-medium px-2 py-0.5 rounded-full border border-teal-100">Iron Deficiency</span>
+                  <span class="bg-teal-50 text-teal-700 text-xs font-medium px-2 py-0.5 rounded-full border border-teal-100">IV Iron</span>
+                  <span class="bg-teal-50 text-teal-700 text-xs font-medium px-2 py-0.5 rounded-full border border-teal-100">Haemoglobin</span>
+                  <span class="bg-teal-50 text-teal-700 text-xs font-medium px-2 py-0.5 rounded-full border border-teal-100">Patient Blood Management</span>
+                </div>
+              </div>
+              <div class="flex-shrink-0 text-teal-600 text-2xl mt-1" aria-hidden="true">→</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Chapter 6: Diabetes -->
+      <a href="diabetes.html" class="chapter-card block bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-navy-200 mb-4 overflow-hidden" aria-label="Chapter 6: Diabetes">
+        <div class="flex items-stretch">
+          <div class="bg-gradient-to-b from-navy-700 to-navy-800 text-white flex flex-col items-center justify-center px-6 py-6 min-w-[80px]">
+            <span class="text-xs font-semibold uppercase tracking-wider opacity-80">Ch.</span>
+            <span class="text-4xl font-extrabold leading-none">6</span>
+          </div>
+          <div class="p-6 flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-bold text-navy-800 mb-1">Diabetes</h3>
+                <p class="text-gray-600 text-sm mb-3">Glycaemic screening, optimisation targets, and perioperative medication management in oncology patients.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-navy-50 text-navy-700 text-xs font-medium px-2 py-0.5 rounded-full border border-navy-100">HbA1c</span>
+                  <span class="bg-navy-50 text-navy-700 text-xs font-medium px-2 py-0.5 rounded-full border border-navy-100">Glycaemic Control</span>
+                  <span class="bg-navy-50 text-navy-700 text-xs font-medium px-2 py-0.5 rounded-full border border-navy-100">SGLT2 Inhibitors</span>
+                  <span class="bg-navy-50 text-navy-700 text-xs font-medium px-2 py-0.5 rounded-full border border-navy-100">Perioperative Management</span>
+                </div>
+              </div>
+              <div class="flex-shrink-0 text-navy-600 text-2xl mt-1" aria-hidden="true">→</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Chapter 7: Frailty -->
+      <a href="frailty.html" class="chapter-card block bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-violet-200 mb-4 overflow-hidden" aria-label="Chapter 7: Frailty">
+        <div class="flex items-stretch">
+          <div class="bg-gradient-to-b from-violet-700 to-violet-800 text-white flex flex-col items-center justify-center px-6 py-6 min-w-[80px]">
+            <span class="text-xs font-semibold uppercase tracking-wider opacity-80">Ch.</span>
+            <span class="text-4xl font-extrabold leading-none">7</span>
+          </div>
+          <div class="p-6 flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-bold text-violet-800 mb-1">Frailty</h3>
+                <p class="text-gray-600 text-sm mb-3">Frailty screening, comprehensive geriatric assessment, and targeted prehabilitation interventions for oncology patients.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-violet-50 text-violet-700 text-xs font-medium px-2 py-0.5 rounded-full border border-violet-100">Clinical Frailty Scale</span>
+                  <span class="bg-violet-50 text-violet-700 text-xs font-medium px-2 py-0.5 rounded-full border border-violet-100">Edmonton Frail Scale</span>
+                  <span class="bg-violet-50 text-violet-700 text-xs font-medium px-2 py-0.5 rounded-full border border-violet-100">CGA</span>
+                  <span class="bg-violet-50 text-violet-700 text-xs font-medium px-2 py-0.5 rounded-full border border-violet-100">Prehabilitation</span>
+                </div>
+              </div>
+              <div class="flex-shrink-0 text-violet-600 text-2xl mt-1" aria-hidden="true">→</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Chapter 8: Nutrition -->
+      <a href="nutrition.html" class="chapter-card block bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-emerald-200 mb-4 overflow-hidden" aria-label="Chapter 8: Nutritional Prehabilitation">
+        <div class="flex items-stretch">
+          <div class="bg-gradient-to-b from-emerald-700 to-emerald-800 text-white flex flex-col items-center justify-center px-6 py-6 min-w-[80px]">
+            <span class="text-xs font-semibold uppercase tracking-wider opacity-80">Ch.</span>
+            <span class="text-4xl font-extrabold leading-none">8</span>
+          </div>
+          <div class="p-6 flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-bold text-emerald-800 mb-1">Nutritional Prehabilitation</h3>
+                <p class="text-gray-600 text-sm mb-3">Malnutrition screening, comprehensive nutrition assessment, targeted intervention, and perioperative nutrition optimisation for cancer surgery patients.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-emerald-50 text-emerald-700 text-xs font-medium px-2 py-0.5 rounded-full border border-emerald-100">MST / MUST / PG-SGA</span>
+                  <span class="bg-emerald-50 text-emerald-700 text-xs font-medium px-2 py-0.5 rounded-full border border-emerald-100">GLIM Criteria</span>
+                  <span class="bg-emerald-50 text-emerald-700 text-xs font-medium px-2 py-0.5 rounded-full border border-emerald-100">Sarcopenia</span>
+                  <span class="bg-emerald-50 text-emerald-700 text-xs font-medium px-2 py-0.5 rounded-full border border-emerald-100">ERAS Protocol</span>
+                </div>
+              </div>
+              <div class="flex-shrink-0 text-emerald-600 text-2xl mt-1" aria-hidden="true">→</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Chapter 9: Nowcasting -->
+      <a href="nowcasting.html" class="chapter-card block bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-amber-200 mb-4 overflow-hidden" aria-label="Chapter 9: Nowcasting">
+        <div class="flex items-stretch">
+          <div class="bg-gradient-to-b from-amber-700 to-amber-800 text-white flex flex-col items-center justify-center px-6 py-6 min-w-[80px]">
+            <span class="text-xs font-semibold uppercase tracking-wider opacity-80">Ch.</span>
+            <span class="text-4xl font-extrabold leading-none">9</span>
+          </div>
+          <div class="p-6 flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <h3 class="text-xl font-bold text-amber-800">Nowcasting</h3>
+                  <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-amber-200">🚧 Coming Soon</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">Real-time patient risk estimation and clinical decision support for cancer surgery prehabilitation. Content being developed by the PRECAST editorial team.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-amber-50 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full border border-amber-100">Risk Estimation</span>
+                  <span class="bg-amber-50 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full border border-amber-100">PRECAST Model</span>
+                  <span class="bg-amber-50 text-amber-700 text-xs font-medium px-2 py-0.5 rounded-full border border-amber-100">Clinical Decision Support</span>
+                </div>
+              </div>
+              <div class="flex-shrink-0 text-amber-600 text-2xl mt-1" aria-hidden="true">→</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Chapter 10: Exercise Prehabilitation -->
+      <a href="exercise.html" class="chapter-card block bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-rose-200 mb-4 overflow-hidden" aria-label="Chapter 10: Exercise Prehabilitation">
+        <div class="flex items-stretch">
+          <div class="bg-gradient-to-b from-rose-700 to-rose-800 text-white flex flex-col items-center justify-center px-6 py-6 min-w-[80px]">
+            <span class="text-xs font-semibold uppercase tracking-wider opacity-80">Ch.</span>
+            <span class="text-4xl font-extrabold leading-none">10</span>
+          </div>
+          <div class="p-6 flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <h3 class="text-xl font-bold text-rose-800">Exercise Prehabilitation</h3>
+                  <span class="bg-rose-100 text-rose-700 text-xs font-semibold px-2 py-0.5 rounded-full border border-rose-200">🚧 Coming Soon</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">Structured physical activity programmes to optimise functional capacity and surgical outcomes before cancer surgery. Delivered through the COACH service.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-rose-50 text-rose-700 text-xs font-medium px-2 py-0.5 rounded-full border border-rose-100">CPET / 6MWT</span>
+                  <span class="bg-rose-50 text-rose-700 text-xs font-medium px-2 py-0.5 rounded-full border border-rose-100">COACH Service</span>
+                  <span class="bg-rose-50 text-rose-700 text-xs font-medium px-2 py-0.5 rounded-full border border-rose-100">Exercise Prescription</span>
+                  <span class="bg-rose-50 text-rose-700 text-xs font-medium px-2 py-0.5 rounded-full border border-rose-100">Functional Capacity</span>
+                </div>
+              </div>
+              <div class="flex-shrink-0 text-rose-600 text-2xl mt-1" aria-hidden="true">→</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Placeholder for future chapters -->
+      <div class="bg-white border border-dashed border-gray-200 rounded-xl p-5 text-center">
+        <p class="text-sm text-gray-400">📌 &nbsp;Future chapters will appear here. See <a href="#how-to-add" class="text-navy-600 underline">how to add a chapter</a>.</p>
+      </div>
+    </section>
+
+    <!-- How to Add a Chapter -->
+    <section id="how-to-add" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-10">
+        <h2 class="text-2xl font-bold text-navy-800 mb-2">How to Add a New Chapter</h2>
+        <p class="text-gray-600 mb-6">The handbook is designed to be easily extended. Follow the steps below to add a new chapter.</p>
+        <ol class="space-y-5">
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-700 text-white font-bold text-sm flex items-center justify-center">1</div>
+            <div>
+              <p class="font-semibold text-navy-800">Prepare your chapter content</p>
+              <p class="text-sm text-gray-600 mt-0.5">Write your chapter in Markdown format following the PRECAST chapter structure (Overview → Learning Objectives → Key Clinical Recommendations → Sections → Clinical Decision Pathway → References).</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-700 text-white font-bold text-sm flex items-center justify-center">2</div>
+            <div>
+              <p class="font-semibold text-navy-800">Create a new HTML page</p>
+              <p class="text-sm text-gray-600 mt-0.5">Copy <code class="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono">anaemia.html</code> or <code class="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono">diabetes.html</code> as a template and rename it (e.g., <code class="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono">cardiac.html</code>). Replace the content sections with your new chapter content.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-700 text-white font-bold text-sm flex items-center justify-center">3</div>
+            <div>
+              <p class="font-semibold text-navy-800">Update the Table of Contents</p>
+              <p class="text-sm text-gray-600 mt-0.5">Open <code class="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono">index.html</code> and add a new chapter card in the <em>Table of Contents</em> section, following the same pattern as the Anaemia or Diabetes cards. Update the chapter number, title, description, and link.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-700 text-white font-bold text-sm flex items-center justify-center">4</div>
+            <div>
+              <p class="font-semibold text-navy-800">Update the navigation in all pages</p>
+              <p class="text-sm text-gray-600 mt-0.5">Add a link to the new chapter in the sidebar navigation of each existing chapter page so readers can move between chapters easily.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-700 text-white font-bold text-sm flex items-center justify-center">5</div>
+            <div>
+              <p class="font-semibold text-navy-800">Deploy the updated site</p>
+              <p class="text-sm text-gray-600 mt-0.5">Re-deploy the handbook website folder to publish the changes. The live URL will remain the same.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="mt-8 bg-gold-50 border border-gold-200 rounded-xl p-5">
+          <p class="text-sm font-semibold text-gold-700 mb-1">💡 Naming Conventions</p>
+          <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside">
+            <li>Use lowercase, hyphen-separated filenames: <code class="font-mono text-xs">cardiac-optimisation.html</code></li>
+            <li>Chapter numbers are sequential: next chapter is <strong>Chapter 11</strong></li>
+            <li>Keep the <code class="font-mono text-xs">README.md</code> updated with a list of all chapters</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acknowledgements -->
+    <section id="acknowledgements" class="mb-8">
+      <div class="bg-navy-50 rounded-2xl border border-navy-100 p-8">
+        <h2 class="text-xl font-bold text-navy-800 mb-3">Acknowledgements</h2>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          The PRECAST Handbook is based on content from the <a href="https://prep4cancersurgery.org.au/" target="_blank" rel="noopener" class="text-navy-700 underline font-medium">Prep-4-Cancer Surgery Toolkit</a>, developed by <strong>Peter MacCallum Cancer Centre</strong> in collaboration with <strong>Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)</strong>, with contributions from multidisciplinary experts in perioperative medicine, haematology, endocrinology, and cancer care.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-300 mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div>
+          <p class="text-white font-bold text-lg">PRECAST Handbook</p>
+          <p class="text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+        </div>
+        <div class="text-sm text-right">
+          <p>Based on the <a href="https://prep4cancersurgery.org.au/" class="underline hover:text-white" target="_blank" rel="noopener">Prep-4-Cancer Surgery Toolkit</a></p>
+          <p class="mt-1 text-gray-500">© 2026 PRECAST Handbook Editorial Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

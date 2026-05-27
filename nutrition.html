@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 8: Nutritional Prehabilitation – PRECAST Handbook</title>
+  <meta name="description" content="PRECAST Handbook Chapter 8: Nutritional prehabilitation for cancer surgery. Malnutrition screening, nutrition assessment, intervention strategies, sarcopenia, and perioperative nutrition." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:    { 50:'#f0f4ff', 100:'#dce6ff', 700:'#1e3a8a', 800:'#162d72', 900:'#0f1f52' },
+            teal:    { 50:'#f0fdfa', 100:'#ccfbf1', 600:'#0d9488', 700:'#0f766e' },
+            emerald: { 50:'#ecfdf5', 100:'#d1fae5', 200:'#a7f3d0', 300:'#6ee7b7', 600:'#059669', 700:'#047857', 800:'#065f46', 900:'#064e3b' },
+            violet:  { 50:'#f5f3ff', 100:'#ede9fe', 700:'#6d28d9', 800:'#5b21b6' },
+            gold:    { 50:'#fffbeb', 400:'#fbbf24', 500:'#f59e0b' }
+          },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    html { scroll-behavior: smooth; }
+    .prose-table th { background-color: #065f46; color: white; }
+    .prose-table td, .prose-table th { padding: 0.6rem 0.9rem; border: 1px solid #e5e7eb; font-size: 0.875rem; }
+    .prose-table tr:nth-child(even) td { background-color: #f8fafc; }
+    .section-anchor { scroll-margin-top: 5rem; }
+    .sidebar-link { transition: color 0.15s, padding-left 0.15s; }
+    .sidebar-link:hover { color: #047857; padding-left: 0.25rem; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white text-xs text-center py-2 tracking-wide">
+    Peter MacCallum Cancer Centre &nbsp;|&nbsp; Western &amp; Central Melbourne Integrated Cancer Services (WCMICS)
+  </div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-br from-emerald-700 to-emerald-800 text-white shadow-xl">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <a href="index.html" class="inline-flex items-center gap-2 text-emerald-200 hover:text-white text-sm font-medium mb-4 transition-colors">
+        ← Back to PRECAST Handbook
+      </a>
+      <div class="flex items-center gap-4">
+        <div class="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-center min-w-[70px]">
+          <p class="text-xs font-semibold opacity-70 uppercase tracking-wider">Ch.</p>
+          <p class="text-4xl font-extrabold leading-none">8</p>
+        </div>
+        <div>
+          <p class="text-emerald-200 text-sm font-semibold uppercase tracking-widest mb-0.5">PRECAST Handbook</p>
+          <h1 class="text-3xl md:text-4xl font-extrabold">Nutritional Prehabilitation</h1>
+          <p class="text-emerald-100 text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation &nbsp;·&nbsp; Last Updated: May 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky nav -->
+  <nav class="bg-emerald-700 text-white sticky top-0 z-50 shadow-md" aria-label="Chapter navigation">
+    <div class="max-w-6xl mx-auto px-6 flex items-center gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap py-3">
+      <a href="index.html" class="hover:text-emerald-200 transition-colors">🏠 Home</a>
+      <span class="text-white/30">|</span>
+      <a href="#overview" class="hover:text-emerald-200 transition-colors">Overview</a>
+      <a href="#recommendations" class="hover:text-emerald-200 transition-colors">Key Recommendations</a>
+      <a href="#screening" class="hover:text-emerald-200 transition-colors">Screening</a>
+      <a href="#assessment" class="hover:text-emerald-200 transition-colors">Assessment</a>
+      <a href="#stratification" class="hover:text-emerald-200 transition-colors">Stratification</a>
+      <a href="#intervention" class="hover:text-emerald-200 transition-colors">Intervention</a>
+      <a href="#sarcopenia" class="hover:text-emerald-200 transition-colors">Sarcopenia</a>
+      <a href="#perioperative" class="hover:text-emerald-200 transition-colors">Perioperative</a>
+      <a href="#pathway" class="hover:text-emerald-200 transition-colors">Decision Pathway</a>
+      <a href="#references" class="hover:text-emerald-200 transition-colors">References</a>
+      <span class="text-white/30">|</span>
+      <a href="anaemia.html" class="hover:text-emerald-200 transition-colors">← Ch. 5: Anaemia</a>
+      <a href="diabetes.html" class="hover:text-emerald-200 transition-colors">← Ch. 6: Diabetes</a>
+      <a href="frailty.html" class="hover:text-emerald-200 transition-colors">← Ch. 7: Frailty</a>
+      <span class="opacity-40">|</span>
+      <a href="nowcasting.html" class="hover:text-emerald-200 transition-colors">Ch. 9: Nowcasting</a>
+      <span class="opacity-40">|</span>
+      <a href="exercise.html" class="hover:text-emerald-200 transition-colors">Ch. 10: Exercise →</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-6 py-10 flex gap-8">
+
+    <!-- Sidebar TOC (desktop) -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <div class="sticky top-20 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">Contents</p>
+        <nav class="space-y-1 text-sm text-gray-600">
+          <a href="#overview"        class="sidebar-link block py-1">Chapter Overview</a>
+          <a href="#objectives"      class="sidebar-link block py-1">Learning Objectives</a>
+          <a href="#recommendations" class="sidebar-link block py-1">Key Recommendations</a>
+          <a href="#background"      class="sidebar-link block py-1">1. Background</a>
+          <a href="#epidemiology"    class="sidebar-link block py-1">2. Epidemiology &amp; Impact</a>
+          <a href="#screening"       class="sidebar-link block py-1">3. Malnutrition Screening</a>
+          <a href="#tools"           class="sidebar-link block py-1">4. Screening Tools</a>
+          <a href="#assessment"      class="sidebar-link block py-1">5. Nutrition Assessment</a>
+          <a href="#stratification"  class="sidebar-link block py-1">6. Diagnosis &amp; Stratification</a>
+          <a href="#intervention"    class="sidebar-link block py-1">7. Nutrition Intervention</a>
+          <a href="#sarcopenia"      class="sidebar-link block py-1">8. Sarcopenia &amp; Muscle Health</a>
+          <a href="#perioperative"   class="sidebar-link block py-1">9. Perioperative Nutrition</a>
+          <a href="#qi"              class="sidebar-link block py-1">10. Quality Improvement</a>
+          <a href="#pathway"         class="sidebar-link block py-1">11. Decision Pathway</a>
+          <a href="#summary"         class="sidebar-link block py-1">12. Summary</a>
+          <a href="#references"      class="sidebar-link block py-1">13. References</a>
+        </nav>
+        <div class="mt-5 pt-4 border-t border-gray-100">
+          <p class="text-xs text-gray-400 mb-2 font-semibold uppercase tracking-wider">Other Chapters</p>
+          <a href="anaemia.html"  class="text-xs text-teal-700 hover:text-emerald-700 block py-1">← Ch. 5: Anaemia</a>
+          <a href="diabetes.html" class="text-xs text-navy-700 hover:text-emerald-700 block py-1">← Ch. 6: Diabetes</a>
+          <a href="frailty.html"  class="text-xs text-violet-700 hover:text-emerald-700 block py-1">← Ch. 7: Frailty</a>
+          <a href="nowcasting.html" class="text-xs text-amber-700 hover:text-emerald-700 block py-1">→ Ch. 9: Nowcasting</a>
+          <a href="exercise.html" class="text-xs text-rose-700 hover:text-emerald-700 block py-1">→ Ch. 10: Exercise</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Chapter Overview -->
+      <section id="overview" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Chapter Overview</h2>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div><span class="font-semibold text-gray-500">Chapter Number:</span> <span class="text-gray-800">8</span></div>
+          <div><span class="font-semibold text-gray-500">Topic:</span> <span class="text-gray-800">Nutritional Prehabilitation</span></div>
+          <div><span class="font-semibold text-gray-500">Relevant Clinicians:</span> <span class="text-gray-800">Dietitians, Surgeons, Anaesthetists, Nurses, Allied Health</span></div>
+          <div><span class="font-semibold text-gray-500">Source:</span> <span class="text-gray-800">Prep-4-Cancer Surgery Toolkit (Peter MacCallum Cancer Centre)</span></div>
+        </div>
+        <p class="text-gray-700 text-sm mt-4 leading-relaxed">Malnutrition is one of the most prevalent and modifiable risk factors in patients undergoing cancer surgery. This chapter provides a structured approach to nutrition screening, assessment, diagnosis, and intervention within the prehabilitation pathway, drawing on ESPEN guidelines and the Prep-4-Cancer Surgery Toolkit.</p>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section id="objectives" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">Learning Objectives</h2>
+        <p class="text-gray-600 text-sm mb-4">After reading this chapter, the clinician should be able to:</p>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Describe the prevalence and clinical consequences of malnutrition in cancer surgery patients</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Select and apply an appropriate validated malnutrition screening tool (MST, MUST, or PG-SGA SF)</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Understand the role of the PG-SGA in comprehensive nutrition assessment and malnutrition diagnosis</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Apply the GLIM criteria to diagnose and classify malnutrition severity</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Stratify patients into universal, targeted, or specialist nutrition care pathways</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Outline evidence-based nutrition interventions including protein targets, ONS, and dietary counselling</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Recognise and address sarcopenia and muscle wasting in the preoperative period</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Apply perioperative nutrition principles including preoperative carbohydrate loading and ERAS protocols</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">✓</span> Identify appropriate quality improvement metrics for nutrition prehabilitation programmes</li>
+        </ul>
+      </section>
+
+      <!-- Key Recommendations -->
+      <section id="recommendations" class="section-anchor mb-6">
+        <div class="bg-gradient-to-br from-emerald-700 to-emerald-800 text-white rounded-2xl p-8 shadow-lg">
+          <h2 class="text-xl font-bold mb-6">Key Clinical Recommendations</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+              <p class="text-xs font-bold uppercase tracking-wider text-emerald-200 mb-2">Screen All Patients</p>
+              <p class="text-sm text-white">All individuals referred into prehabilitation should be screened for malnutrition risk using a validated tool (MST preferred in Australia). Screening should occur at diagnosis and be repeated during treatment.</p>
+            </div>
+            <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+              <p class="text-xs font-bold uppercase tracking-wider text-emerald-200 mb-2">Dietitian Referral Threshold</p>
+              <p class="text-sm text-white">MST ≥ 2, MUST ≥ 2, or PG-SGA SF &gt; 5 indicates malnutrition risk — refer immediately to a dietitian for comprehensive nutrition assessment. Do not delay referral pending surgery date.</p>
+            </div>
+            <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+              <p class="text-xs font-bold uppercase tracking-wider text-emerald-200 mb-2">High-Risk Surgical Groups</p>
+              <p class="text-sm text-white">All patients undergoing major GI or gynaecological cancer surgery should be referred to a dietitian regardless of screening score, due to the inherently high risk of malnutrition in these groups.</p>
+            </div>
+            <div class="bg-white/10 border border-white/20 rounded-xl p-4">
+              <p class="text-xs font-bold uppercase tracking-wider text-emerald-200 mb-2">PG-SGA for Assessment</p>
+              <p class="text-sm text-white">The scored PG-SGA is the internationally recommended tool for diagnosing malnutrition in cancer patients. It stratifies patients into PG-SGA A (well nourished), B (moderate/suspected malnutrition), or C (severe malnutrition).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. Background -->
+      <section id="background" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">1. Background &amp; Rationale</h2>
+        <p class="text-gray-700 text-sm mb-4 leading-relaxed">Malnutrition is a common and clinically significant condition in patients undergoing cancer surgery. It is directly linked to increased risk of postoperative complications, prolonged hospital stay, impaired wound healing, reduced quality of life, and higher mortality. Despite this, malnutrition remains underdiagnosed and undertreated in the preoperative period.</p>
+        <p class="text-gray-700 text-sm mb-4 leading-relaxed">Evidence-based nutrition guidelines from ESPEN (European Society for Clinical Nutrition and Metabolism) and the Clinical Oncology Society of Australia (COSA) recommend that all individuals with cancer be screened for malnutrition risk at diagnosis and throughout treatment, including the preoperative period. The aim of nutrition prehabilitation is to identify patients at nutritional risk, diagnose malnutrition, and implement targeted interventions to optimise nutritional status before surgery.</p>
+        <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-5">
+          <p class="font-semibold text-emerald-800 mb-2">The Nutrition Care Process in Prehabilitation</p>
+          <div class="flex flex-wrap gap-3 text-sm">
+            <div class="flex items-center gap-2 bg-white border border-emerald-200 rounded-lg px-3 py-2">
+              <span class="text-emerald-600 font-bold text-lg">1</span>
+              <span class="text-gray-700">Screen all patients</span>
+            </div>
+            <div class="text-emerald-400 font-bold self-center">→</div>
+            <div class="flex items-center gap-2 bg-white border border-emerald-200 rounded-lg px-3 py-2">
+              <span class="text-emerald-600 font-bold text-lg">2</span>
+              <span class="text-gray-700">Assess at-risk patients</span>
+            </div>
+            <div class="text-emerald-400 font-bold self-center">→</div>
+            <div class="flex items-center gap-2 bg-white border border-emerald-200 rounded-lg px-3 py-2">
+              <span class="text-emerald-600 font-bold text-lg">3</span>
+              <span class="text-gray-700">Diagnose &amp; stratify</span>
+            </div>
+            <div class="text-emerald-400 font-bold self-center">→</div>
+            <div class="flex items-center gap-2 bg-white border border-emerald-200 rounded-lg px-3 py-2">
+              <span class="text-emerald-600 font-bold text-lg">4</span>
+              <span class="text-gray-700">Intervene &amp; monitor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Epidemiology -->
+      <section id="epidemiology" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">2. Epidemiology &amp; Clinical Impact</h2>
+        <p class="text-gray-700 text-sm mb-4">Malnutrition is particularly prevalent in cancer surgery populations. The highest rates are observed in patients with upper GI cancers (oesophageal, gastric, pancreatic) and gynaecological cancers, where rates of malnutrition at diagnosis can exceed 50–80%.</p>
+        <div class="grid md:grid-cols-3 gap-4 mb-4">
+          <div class="bg-red-50 border border-red-100 rounded-xl p-4 text-center">
+            <p class="text-3xl font-extrabold text-red-600 mb-1">30–50%</p>
+            <p class="text-xs text-gray-600">of cancer surgery patients have malnutrition at diagnosis</p>
+          </div>
+          <div class="bg-orange-50 border border-orange-100 rounded-xl p-4 text-center">
+            <p class="text-3xl font-extrabold text-orange-600 mb-1">2–3×</p>
+            <p class="text-xs text-gray-600">increased risk of postoperative complications in malnourished patients</p>
+          </div>
+          <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-4 text-center">
+            <p class="text-3xl font-extrabold text-yellow-600 mb-1">↑ LOS</p>
+            <p class="text-xs text-gray-600">Malnutrition associated with significantly longer hospital stay and higher costs</p>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden">
+            <thead>
+              <tr>
+                <th>Cancer Type</th>
+                <th>Malnutrition Prevalence</th>
+                <th>Primary Cause</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Oesophageal / Gastric</td><td>60–80%</td><td>Dysphagia, reduced intake, tumour burden</td></tr>
+              <tr><td>Pancreatic / HPB</td><td>50–75%</td><td>Malabsorption, exocrine insufficiency, pain</td></tr>
+              <tr><td>Colorectal</td><td>30–50%</td><td>Altered bowel function, treatment side effects</td></tr>
+              <tr><td>Gynaecological</td><td>30–60%</td><td>Bowel involvement, ascites, systemic inflammation</td></tr>
+              <tr><td>Lung</td><td>40–60%</td><td>Systemic inflammation, cachexia, reduced appetite</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 mt-2">Sources: ESPEN guidelines (Arends et al. 2017; Muscaritoli et al. 2021); COSA position statement (Kiss et al. 2020)</p>
+      </section>
+
+      <!-- 3. Malnutrition Screening -->
+      <section id="screening" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">3. Malnutrition Screening</h2>
+        <h3 class="font-semibold text-gray-800 mb-2">Who Should Be Screened?</h3>
+        <p class="text-gray-700 text-sm mb-4">Evidence-based nutrition guidelines recommend <strong>all individuals with cancer</strong> be screened for malnutrition risk using a validated tool at diagnosis, and during and after cancer treatment, including surgery. For this reason, <strong>all individuals referred into the prehabilitation service should be screened for malnutrition</strong>.</p>
+        <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4 mb-4">
+          <p class="font-semibold text-emerald-800 mb-1">Why Is Nutrition Screening Important?</p>
+          <p class="text-sm text-emerald-700">Malnutrition is directly linked to increased risk of post-operative complications. The aim of nutrition screening is to identify if an individual is at risk of malnutrition. If deemed at risk, the patient should be referred to the dietitian for a comprehensive nutrition assessment and diagnosis of malnutrition.</p>
+        </div>
+        <h3 class="font-semibold text-gray-800 mb-2">Which Screening Tool to Use?</h3>
+        <p class="text-gray-700 text-sm mb-4">There is no single universally recommended malnutrition screening tool for prehabilitation in cancer surgery. The following validated tools can be considered:</p>
+      </section>
+
+      <!-- 4. Screening Tools -->
+      <section id="tools" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">4. Screening Tools — Comparison</h2>
+
+        <!-- MST -->
+        <div class="border border-emerald-200 rounded-xl mb-5 overflow-hidden">
+          <div class="bg-emerald-700 text-white px-6 py-3 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-base">Malnutrition Screening Tool (MST)</p>
+              <p class="text-emerald-200 text-xs mt-0.5">Recommended first-line tool in Australia</p>
+            </div>
+            <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">2 questions · 2 min</span>
+          </div>
+          <div class="p-5">
+            <p class="text-gray-700 text-sm mb-3">A quick, two-question tool investigating recent unintentional weight loss and recent poor intake due to poor appetite. Creates a score of 0–5. A score of <strong>2–5 indicates risk of malnutrition</strong>, requiring dietitian referral. Validated in cancer patients, reliable, and requires no equipment (height/weight not needed). The most commonly used nutrition screening tool in Australia.</p>
+            <div class="overflow-x-auto">
+              <table class="prose-table w-full rounded-lg overflow-hidden">
+                <thead><tr><th>Items</th><th>Time</th><th>Cut-off for Risk</th><th>Any Clinician?</th><th>Patient Self-complete?</th><th>Remote?</th><th>Free?</th></tr></thead>
+                <tbody>
+                  <tr><td>2</td><td>2 min</td><td class="font-semibold text-red-700">Score 2–5 = at risk</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- MUST -->
+        <div class="border border-emerald-200 rounded-xl mb-5 overflow-hidden">
+          <div class="bg-emerald-700 text-white px-6 py-3 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-base">Malnutrition Universal Screening Tool (MUST)</p>
+              <p class="text-emerald-200 text-xs mt-0.5">Validated in acute and community adults</p>
+            </div>
+            <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">3 questions · 3 min</span>
+          </div>
+          <div class="p-5">
+            <p class="text-gray-700 text-sm mb-3">A three-question tool incorporating current weight and height (to calculate BMI), percentage of recent unplanned weight loss, and an acute disease state score. Creates a score of 0–6. A score of <strong>2–6 is considered at risk of malnutrition</strong>. Validated in acute and community adults (not specifically cancer patients).</p>
+            <div class="overflow-x-auto">
+              <table class="prose-table w-full rounded-lg overflow-hidden">
+                <thead><tr><th>Items</th><th>Time</th><th>Cut-off for Risk</th><th>Any Clinician?</th><th>Patient Self-complete?</th><th>Remote?</th><th>Free?</th></tr></thead>
+                <tbody>
+                  <tr><td>3</td><td>3 min</td><td class="font-semibold text-red-700">Score 2–6 = at risk</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-gray-500 mt-2">Note: Requires height and weight measurement. Not specifically validated in cancer patients.</p>
+          </div>
+        </div>
+
+        <!-- PG-SGA SF -->
+        <div class="border border-emerald-200 rounded-xl mb-5 overflow-hidden">
+          <div class="bg-emerald-700 text-white px-6 py-3 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-base">Patient-Generated Subjective Global Assessment Short Form (PG-SGA SF)</p>
+              <p class="text-emerald-200 text-xs mt-0.5">Validated in cancer patients — patient self-completed</p>
+            </div>
+            <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">4 boxes · 5 min</span>
+          </div>
+          <div class="p-5">
+            <p class="text-gray-700 text-sm mb-3">The first page of the full PG-SGA, designed for patient self-completion. Consists of four boxes: (1) body weight (scored 0–5); (2) food intake (0–4); (3) symptoms affecting oral intake (0–23); and (4) activities and function (0–3). A total score of <strong>&gt;5 indicates risk of malnutrition</strong>, requiring dietitian referral. Validated in cancer patients.</p>
+            <div class="overflow-x-auto">
+              <table class="prose-table w-full rounded-lg overflow-hidden">
+                <thead><tr><th>Items</th><th>Time</th><th>Cut-off for Risk</th><th>Any Clinician?</th><th>Patient Self-complete?</th><th>Remote?</th><th>Free?</th></tr></thead>
+                <tbody>
+                  <tr><td>4 boxes</td><td>5 min</td><td class="font-semibold text-red-700">Score &gt;5 = at risk</td><td>✓ Yes</td><td>✓ Yes (patient-designed)</td><td>✓ Yes</td><td>✓ Yes</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparison summary -->
+        <div class="bg-gray-50 rounded-xl p-5 border border-gray-200">
+          <p class="font-semibold text-gray-800 mb-3">Choosing the Right Tool</p>
+          <div class="grid md:grid-cols-3 gap-3 text-sm">
+            <div class="bg-white rounded-lg p-3 border border-emerald-100">
+              <p class="font-semibold text-emerald-700 mb-1">MST — Best for:</p>
+              <p class="text-xs text-gray-600">Rapid triage, no equipment needed, Australian clinical settings, remote/telehealth screening, any clinician or patient self-report</p>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-emerald-100">
+              <p class="font-semibold text-emerald-700 mb-1">MUST — Best for:</p>
+              <p class="text-xs text-gray-600">Community and acute settings where height/weight are available, general adult populations, when BMI data is needed</p>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-emerald-100">
+              <p class="font-semibold text-emerald-700 mb-1">PG-SGA SF — Best for:</p>
+              <p class="text-xs text-gray-600">Cancer-specific screening, patient self-report prior to clinic visit, capturing symptom burden, bridging to full PG-SGA assessment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Nutrition Assessment -->
+      <section id="assessment" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">5. Comprehensive Nutrition Assessment</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-2">Who Can Assess?</h3>
+            <p class="text-gray-700 text-sm">Nutrition assessment must be completed by a <strong>qualified/accredited dietitian</strong>. It is distinct from screening and requires clinical expertise to diagnose malnutrition, determine severity and causes, and plan targeted interventions.</p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-2">Who Should Receive Assessment?</h3>
+            <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside">
+              <li>All patients screened as 'at risk' of malnutrition</li>
+              <li>All patients undergoing major GI tract surgery</li>
+              <li>All patients with known or suspected cachexia or sarcopenia</li>
+              <li>All patients with high-risk cancer types (upper GI, gynaecological)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="font-semibold text-gray-800 mb-3">Comprehensive Nutrition Assessment Domains</h3>
+        <div class="grid md:grid-cols-3 gap-3 mb-6">
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-sm"><p class="font-semibold text-emerald-800 mb-1">📋 Dietary History</p><p class="text-xs text-gray-600">Food intake, appetite changes, dietary restrictions, supplement use</p></div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-sm"><p class="font-semibold text-emerald-800 mb-1">⚖️ Anthropometrics</p><p class="text-xs text-gray-600">Weight, height, BMI, weight history, rate of weight loss</p></div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-sm"><p class="font-semibold text-emerald-800 mb-1">🔬 Biochemistry</p><p class="text-xs text-gray-600">Albumin (reflects disease severity), CRP, FBC, micronutrients</p></div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-sm"><p class="font-semibold text-emerald-800 mb-1">💪 Physical Exam</p><p class="text-xs text-gray-600">Muscle mass, subcutaneous fat, oedema (nutrition-focused physical exam)</p></div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-sm"><p class="font-semibold text-emerald-800 mb-1">🏃 Functional Status</p><p class="text-xs text-gray-600">Handgrip strength, 6-minute walk test, 30-second sit-to-stand, ECOG</p></div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-sm"><p class="font-semibold text-emerald-800 mb-1">🩺 Clinical Factors</p><p class="text-xs text-gray-600">Nutrition impact symptoms, disease stage, treatment history, comorbidities</p></div>
+        </div>
+
+        <h3 class="font-semibold text-gray-800 mb-3">The PG-SGA — Gold Standard Assessment Tool</h3>
+        <p class="text-gray-700 text-sm mb-4">The scored <strong>Patient-Generated Subjective Global Assessment (PG-SGA)</strong> is internationally recognised as the preferred tool for diagnosing malnutrition in cancer patients. It has been validated for use in cancer patients and is endorsed by COSA and ESPEN.</p>
+        <div class="overflow-x-auto mb-4">
+          <table class="prose-table w-full rounded-xl overflow-hidden">
+            <thead>
+              <tr><th>Items</th><th>Time</th><th>Risk Stratification</th><th>MCID</th><th>Clinician?</th><th>Patient?</th><th>Remote?</th><th>Free?</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7</td>
+                <td>10 min</td>
+                <td><strong>A</strong> = Well nourished (Universal)<br><strong>B</strong> = Moderate/Suspected (Targeted)<br><strong>C</strong> = Severe malnutrition (Specialist)</td>
+                <td>Change in category A/B/C</td>
+                <td>Dietitian or specifically trained clinician</td>
+                <td>First 4 sections only</td>
+                <td>✓ Yes</td>
+                <td>✓ Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 mb-4">The PG-SGA consists of 7 items. Patient-completed sections: weight, food intake, symptoms, activities/function. Clinician-completed sections: disease status, metabolic demand, physical exam.</p>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm">
+          <p class="font-semibold text-amber-800 mb-1">⚡ Note on Biochemical Markers</p>
+          <p class="text-amber-700 text-xs">Low albumin is a clear surgical risk factor; however, it reflects disease-associated catabolism and disease severity rather than undernutrition per se. Nutrition diagnosis should <strong>not</strong> be based on biochemical data alone, but can complement a thorough nutrition assessment.</p>
+        </div>
+      </section>
+
+      <!-- 6. Diagnosis & Stratification -->
+      <section id="stratification" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">6. Malnutrition Diagnosis &amp; Care Stratification</h2>
+        <p class="text-gray-700 text-sm mb-4">The most important part of comprehensive assessment is diagnosing whether the individual is clinically malnourished and the severity of malnutrition. This allows stratification into the appropriate level of nutrition care.</p>
+
+        <h3 class="font-semibold text-gray-800 mb-3">GLIM Criteria for Malnutrition Diagnosis</h3>
+        <p class="text-gray-700 text-sm mb-3">The <strong>Global Leadership Initiative on Malnutrition (GLIM)</strong> criteria provide a standardised framework for diagnosing malnutrition. Diagnosis requires at least <strong>one phenotypic criterion AND one etiologic criterion</strong>:</p>
+        <div class="overflow-x-auto mb-6">
+          <table class="prose-table w-full rounded-xl overflow-hidden">
+            <thead>
+              <tr><th colspan="2">Phenotypic Criteria (at least 1 required)</th><th colspan="2">Etiologic Criteria (at least 1 required)</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-semibold">Low BMI</td>
+                <td>&lt;20 kg/m² (if &lt;70 years) or &lt;22 kg/m² (if ≥70 years)</td>
+                <td class="font-semibold">Reduced food intake</td>
+                <td>≤50% of estimated energy requirement for &gt;1 week, or any reduction for &gt;2 weeks</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">Unintentional weight loss</td>
+                <td>&gt;5% within 6 months, or &gt;10% beyond 6 months</td>
+                <td class="font-semibold">Presence of inflammation</td>
+                <td>Acute disease/injury, or chronic disease-related (cancer, major surgery, organ failure)</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">Reduced muscle mass</td>
+                <td>Low at ≥4 sites on nutrition-focused physical exam</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="font-semibold text-gray-800 mb-3">Nutrition Care Stratification (PG-SGA Based)</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-green-50 border-2 border-green-300 rounded-xl p-5">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-green-600 text-white text-xs font-bold px-2 py-0.5 rounded">PG-SGA A</span>
+              <p class="font-bold text-green-800">Universal Care</p>
+            </div>
+            <p class="text-xs text-gray-600 mb-3">Well nourished. No significant weight loss or reduced intake.</p>
+            <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+              <li>General healthy eating advice</li>
+              <li>Protein and energy guidance</li>
+              <li>Written resources provided</li>
+              <li>Reassess if status changes</li>
+            </ul>
+          </div>
+          <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-5">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-yellow-600 text-white text-xs font-bold px-2 py-0.5 rounded">PG-SGA B</span>
+              <p class="font-bold text-yellow-800">Targeted Care</p>
+            </div>
+            <p class="text-xs text-gray-600 mb-3">Moderate or suspected malnutrition. Some weight loss or reduced intake.</p>
+            <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+              <li>Individualised dietitian counselling</li>
+              <li>Oral nutritional supplements (ONS)</li>
+              <li>Symptom management strategies</li>
+              <li>Regular monitoring and review</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border-2 border-red-400 rounded-xl p-5">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded">PG-SGA C</span>
+              <p class="font-bold text-red-800">Specialist Care</p>
+            </div>
+            <p class="text-xs text-gray-600 mb-3">Severe malnutrition. Significant weight loss, muscle wasting, reduced intake.</p>
+            <ul class="text-xs text-gray-700 space-y-1 list-disc list-inside">
+              <li>Intensive dietitian-led intervention</li>
+              <li>Consider enteral/parenteral nutrition</li>
+              <li>MDT involvement (medical, surgical)</li>
+              <li>Consider delaying surgery if safe</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Nutrition Intervention -->
+      <section id="intervention" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">7. Nutrition Intervention</h2>
+        <p class="text-gray-700 text-sm mb-5">Nutrition interventions in prehabilitation are guided by the PG-SGA stratification and delivered by the dietitian. The primary goals are to optimise energy and protein intake, address nutrition impact symptoms, and improve muscle mass and functional status before surgery.</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-3">Energy &amp; Protein Targets</h3>
+            <div class="space-y-3">
+              <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-4">
+                <p class="font-semibold text-emerald-800 text-sm mb-1">⚡ Energy Requirements</p>
+                <p class="text-xs text-gray-700"><strong>25–30 kcal/kg/day</strong> for most cancer surgery patients. May be higher in patients with cachexia or significant metabolic stress. Adjust based on weight status and activity level.</p>
+              </div>
+              <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-4">
+                <p class="font-semibold text-emerald-800 text-sm mb-1">💪 Protein Requirements</p>
+                <p class="text-xs text-gray-700"><strong>1.2–1.5 g/kg/day</strong> for cancer patients undergoing surgery (ESPEN recommendation). Higher protein intake (≥1.5 g/kg/day) may be warranted in patients with significant muscle wasting or severe malnutrition.</p>
+              </div>
+              <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-4">
+                <p class="font-semibold text-emerald-800 text-sm mb-1">💊 Micronutrients</p>
+                <p class="text-xs text-gray-700">Address specific deficiencies identified on assessment (iron, vitamin D, B12, folate). Correct deficiencies before surgery where possible.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-3">Intervention Strategies by Severity</h3>
+            <div class="space-y-3">
+              <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <p class="font-semibold text-gray-800 text-sm mb-1">Dietary Counselling</p>
+                <p class="text-xs text-gray-600">Individualised advice on food fortification, meal frequency, high-protein foods, and managing nutrition impact symptoms (nausea, early satiety, dysphagia).</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <p class="font-semibold text-gray-800 text-sm mb-1">Oral Nutritional Supplements (ONS)</p>
+                <p class="text-xs text-gray-600">High-protein, energy-dense supplements (e.g., 1.5–2.0 kcal/mL) prescribed when dietary intake is insufficient. Consider disease-specific formulas for GI cancers.</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <p class="font-semibold text-gray-800 text-sm mb-1">Enteral / Parenteral Nutrition</p>
+                <p class="text-xs text-gray-600">Reserved for patients with severe malnutrition or inability to meet requirements orally. Requires specialist dietitian and medical oversight. Consider 7–14 days preoperative nutrition support in severely malnourished patients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-semibold text-gray-800 mb-3">Managing Nutrition Impact Symptoms</h3>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden">
+            <thead><tr><th>Symptom</th><th>Dietary Strategies</th><th>When to Escalate</th></tr></thead>
+            <tbody>
+              <tr><td>Nausea / Vomiting</td><td>Small, frequent meals; cold/room temperature foods; ginger; avoid strong smells</td><td>Anti-emetic review if persistent</td></tr>
+              <tr><td>Early Satiety</td><td>Small frequent meals; liquid nutrition; energy-dense foods; limit fluids with meals</td><td>Gastric emptying study if severe</td></tr>
+              <tr><td>Dysphagia</td><td>Texture-modified diet (IDDSI framework); thickened fluids; upright positioning</td><td>Speech pathology referral</td></tr>
+              <tr><td>Anorexia / Poor Appetite</td><td>Fortified foods; ONS; meal planning; appetite stimulants (medical review)</td><td>Cachexia/metabolic review</td></tr>
+              <tr><td>Diarrhoea / Malabsorption</td><td>Low-fibre diet; BRAT diet; pancreatic enzyme replacement if indicated</td><td>Gastroenterology review</td></tr>
+              <tr><td>Constipation</td><td>Increase fluid and fibre; physical activity; review medications</td><td>Bowel management review</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 8. Sarcopenia & Muscle Health -->
+      <section id="sarcopenia" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">8. Sarcopenia &amp; Muscle Health</h2>
+        <p class="text-gray-700 text-sm mb-4">Low muscle mass (sarcopenia) is common in cancer patients and is independently associated with negative surgical outcomes including increased complications, prolonged hospital stay, and reduced survival. Sarcopenia may be present even in patients with normal or high BMI (sarcopenic obesity).</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-5">
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-3">Assessing Muscle Mass</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3">
+                <span class="text-emerald-600 font-bold text-lg mt-0.5">CT</span>
+                <div><p class="font-semibold text-gray-700">CT Scan (L3 Skeletal Muscle Index)</p><p class="text-xs text-gray-500">Gold standard if available from staging CT. Measures muscle cross-sectional area at L3 vertebral level. No additional patient burden.</p></div>
+              </div>
+              <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3">
+                <span class="text-emerald-600 font-bold text-lg mt-0.5">BIA</span>
+                <div><p class="font-semibold text-gray-700">Bioelectrical Impedance Analysis (BIA)</p><p class="text-xs text-gray-500">Practical, non-invasive bedside tool. Requires specific validated equations for cancer patients. Affected by hydration status.</p></div>
+              </div>
+              <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3">
+                <span class="text-emerald-600 font-bold text-lg mt-0.5">US</span>
+                <div><p class="font-semibold text-gray-700">Muscle Ultrasound</p><p class="text-xs text-gray-500">Emerging bedside tool for measuring muscle thickness and quality. Requires trained operator.</p></div>
+              </div>
+              <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3">
+                <span class="text-emerald-600 font-bold text-lg mt-0.5">↔</span>
+                <div><p class="font-semibold text-gray-700">Surrogate Measures</p><p class="text-xs text-gray-500">Calf circumference and mid-upper arm circumference (MUAC) can be used when body composition equipment is unavailable.</p></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-3">Functional Muscle Assessment</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-start gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-100">
+                <span class="text-2xl">✊</span>
+                <div><p class="font-semibold text-emerald-800">Handgrip Strength</p><p class="text-xs text-gray-600">Validated measure of muscle strength. Performed by physiotherapist, exercise physiologist, or dietitian. Predictive of surgical outcomes.</p></div>
+              </div>
+              <div class="flex items-start gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-100">
+                <span class="text-2xl">🚶</span>
+                <div><p class="font-semibold text-emerald-800">6-Minute Walk Test (6MWT)</p><p class="text-xs text-gray-600">Objective measure of functional capacity. Commonly used in prehabilitation programmes.</p></div>
+              </div>
+              <div class="flex items-start gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-100">
+                <span class="text-2xl">🪑</span>
+                <div><p class="font-semibold text-emerald-800">30-Second Sit-to-Stand</p><p class="text-xs text-gray-600">Measures lower limb strength and functional mobility. Easy to perform in clinic.</p></div>
+              </div>
+              <div class="flex items-start gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-100">
+                <span class="text-2xl">📊</span>
+                <div><p class="font-semibold text-emerald-800">ECOG Performance Status</p><p class="text-xs text-gray-600">Indirect measure of functional status. Useful for tracking change over the prehabilitation period.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5">
+          <p class="font-semibold text-emerald-800 mb-2">Addressing Sarcopenia in Prehabilitation</p>
+          <p class="text-sm text-emerald-700 mb-2">Sarcopenia requires a combined nutrition and exercise approach. Nutrition alone is insufficient to reverse muscle loss without concurrent resistance training.</p>
+          <div class="grid md:grid-cols-2 gap-3 text-sm">
+            <div class="bg-white rounded-lg p-3 border border-emerald-100">
+              <p class="font-semibold text-gray-800 mb-1">Nutrition Component</p>
+              <ul class="text-xs text-gray-600 space-y-1 list-disc list-inside">
+                <li>Adequate protein: ≥1.5 g/kg/day</li>
+                <li>Leucine-rich protein sources (dairy, legumes, eggs)</li>
+                <li>Protein distribution: 25–30 g per meal</li>
+                <li>Consider protein supplements if intake inadequate</li>
+                <li>Omega-3 fatty acids (EPA/DHA) may attenuate muscle loss</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg p-3 border border-emerald-100">
+              <p class="font-semibold text-gray-800 mb-1">Exercise Component (via COACH)</p>
+              <ul class="text-xs text-gray-600 space-y-1 list-disc list-inside">
+                <li>Progressive resistance training: 2–3×/week</li>
+                <li>Target major muscle groups</li>
+                <li>Combine with aerobic training for functional gains</li>
+                <li>Physiotherapy-led, tailored to individual capacity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Perioperative Nutrition -->
+      <section id="perioperative" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">9. Perioperative Nutrition</h2>
+        <p class="text-gray-700 text-sm mb-5">Perioperative nutrition management extends beyond the prehabilitation period to include the immediate preoperative phase. ERAS (Enhanced Recovery After Surgery) protocols have transformed perioperative nutrition practice.</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-5">
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200">
+            <h3 class="font-semibold text-gray-800 mb-3">Preoperative Fasting — ERAS Guidance</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-100">
+                <span class="text-emerald-600 font-bold">6h</span>
+                <p class="text-gray-700">Solids — last solid food 6 hours before anaesthesia</p>
+              </div>
+              <div class="flex items-center gap-3 bg-white rounded-lg p-3 border border-gray-100">
+                <span class="text-emerald-600 font-bold">2h</span>
+                <p class="text-gray-700">Clear fluids — allowed up to 2 hours before anaesthesia</p>
+              </div>
+              <div class="flex items-center gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-100">
+                <span class="text-emerald-700 font-bold">CHO</span>
+                <p class="text-gray-700">Preoperative carbohydrate loading: 400 mL of 12.5% CHO drink night before, and 200 mL on morning of surgery (2h before), where not contraindicated</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-5 border border-gray-200">
+            <h3 class="font-semibold text-gray-800 mb-3">Immunonutrition</h3>
+            <p class="text-sm text-gray-700 mb-3">Immunonutrition formulas contain specific nutrients (arginine, omega-3 fatty acids, glutamine, nucleotides) that modulate the immune response and reduce inflammation. ESPEN guidelines recommend consideration in malnourished patients undergoing major cancer surgery.</p>
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <p class="text-xs font-semibold text-amber-800 mb-1">⚡ ESPEN Recommendation</p>
+              <p class="text-xs text-amber-700">Peri-operative oral immunonutrition (arginine, omega-3 fatty acids, nucleotides) should be considered for 5–7 days before major cancer surgery, regardless of nutritional status. Discuss with dietitian and surgical team.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-semibold text-gray-800 mb-3">Postoperative Nutrition Principles</h3>
+        <div class="grid md:grid-cols-3 gap-3 text-sm">
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3">
+            <p class="font-semibold text-emerald-800 mb-1">Early Oral Feeding</p>
+            <p class="text-xs text-gray-600">Resume oral intake as early as possible post-surgery (within hours if tolerated). Avoid prolonged nil-by-mouth periods.</p>
+          </div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3">
+            <p class="font-semibold text-emerald-800 mb-1">Enteral Nutrition</p>
+            <p class="text-xs text-gray-600">Preferred over parenteral nutrition when gut function is present. Early enteral feeding (within 24h) reduces complications in major GI surgery.</p>
+          </div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-3">
+            <p class="font-semibold text-emerald-800 mb-1">Discharge Planning</p>
+            <p class="text-xs text-gray-600">Ensure ongoing nutrition support plan at discharge. ONS, home dietitian follow-up, and clear escalation pathways for weight loss or poor intake.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Quality Improvement -->
+      <section id="qi" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">10. Quality Improvement Metrics</h2>
+        <p class="text-gray-700 text-sm mb-4">The following metrics can be used to evaluate the effectiveness of nutrition prehabilitation programmes:</p>
+        <div class="overflow-x-auto">
+          <table class="prose-table w-full rounded-xl overflow-hidden">
+            <thead><tr><th>Metric</th><th>Measurement Method</th><th>Target / Benchmark</th></tr></thead>
+            <tbody>
+              <tr><td>Malnutrition screening rate</td><td>Proportion of prehab referrals screened with validated tool</td><td>100% of referrals screened</td></tr>
+              <tr><td>Dietitian referral rate</td><td>Proportion of at-risk patients referred to dietitian</td><td>100% of at-risk patients referred</td></tr>
+              <tr><td>Time to dietitian assessment</td><td>Days from referral to first dietitian appointment</td><td>Within 5 working days</td></tr>
+              <tr><td>Malnutrition diagnosis rate</td><td>Proportion of assessed patients with formal diagnosis</td><td>Baseline data collection</td></tr>
+              <tr><td>PG-SGA category improvement</td><td>Change in PG-SGA A/B/C category from baseline to surgery</td><td>Improvement in ≥50% of targeted/specialist patients</td></tr>
+              <tr><td>Weight stability / gain</td><td>Body weight at baseline vs. pre-surgery</td><td>Prevent further weight loss; aim for ≥0.5 kg/week gain in malnourished</td></tr>
+              <tr><td>ONS compliance</td><td>Patient-reported ONS consumption vs. prescribed</td><td>&gt;75% compliance with prescribed ONS</td></tr>
+              <tr><td>Handgrip strength change</td><td>Handgrip dynamometry at baseline and pre-surgery</td><td>Maintenance or improvement from baseline</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 11. Clinical Decision Pathway -->
+      <section id="pathway" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">11. Clinical Decision Pathway — Nutritional Prehabilitation</h2>
+        <p class="text-gray-600 text-sm mb-6">Follow this step-by-step pathway for all patients referred to the prehabilitation service:</p>
+        <div class="space-y-3">
+          <div class="flex items-start gap-4 bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+            <div class="bg-emerald-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+            <div><p class="font-semibold text-emerald-900">Screen ALL patients at first contact</p><p class="text-sm text-gray-600 mt-0.5">Apply MST (preferred), MUST, or PG-SGA SF. Document score. All patients with cancer surgery planned should be screened regardless of apparent nutritional status.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+            <div class="bg-emerald-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+            <div><p class="font-semibold text-emerald-900">Interpret screening score</p><p class="text-sm text-gray-600 mt-0.5">MST ≥ 2 / MUST ≥ 2 / PG-SGA SF &gt; 5 → <strong>At risk → Refer to dietitian</strong>. MST &lt; 2 → Universal care (general nutrition advice, written resources).</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+            <div class="bg-emerald-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+            <div><p class="font-semibold text-emerald-900">Auto-refer high-risk surgical groups</p><p class="text-sm text-gray-600 mt-0.5">All patients with major GI or gynaecological cancer surgery → <strong>Automatic dietitian referral</strong> regardless of screening score.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-yellow-50 border border-yellow-300 rounded-xl p-4">
+            <div class="bg-yellow-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
+            <div><p class="font-semibold text-yellow-900">Dietitian: Comprehensive nutrition assessment (PG-SGA)</p><p class="text-sm text-gray-600 mt-0.5">Complete full PG-SGA. Assess dietary history, anthropometrics, muscle mass, functional status, and nutrition impact symptoms. Apply GLIM criteria for malnutrition diagnosis.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-yellow-50 border border-yellow-300 rounded-xl p-4">
+            <div class="bg-yellow-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">5</div>
+            <div><p class="font-semibold text-yellow-900">Stratify: PG-SGA A / B / C</p><p class="text-sm text-gray-600 mt-0.5"><strong>A (Well nourished):</strong> Universal care — general advice and written resources. <strong>B (Moderate):</strong> Targeted care — individualised counselling + ONS. <strong>C (Severe):</strong> Specialist care — intensive intervention, consider enteral/parenteral nutrition, consider delaying surgery.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <div class="bg-blue-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">6</div>
+            <div><p class="font-semibold text-blue-900">Implement targeted intervention</p><p class="text-sm text-gray-600 mt-0.5">Prescribe individualised nutrition plan. Address nutrition impact symptoms. Prescribe ONS if required. Refer to COACH for combined exercise and nutrition support where applicable.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <div class="bg-blue-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">7</div>
+            <div><p class="font-semibold text-blue-900">Assess sarcopenia and muscle health</p><p class="text-sm text-gray-600 mt-0.5">Assess muscle mass (CT, BIA, MUAC) and function (handgrip, 6MWT, sit-to-stand). Prescribe combined protein and resistance exercise programme for sarcopenic patients.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <div class="bg-blue-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">8</div>
+            <div><p class="font-semibold text-blue-900">Perioperative nutrition planning</p><p class="text-sm text-gray-600 mt-0.5">Ensure ERAS fasting protocol communicated. Prescribe preoperative carbohydrate loading. Consider immunonutrition for major GI cancer surgery. Plan early postoperative oral feeding.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+            <div class="bg-emerald-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">9</div>
+            <div><p class="font-semibold text-emerald-900">Monitor and reassess</p><p class="text-sm text-gray-600 mt-0.5">Repeat PG-SGA at each dietitian contact. Track weight, handgrip strength, and ONS compliance. Escalate to specialist care if status deteriorates. Reassess within 1–2 weeks of intervention commencement.</p></div>
+          </div>
+          <div class="flex items-start gap-4 bg-gray-50 border border-gray-200 rounded-xl p-4">
+            <div class="bg-gray-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">10</div>
+            <div><p class="font-semibold text-gray-900">Discharge nutrition plan</p><p class="text-sm text-gray-600 mt-0.5">Provide written discharge nutrition plan. Arrange community dietitian follow-up. Ensure GP is informed of nutritional status and ongoing needs. Escalation pathway for weight loss or poor intake post-discharge.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. Summary -->
+      <section id="summary" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">12. Summary</h2>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>Malnutrition is prevalent and modifiable</strong> — affecting 30–80% of cancer surgery patients depending on cancer type. It is directly linked to adverse surgical outcomes.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>Screen all patients</strong> using MST (preferred in Australia), MUST, or PG-SGA SF. Refer to dietitian for MST ≥ 2, MUST ≥ 2, or PG-SGA SF &gt; 5.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>Comprehensive assessment (PG-SGA)</strong> by an accredited dietitian diagnoses malnutrition and stratifies patients into universal, targeted, or specialist care pathways.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>GLIM criteria</strong> provide a standardised, internationally recognised framework for malnutrition diagnosis using phenotypic and etiologic criteria.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>Protein targets of 1.2–1.5 g/kg/day</strong> are recommended for cancer surgery patients, with higher targets for those with sarcopenia or severe malnutrition.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>Sarcopenia requires combined nutrition and exercise</strong> — protein supplementation alone is insufficient without concurrent resistance training (refer to COACH).</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>ERAS perioperative nutrition</strong> — 6-hour solid and 2-hour clear fluid fasting, preoperative carbohydrate loading, and early postoperative oral feeding are evidence-based standards.</li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">•</span> <strong>Immunonutrition</strong> should be considered for malnourished patients undergoing major cancer surgery (ESPEN recommendation).</li>
+        </ul>
+      </section>
+
+      <!-- 13. References -->
+      <section id="references" class="section-anchor bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
+        <h2 class="text-xl font-bold text-navy-800 mb-4">13. References</h2>
+        <ol class="space-y-2 text-sm text-gray-700 list-decimal list-inside">
+          <li>Arends J, Bachmann P, Baracos V, et al. ESPEN guidelines on nutrition in cancer patients. <em>Clin Nutr.</em> 2017;36(1):11–48.</li>
+          <li>Weimann A, Braga M, Carli F, et al. ESPEN practical guideline: clinical nutrition in surgery. <em>Clin Nutr.</em> 2021;40:4745–4761.</li>
+          <li>Muscaritoli M, Arends J, Bachmann P, et al. ESPEN practical guideline: Clinical nutrition in cancer. <em>Clin Nutr.</em> 2021;40:2898–2913.</li>
+          <li>Kiss N, Loeliger J, Findlay M, et al. Clinical Oncology Society of Australia: position statement on cancer-related malnutrition and sarcopenia. <em>Nutr Diet.</em> 2020;77:416–425.</li>
+          <li>Gillis C, Hasil L, Kasvis P, et al. Nutrition Care Process Model Approach to Surgical Prehabilitation in Oncology. <em>Front Nutr.</em> 2021;24(8):644706.</li>
+          <li>Prado C, Laviano A, Gillis C, et al. Examining guidelines and new evidence in oncology nutrition: a position paper on gaps and opportunities in multimodal approaches to improve patient care. <em>Support Care Cancer.</em> 2022;30:3073–3083.</li>
+          <li>Ford K, Prado C, Weimann A, Schuetz P, Lobo D. Unresolved issues in perioperative nutrition: A narrative Review. <em>Clin Nutr.</em> 2022;41:1578–1590.</li>
+          <li>Cederholm T, Jensen GL, Correia M, et al. GLIM criteria for the diagnosis of malnutrition — a consensus report from the global clinical nutrition community. <em>Clin Nutr.</em> 2019;38:1–9.</li>
+          <li>Bauer J, Capra S, Ferguson M. Use of the scored Patient-Generated Subjective Global Assessment (PG-SGA) as a nutrition assessment tool in patients with cancer. <em>Eur J Clin Nutr.</em> 2002;56:779–785.</li>
+          <li>Ferguson M, Capra S, Bauer J, Banks M. Development of a valid and reliable Malnutrition Screening Tool for adult acute hospital patients. <em>Nutrition.</em> 1999;15(6):458–464.</li>
+          <li>Gillis C, Weimann A. Prehabilitation in surgery — an update with a focus on nutrition. <em>Curr Opin Clin Nutr Metab Care.</em> 2025;28(3):224–234.</li>
+          <li>Prado C, Landi F, Chew STH, et al. Advances in muscle health and nutrition: A toolkit for healthcare professionals. <em>Clin Nutr.</em> 2022;41:2244–2263.</li>
+        </ol>
+        <div class="mt-6 pt-4 border-t border-gray-100 text-sm text-gray-500">
+          <p><strong>Acknowledgements:</strong> Based on content from the <a href="https://prep4cancersurgery.org.au/toolkit/nutrition/" target="_blank" rel="noopener" class="underline text-emerald-700">Prep-4-Cancer Surgery Toolkit (Nutrition)</a>, developed by Peter MacCallum Cancer Centre in collaboration with WCMICS. Clinical content lead: Anna Beaumont, Dietitian, Peter MacCallum Cancer Centre.</p>
+        </div>
+      </section>
+
+      <!-- Chapter Navigation -->
+      <div class="flex flex-wrap justify-between items-center gap-3 mt-8">
+        <a href="frailty.html" class="flex items-center gap-2 bg-violet-700 hover:bg-violet-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">← Chapter 7: Frailty</a>
+        <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-emerald-700 transition-colors">Back to Handbook</a>
+        <a href="nowcasting.html" class="flex items-center gap-2 bg-amber-700 hover:bg-amber-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 9: Nowcasting</a>
+        <a href="exercise.html" class="flex items-center gap-2 bg-rose-700 hover:bg-rose-800 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors shadow">Chapter 10: Exercise →</a>
+        <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-emerald-700 transition-colors">Back to Handbook</a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-gray-300 mt-8">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+        <div>
+          <p class="text-white font-bold">PRECAST Handbook – Chapter 8: Nutritional Prehabilitation</p>
+          <p class="text-sm mt-1">Medical Optimisation for Cancer Surgery Prehabilitation</p>
+        </div>
+        <div class="text-sm text-right">
+          <p>Based on the <a href="https://prep4cancersurgery.org.au/" class="underline hover:text-white" target="_blank" rel="noopener">Prep-4-Cancer Surgery Toolkit</a></p>
+          <p class="mt-1 text-gray-500">© 2026 PRECAST Handbook Editorial Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
